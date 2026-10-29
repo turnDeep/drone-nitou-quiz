@@ -21,7 +21,9 @@ def app(tmp_path):
     first, second = example("round2-001"), example("round2-002")
     second["prompt"] = "2問目を選択してください。"
     (tmp_path / "data" / "questions_round2.json").write_text(json.dumps(document(first, second)), encoding="utf-8")
-    return AppTest.from_file(str(tmp_path / "app.py"), default_timeout=10)
+    app = AppTest.from_file(str(tmp_path / "app.py"), default_timeout=10)
+    app.session_state["source_mode"] = "第1回"
+    return app
 
 
 def button(app, label):

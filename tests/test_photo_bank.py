@@ -2,7 +2,9 @@
 
 import json
 from pathlib import Path
+from unittest.mock import patch
 
+import pytest
 from streamlit.testing.v1 import AppTest
 
 from quiz import eligible_questions, load_questions
@@ -53,7 +55,9 @@ def test_photo_bank_has_all_50_with_matching_original_key_and_evidence():
 
 
 def test_real_bank_initial_question_and_answer_feedback():
-    app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=10).run()
+    app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=10)
+    app.session_state["source_mode"] = "第1回"
+    app.run()
     assert not app.exception
     assert len(app.session_state["quiz_session"]["order"]) == 50
     assert not app.error and not app.success
@@ -101,7 +105,9 @@ def test_second_round_has_all_50_with_matching_original_key_and_evidence():
 
 
 def test_both_rounds_switch_cleanly_and_second_round_grades_all_50():
-    app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=10).run()
+    app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=10)
+    app.session_state["source_mode"] = "第1回"
+    app.run()
     assert not app.exception
     assert app.sidebar.radio[0].options == ["第1回", "第2回"]
     first = next(item for item in app.radio if item.label == "答えを1つ選んでください")
@@ -131,3 +137,27 @@ def test_both_rounds_switch_cleanly_and_second_round_grades_all_50():
     assert app.session_state["quiz_session"]["order"][0] == "photo-001"
     assert app.session_state["quiz_session"]["answers"] == {}
     assert not (ROOT / "data/demo_questions.json").exists()
+
+
+@pytest.mark.parametrize("mode,bank_file", [
+    ("第1回", "questions.json"),
+    ("第2回", "questions_round2.json"),
+])
+def test_random_initial_round_stays_fixed_while_answering_and_advancing(mode, bank_file):
+    questions = load_questions(ROOT / "data" / bank_file)
+    with patch("random.choice", return_value=mode) as choose:
+        app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=10).run()
+        assert not app.exception
+        assert app.sidebar.radio[0].value == mode
+        assert app.session_state["quiz_session"]["order"] == [q["id"] for q in questions]
+        answer = next(item for item in app.radio if item.label == "答えを1つ選んでください")
+        answer.set_value(questions[0]["answer_index"])
+        next(item for item in app.button if item.label == "回答する").click().run()
+        assert not app.exception
+        assert any("正解です" in item.value for item in app.success)
+        next(item for item in app.button if item.label == "次の問題へ").click().run()
+        assert not app.exception
+        assert app.sidebar.radio[0].value == mode
+        assert app.session_state["quiz_session"]["position"] == 1
+        assert app.session_state["quiz_session"]["answers"] == {questions[0]["id"]: questions[0]["answer_index"]}
+        choose.assert_called_once_with(["第1回", "第2回"])

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import random
 from pathlib import Path
 
 import streamlit as st
@@ -22,6 +23,9 @@ st.set_page_config(
     layout="centered", initial_sidebar_state="collapsed",
 )
 st.markdown(f"<style>{(ROOT / 'styles.css').read_text(encoding='utf-8')}</style>", unsafe_allow_html=True)
+
+if "source_mode" not in st.session_state:
+    st.session_state.source_mode = random.choice(list(BANK_FILES))
 
 with st.sidebar:
     st.header("二等ドローン学科")
