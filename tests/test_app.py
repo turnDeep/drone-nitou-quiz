@@ -14,6 +14,8 @@ def app(tmp_path):
     root = Path(__file__).resolve().parents[1]
     source = (root / "app.py").read_text(encoding="utf-8")
     (tmp_path / "app.py").write_text(source, encoding="utf-8")
+    if (root / "styles.css").exists():
+        (tmp_path / "styles.css").write_text((root / "styles.css").read_text(encoding="utf-8"), encoding="utf-8")
     (tmp_path / "data").mkdir()
     (tmp_path / "data" / "questions.json").write_text(json.dumps(document()), encoding="utf-8")
     first, second = example("demo-001", "original_sample"), example("demo-002", "original_sample")

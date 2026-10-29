@@ -38,6 +38,8 @@ def test_photo_bank_has_all_50_with_matching_original_key_and_evidence():
         assert question["review"]["reference"]["pdf_page"] == question["review"]["reference"]["printed_page"] + 6
         assert question["review"]["reference"]["url"] == "https://www.mlit.go.jp/common/002010809.pdf"
         assert audit["reason"] and audit["reference_excerpt"]
+        assert 2 <= len(question["explanation_highlights"]) <= 4
+        assert all(term in question["explanation"] for term in question["explanation_highlights"])
         assert audit["answer_changed"] == (original["answer_index"] != question["answer_index"])
         changed = original["prompt"] != question["prompt"] or original["choices"] != question["choices"]
         assert changed == (audit["verdict"] == "question_revised"), number
@@ -49,10 +51,13 @@ def test_real_bank_initial_question_and_answer_feedback():
     assert len(app.session_state["quiz_session"]["order"]) == 50
     assert not app.error and not app.success
     assert not any("原本の正答表示" in str(item.value) for item in app.caption)
+    assert any('<u class="question-focus">適切でないもの</u>' in item.value for item in app.markdown)
+    assert not any('<strong class="explanation-key">' in item.value for item in app.markdown)
     answer = next(item for item in app.radio if item.label == "答えを1つ選んでください")
     assert answer.value is None
     answer.set_value(2)
     next(item for item in app.button if item.label == "回答する").click().run()
     assert not app.exception
     assert any("正解です" in item.value for item in app.success)
+    assert any('<strong class="explanation-key">' in item.value for item in app.markdown)
     assert any("教則第五版の該当箇所を開く" in item.value for item in app.markdown)

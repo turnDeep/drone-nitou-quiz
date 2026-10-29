@@ -8,6 +8,7 @@ from pathlib import Path
 
 import streamlit as st
 
+from formatting import explanation_html, question_html
 from quiz import (
     QuestionDataError, advance, create_session, eligible_questions,
     load_questions, missed_questions, score, submit_answer,
@@ -15,23 +16,14 @@ from quiz import (
 
 ROOT = Path(__file__).resolve().parent
 
-st.set_page_config(page_title="二等ドローン学科 | 三択レッスン", page_icon="✈️", layout="centered")
-st.markdown(
-    """<style>
-    .block-container {max-width: 800px; padding-top: 2rem;}
-    div[data-testid="stRadio"] label {padding: .35rem 0;}
-    div[data-testid="stMetricValue"] {font-size: 1.65rem;}
-    h1 {font-size: clamp(1.7rem, 5vw, 2.3rem) !important;}
-    </style>""",
-    unsafe_allow_html=True,
+st.set_page_config(
+    page_title="二等ドローン学科 | 三択レッスン", page_icon="✈️",
+    layout="centered", initial_sidebar_state="collapsed",
 )
-
-st.caption("無人航空機操縦士 / 二等学科の学習")
-st.title("三択で、ひとつずつ。")
-st.write("選んで回答すると、正誤と解説・教則第五版の根拠を確認できます。")
+st.markdown(f"<style>{(ROOT / 'styles.css').read_text(encoding='utf-8')}</style>", unsafe_allow_html=True)
 
 with st.sidebar:
-    st.header("学習メニュー")
+    st.header("二等ドローン学科")
     mode = st.radio("問題の種類", ["写真の問題", "操作サンプル"], key="source_mode")
     st.caption("教則第五版との照合済み問題だけを出題します。")
     st.divider()
@@ -89,12 +81,14 @@ session = st.session_state.quiz_session
 lookup = {question["id"]: question for question in questions}
 correct, answered = score(session, questions)
 total = len(session["order"])
-columns = st.columns(3)
-columns[0].metric("回答済み", f"{answered} / {total}")
-columns[1].metric("正解", f"{correct} 問")
-columns[2].metric("正答率", f"{correct / answered:.0%}" if answered else "—")
-st.progress(answered / total, text=f"{answered}問を回答しました")
-st.caption("出題分野や問題の種類を変更すると、学習を最初から開始します。")
+with st.sidebar:
+    st.divider()
+    columns = st.columns(3)
+    columns[0].metric("回答済み", f"{answered}/{total}")
+    columns[1].metric("正解", f"{correct}問")
+    columns[2].metric("正答率", f"{correct / answered:.0%}" if answered else "—")
+    st.progress(answered / total, text=f"{answered}問を回答しました")
+    st.caption("出題分野や問題の種類を変更すると、学習を最初から開始します。")
 
 
 def restart(selected: list[dict]) -> None:
@@ -119,12 +113,12 @@ if session["position"] >= total:
 question = lookup[session["order"][session["position"]]]
 question_id = question["id"]
 is_answered = question_id in session["answers"]
-st.divider()
-st.caption(f"第{session['position'] + 1}問 / {total}問 · {question['category']}")
-if not is_demo:
-    origin = question["origin"]
-    st.caption(f"問題集：第1回・問題{origin['question_number']}")
-st.subheader(question["prompt"])
+st.markdown(f"<h1 class='question-heading'>{session['position'] + 1}. 問題</h1>", unsafe_allow_html=True)
+with st.sidebar:
+    st.caption(f"第{session['position'] + 1}問 / {total}問 · {question['category']}")
+    if not is_demo:
+        st.caption(f"問題集：第1回・問題{question['origin']['question_number']}")
+st.markdown(question_html(question["prompt"]), unsafe_allow_html=True)
 
 if not is_answered:
     with st.form(f"answer_form_{st.session_state.quiz_generation}_{question_id}"):
@@ -132,8 +126,9 @@ if not is_answered:
             "答えを1つ選んでください",
             options=list(range(3)),
             index=None,
-            format_func=lambda value: f"{['A', 'B', 'C'][value]}. {question['choices'][value]}",
+            format_func=lambda value: question['choices'][value],
             key=f"choice_{st.session_state.quiz_generation}_{question_id}",
+            label_visibility="collapsed",
         )
         submitted = st.form_submit_button("回答する", type="primary", use_container_width=True)
     if submitted:
@@ -154,7 +149,10 @@ else:
     st.write(f"**正答：{['A', 'B', 'C'][answer]}. {question['choices'][answer]}**")
     with st.container(border=True):
         st.markdown("### 解説")
-        st.write(question["explanation"])
+        st.markdown(
+            explanation_html(question["explanation"], question.get("explanation_highlights", [])),
+            unsafe_allow_html=True,
+        )
         review = question["review"]
         reference = review["reference"]
         st.markdown(f"[教則第五版の該当箇所を開く]({reference['url']}#page={reference['pdf_page']})")

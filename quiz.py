@@ -77,6 +77,11 @@ def validate_questions(document: object) -> list[dict]:
             raise QuestionDataError(f"{prefix}: 正答番号は0・1・2のいずれかです。")
         if not isinstance(question.get("explanation"), str):
             raise QuestionDataError(f"{prefix}: 解説は文字列で指定してください。")
+        highlights = question.get("explanation_highlights", [])
+        if not isinstance(highlights, list) or not all(
+            _text(term) and term in question["explanation"] for term in highlights
+        ):
+            raise QuestionDataError(f"{prefix}: 赤字にする語句は解説に含まれる文字列の配列で指定してください。")
         if review["status"] != "verified":
             continue
         if answer is None or not _text(question["explanation"]):
