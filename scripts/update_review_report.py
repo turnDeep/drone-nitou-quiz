@@ -21,15 +21,15 @@ def cell(value):
     return str(value).replace("|", "\\|").replace("\n", " ")
 
 
-def main():
-    questions = load_questions(ROOT / "data/questions.json")
+def write_report(round_number, bank_file, manifest_file, photo_count, report_file):
+    questions = load_questions(ROOT / "data" / bank_file)
     counts = Counter(q["audit"]["verdict"] for q in questions)
     changed_answers = sum(q["audit"]["answer_changed"] for q in questions)
     lines = [
-        "# 写真問題50問の第五版照合結果", "",
-        "確認日：2026年10月29日。対象：提供写真20枚にある第1回の問題1〜50と正答・解説。", "",
+        f"# 第{round_number}回・写真問題50問の第五版照合結果", "",
+        f"確認日：2026年10月29日。対象：提供写真{photo_count}枚にある第{round_number}回の問題1〜50と正答・解説。", "",
         f"照合した問題は{len(questions)}問です。正答番号の変更は{changed_answers}問です。",
-        "原文・元の正答・元の解説の要点は `data/questions.json` の `original` に残しています。",
+        f"原文・元の正答・元の解説の要点は `data/{bank_file}` の `original` に残しています。",
         "アプリの解説は第五版の該当本文を確認して書き直したものです。原本画像はGitHubにアップロードしていません。", "",
         "## 判定の件数", "", "| 判定 | 件数 |", "| --- | ---: |",
     ]
@@ -61,11 +61,16 @@ def main():
     lines += [
         "## 照合の範囲", "",
         "これは提供された50問の確認記録です。第五版の全論点を網羅した新規問題集、公式過去問、法令適合の認証を意味するものではありません。",
-        "参考資料の版・URL・SHA-256は `docs/sources.json`、受領した写真の識別情報は `docs/photo-manifest.json` を参照してください。", "",
+        f"参考資料の版・URL・SHA-256は `docs/sources.json`、受領した写真の識別情報は `docs/{manifest_file}` を参照してください。", "",
     ]
-    target = ROOT / "docs/question-audit.md"
+    target = ROOT / "docs" / report_file
     target.write_text("\n".join(lines), encoding="utf-8")
     print(f"Reviewed {len(questions)} questions; wrote {target.name}; {dict(counts)}")
+
+
+def main():
+    write_report(1, "questions.json", "photo-manifest.json", 20, "question-audit.md")
+    write_report(2, "questions_round2.json", "photo-manifest-round2.json", 19, "question-audit-round2.md")
 
 
 if __name__ == "__main__":

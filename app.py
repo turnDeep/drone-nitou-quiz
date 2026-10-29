@@ -15,6 +15,7 @@ from quiz import (
 )
 
 ROOT = Path(__file__).resolve().parent
+BANK_FILES = {"第1回": "questions.json", "第2回": "questions_round2.json"}
 
 st.set_page_config(
     page_title="二等ドローン学科 | 三択レッスン", page_icon="✈️",
@@ -24,20 +25,16 @@ st.markdown(f"<style>{(ROOT / 'styles.css').read_text(encoding='utf-8')}</style>
 
 with st.sidebar:
     st.header("二等ドローン学科")
-    mode = st.radio("問題の種類", ["写真の問題", "操作サンプル"], key="source_mode")
+    mode = st.radio("問題集", list(BANK_FILES), key="source_mode")
     st.caption("教則第五版との照合済み問題だけを出題します。")
     st.divider()
     st.caption("学習履歴はこのセッション内だけに保存します。ブラウザーを閉じたり接続が切れたりすると、履歴が失われる場合があります。")
 
-is_demo = mode == "操作サンプル"
 if st.session_state.get("active_source") != mode:
     st.session_state.active_source = mode
     st.session_state.pop("quiz_signature", None)
     st.session_state.pop("quiz_session", None)
-origin_kind = "original_sample" if is_demo else "photo"
-path = ROOT / "data" / ("demo_questions.json" if is_demo else "questions.json")
-if is_demo:
-    st.caption("操作確認用の問題です。")
+path = ROOT / "data" / BANK_FILES[mode]
 
 try:
     all_questions = load_questions(path)
@@ -45,16 +42,15 @@ except QuestionDataError as error:
     st.error(str(error))
     st.stop()
 
-source_questions = [question for question in all_questions if question["origin"]["kind"] == origin_kind]
-questions = eligible_questions(all_questions, origin_kind)
+source_questions = [question for question in all_questions if question["origin"]["kind"] == "photo"]
+questions = eligible_questions(all_questions, "photo")
 pending_count = len(source_questions) - len(questions)
 
 with st.sidebar:
     st.caption(f"収録 {len(source_questions)} 問 / 第五版照合済み {len(questions)} 問")
 
 if not source_questions:
-    st.info("写真の問題は未登録です。写真の受領後、問題文・正答・解説を教則第五版と照合して登録します。" if not is_demo else "操作サンプルはまだ登録されていません。")
-    st.caption("サイドバーの「操作サンプル」で、回答と解説表示の流れを試せます。" if not is_demo else "問題ファイルを確認してください。")
+    st.info(f"{mode}の問題は未登録です。")
     st.stop()
 
 if pending_count:
@@ -88,7 +84,7 @@ with st.sidebar:
     columns[1].metric("正解", f"{correct}問")
     columns[2].metric("正答率", f"{correct / answered:.0%}" if answered else "—")
     st.progress(answered / total, text=f"{answered}問を回答しました")
-    st.caption("出題分野や問題の種類を変更すると、学習を最初から開始します。")
+    st.caption("出題分野や問題集を変更すると、学習を最初から開始します。")
 
 
 def restart(selected: list[dict]) -> None:
@@ -116,8 +112,7 @@ is_answered = question_id in session["answers"]
 st.markdown(f"<h1 class='question-heading'>{session['position'] + 1}. 問題</h1>", unsafe_allow_html=True)
 with st.sidebar:
     st.caption(f"第{session['position'] + 1}問 / {total}問 · {question['category']}")
-    if not is_demo:
-        st.caption(f"問題集：第1回・問題{question['origin']['question_number']}")
+    st.caption(f"問題集：{mode}・問題{question['origin']['question_number']}")
 st.markdown(question_html(question["prompt"]), unsafe_allow_html=True)
 
 if not is_answered:

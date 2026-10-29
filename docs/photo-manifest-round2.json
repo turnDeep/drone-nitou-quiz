@@ -1,0 +1,139 @@
+{
+  "received_on": "2026-10-29",
+  "round": 2,
+  "photos": [
+    {
+      "file_name": "1-写真1.jpg",
+      "sha256": "d6100f77f53c2f42a4e1d0f4f5013fcfc01aefccfc8d8d01d179124201d90f39",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "2-写真2.jpg",
+      "sha256": "2609a77e7bc14de575026f8cde6954eacd7fb85e5879adf403bb81f254a711a7",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "3-写真3.jpg",
+      "sha256": "5a2849728a26ebc6d526d49b41d8720e0673c51bf4ebac31fcb1980a612db9d2",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "4-写真4.jpg",
+      "sha256": "b2e14840bec4ec32545df2d5d80c45353debefa639874043020a3ca237351587",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "5-写真5.jpg",
+      "sha256": "4eb3370b3e1dc3b18d1e54e11b90359ad715fb72e3d624d1871df682e1a843ea",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "6-写真6.jpg",
+      "sha256": "587f841960b0b44c0a0c647aeb0555714270c9e5c15b0677281484225f110afb",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "7-写真7.jpg",
+      "sha256": "33fcebff5502692ee2ee13774ffd4cafe8ad5bf4a2468652d9a831efe99f3246",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "8-写真8.jpg",
+      "sha256": "c0bf390593c2294ba5be73a2cd80e3fc4622405fc009c3edd3a983e66aca7cd6",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "9-写真9.jpg",
+      "sha256": "5c80c1e53fa16bcaaa1bd3c0141105a813261aa73166a8afcd2ca3929fa901c7",
+      "width": 2880,
+      "height": 3840,
+      "role": "question"
+    },
+    {
+      "file_name": "10-写真10.jpg",
+      "sha256": "1c3ce908b0dab7e1c8fccea889eaf2c0e8ef1489ebee8fd3ba2458129c08f3fc",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "11-写真11.jpg",
+      "sha256": "5c5feb7abd0fa56e2bda25769f9501dd041941a9eb6c34ac3e2d7b041b343602",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "12-写真12.jpg",
+      "sha256": "fff614d72a9867daeac47631c7b63cce62442ca57c28c0f9c7126fd6dde5a4af",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "13-写真13.jpg",
+      "sha256": "3a1bdca444a5fa0cc7e64adbba558381f2a742a59753670a9858f4f8c078fb6f",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "14-写真14.jpg",
+      "sha256": "531f32f57a1b5e540c8e097482046ae506a85aa042877f7b5c6c1c66911d6181",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "15-写真15.jpg",
+      "sha256": "0dd95ffad791f2a949c7bd754536e0c585c5f05771e86fa0f2940ff63b2bbd5e",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "16-写真16.jpg",
+      "sha256": "612d799d6ca739744353c236b18a75b2ddf2122d2444482638dd22d2773d323f",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "17-写真17.jpg",
+      "sha256": "c6e16281b1dd8816ba1d5f4d938079110fd4a69e08f8796ec72b4d2979ad4640",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "18-写真18.jpg",
+      "sha256": "dd1a4cb630deb97dbb4af47e229403e07aeab2720522d21fef001c0d7541a10a",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "19-写真19.jpg",
+      "sha256": "e56b1319c1aa504ca259753a65b69717dab1f3e9aafd6f15529a860a9d89795b",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    }
+  ]
+}
