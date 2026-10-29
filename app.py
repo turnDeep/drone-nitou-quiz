@@ -129,6 +129,7 @@ if not is_answered:
             format_func=lambda value: question['choices'][value],
             key=f"choice_{st.session_state.quiz_generation}_{question_id}",
             label_visibility="collapsed",
+            width="stretch",
         )
         submitted = st.form_submit_button("回答する", type="primary", use_container_width=True)
     if submitted:

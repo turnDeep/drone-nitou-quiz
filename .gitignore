@@ -10,3 +10,4 @@ artifacts/
 .reference-cache/
 *.log
 .working/
+.playwright-mcp/
