@@ -9,3 +9,4 @@ inputs/
 artifacts/
 .reference-cache/
 *.log
+.working/

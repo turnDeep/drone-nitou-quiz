@@ -1,0 +1,145 @@
+{
+  "received_on": "2026-10-29",
+  "photos": [
+    {
+      "file_name": "1-写真1.jpg",
+      "sha256": "cb53b562b6c0ba8d2f4628998764199863e0490d36f59cc9a4c9fad21d69248e",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "2-写真2.jpg",
+      "sha256": "cef25aee2915af20a7eab8eca622a90d6682b2ca7ef58029ee1c9ca41ef87212",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "3-写真3.jpg",
+      "sha256": "d366ca345071cd8c0a0a2281c7bde1e967815d31a360a5f1ac7297d60f781db5",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "4-写真4.jpg",
+      "sha256": "9f8ccfe7a257defcbedf30a0990b61538a3b2195dc2e4f8b066b05121a9c52eb",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "5-写真5.jpg",
+      "sha256": "4ca125c4f8504bfd060f1e2353aa5d40e3b2a5859113cd3b98f0da1906721a03",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "6-写真6.jpg",
+      "sha256": "55bc88cc1f8e4a3469b224cb33a0f060e97c061c988178851b1e3c35f00d7141",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "7-写真7.jpg",
+      "sha256": "2c63dcee27d890e4bb869ac163a7422650c0ee6da44c2300cdae972f76f8d18d",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "8-写真8.jpg",
+      "sha256": "e0ed6f7bf9b1fc298328bfee2dbd8054fefc394f3d0a713f362c5241d1ea7af3",
+      "width": 1280,
+      "height": 960,
+      "role": "question"
+    },
+    {
+      "file_name": "9-写真9.jpg",
+      "sha256": "aada050badeb6fc451fdfa4c62a25dd8b772575ffcbf8dceed63e93dca9b04ab",
+      "width": 2880,
+      "height": 3840,
+      "role": "question"
+    },
+    {
+      "file_name": "10-写真10.jpg",
+      "sha256": "be22a81e7f2bcd3e13ac555940819bf3ca2c60764eb0c4d10843356a69cbbbe7",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "11-写真11.jpg",
+      "sha256": "6a430ecf5000c418bf80087d750a345aff96f4c0aef26d00d0fc8601994af236",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "12-写真12.jpg",
+      "sha256": "6ee6580ac4500f303692a45781d57d1ede02c622b09d146c94205363c000eb79",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "13-写真13.jpg",
+      "sha256": "53534845901403a3c3dbede89d1e5432d15f43bb9e5186009ac361505aa756d2",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "14-写真14.jpg",
+      "sha256": "7730df6bb0960215441a0bb1296f48b9a3cd1db1d28ecf021d4351c3dc856fb5",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "15-写真15.jpg",
+      "sha256": "7c54476df62cbaf58fb42e08ba26c1c4ccfb8fcb458ccf6fbb93dc08a519c9e8",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "16-写真16.jpg",
+      "sha256": "b28df561ec70e1dc506bfe3542acade01bbee3596e4dfa9b05dc640f5b60197a",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "17-写真17.jpg",
+      "sha256": "2946430973e19fdd4203c4b9517c372be00cb74724f1915fc68845f8281fe0e2",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "18-写真18.jpg",
+      "sha256": "194c9ff9f95bd0c4d7c979074702899839c96b48ad1bbd12289dbcea92acf771",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "19-写真19.jpg",
+      "sha256": "937685cd2c777497272cba51eb829b7ceaa99122ddb25058ce976e41a6fabfe4",
+      "width": 1280,
+      "height": 960,
+      "role": "answer_and_explanation"
+    },
+    {
+      "file_name": "20-写真20.jpg",
+      "sha256": "8ad433ef852d087d1a7fe859f342dd8e3f87d0618d5f3030ff0c5e6971d94bd7",
+      "width": 2880,
+      "height": 3840,
+      "role": "answer_and_explanation"
+    }
+  ]
+}
