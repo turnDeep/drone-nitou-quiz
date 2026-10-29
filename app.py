@@ -45,7 +45,7 @@ if st.session_state.get("active_source") != mode:
 origin_kind = "original_sample" if is_demo else "photo"
 path = ROOT / "data" / ("demo_questions.json" if is_demo else "questions.json")
 if is_demo:
-    st.warning("操作サンプルは写真由来ではありません。アプリの使い方を確認するための独自問題です。")
+    st.caption("操作確認用の問題です。")
 
 try:
     all_questions = load_questions(path)
@@ -123,11 +123,7 @@ st.divider()
 st.caption(f"第{session['position'] + 1}問 / {total}問 · {question['category']}")
 if not is_demo:
     origin = question["origin"]
-    page_note = "・前後のページから推定" if origin.get("printed_page_inferred") else ""
-    source_page = f"（問題冊子 p.{origin['printed_page']}{page_note}）" if origin.get("printed_page") else ""
-    st.caption(f"原本：第1回 問題{origin['question_number']}{source_page}")
-    if question.get("audit", {}).get("verdict") == "question_revised":
-        st.caption("三択問題として正答が一つになるよう、原本の表現を修正しています。修正理由は回答後に確認できます。")
+    st.caption(f"問題集：第1回・問題{origin['question_number']}")
 st.subheader(question["prompt"])
 
 if not is_answered:
@@ -163,23 +159,6 @@ else:
         reference = review["reference"]
         st.markdown(f"[教則第五版の該当箇所を開く]({reference['url']}#page={reference['pdf_page']})")
         st.caption(f"{reference['section']} / 本文 {reference['printed_page']}ページ / PDF通算 {reference['pdf_page']}ページ")
-        st.caption(f"照合日：{review['checked_on']}")
-        with st.expander("第五版への照合・修正内容"):
-            st.write(review["note"])
-            audit = question.get("audit", {})
-            if audit.get("reason") and audit["reason"] != review["note"]:
-                st.write(audit["reason"])
-            if not is_demo:
-                st.caption(f"問題写真：{question['origin']['source_file']}")
-                if question["origin"].get("answer_source_file"):
-                    st.caption(f"正答・解説写真：{question['origin']['answer_source_file']}")
-            original = question.get("original")
-            if original and audit.get("verdict") == "question_revised":
-                st.markdown("**原本の問題文・選択肢**")
-                st.write(original["prompt"])
-                for index, choice in enumerate(original["choices"]):
-                    st.write(f"{['A', 'B', 'C'][index]}. {choice}")
-                st.caption(f"原本の正答表示：{['A', 'B', 'C'][original['answer_index']]}")
     if st.button("結果を見る" if session["position"] + 1 == total else "次の問題へ", type="primary", use_container_width=True):
         advance(session)
         st.rerun()

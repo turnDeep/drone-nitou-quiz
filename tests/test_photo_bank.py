@@ -55,4 +55,4 @@ def test_real_bank_initial_question_and_answer_feedback():
     next(item for item in app.button if item.label == "回答する").click().run()
     assert not app.exception
     assert any("正解です" in item.value for item in app.success)
-    assert any("第五版への照合" in item.label for item in app.expander)
+    assert any("教則第五版の該当箇所を開く" in item.value for item in app.markdown)
