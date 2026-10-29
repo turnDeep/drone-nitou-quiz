@@ -94,7 +94,25 @@ with st.sidebar:
 def restart(selected: list[dict]) -> None:
     st.session_state.quiz_session = create_session(selected, shuffle)
     st.session_state.quiz_generation += 1
+    st.session_state.scroll_to_top = True
     st.rerun()
+
+
+def scroll_to_top_if_requested() -> None:
+    if st.session_state.pop("scroll_to_top", False):
+        # Wait for the new content to finish rendering, then reset the actual
+        # Streamlit scroll container. Only app navigation requests this effect.
+        st.html(
+            """<script>
+            requestAnimationFrame(() => requestAnimationFrame(() => {
+                document.querySelector('[data-testid="stMain"]')?.scrollTo({
+                    top: 0, behavior: "instant"
+                });
+                window.scrollTo({top: 0, behavior: "instant"});
+            }));
+            </script>""",
+            unsafe_allow_javascript=True,
+        )
 
 
 if session["position"] >= total:
@@ -108,6 +126,7 @@ if session["position"] >= total:
         st.write("すべて正解です。解説で確認した内容を、実際の学習にも役立ててください。")
     if st.button("最初から学習する", use_container_width=True):
         restart(questions)
+    scroll_to_top_if_requested()
     st.stop()
 
 question = lookup[session["order"][session["position"]]]
@@ -159,9 +178,12 @@ else:
         st.caption(f"{reference['section']} / 本文 {reference['printed_page']}ページ / PDF通算 {reference['pdf_page']}ページ")
     if st.button("結果を見る" if session["position"] + 1 == total else "次の問題へ", type="primary", use_container_width=True):
         advance(session)
+        st.session_state.scroll_to_top = True
         st.rerun()
 
 with st.sidebar:
     st.divider()
     if st.button("この学習をやり直す", use_container_width=True):
         restart(questions)
+
+scroll_to_top_if_requested()
