@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "questions": [
+    {
+      "id": "photo-001",
+      "category": "章を入力",
+      "prompt": "写真から読み取った問題文を入力",
+      "choices": ["選択肢1", "選択肢2", "選択肢3"],
+      "answer_index": 0,
+      "explanation": "第五版との照合後に解説を入力（このひな形の正答番号は仮置きです）",
+      "origin": {
+        "kind": "photo",
+        "source_file": "写真のファイル名",
+        "question_number": "原本の問題番号"
+      },
+      "review": {
+        "status": "pending",
+        "edition": 5,
+        "checked_on": "",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "",
+          "printed_page": null,
+          "pdf_page": null
+        },
+        "note": "未照合。この状態ではアプリの出題対象になりません。"
+      }
+    }
+  ]
+}

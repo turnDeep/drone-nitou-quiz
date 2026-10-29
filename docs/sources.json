@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "id": "fifth_edition",
+      "url": "https://www.mlit.go.jp/common/002010809.pdf",
+      "checked_on": "2026-10-29",
+      "sha256": "d046fd9aefe288916f8ed20d02fd131f2e8582260667ce65a259c01642359bd4",
+      "pdf_pages": 87
+    },
+    {
+      "id": "changes_from_fourth",
+      "url": "https://www.mlit.go.jp/common/002010810.pdf",
+      "checked_on": "2026-10-29",
+      "sha256": "62d5f01c77b739b725c06e77ef83585c596ca92664ac3a0f7429868a399d2730",
+      "pdf_pages": 87
+    },
+    {
+      "id": "fourth_edition",
+      "url": "https://www.mlit.go.jp/koku/content/001860311.pdf",
+      "checked_on": "2026-10-29",
+      "sha256": "7a8397a898197f5210d1d167a4e05b28cb6e41b28f186f3c91449ba91ae4f216",
+      "pdf_pages": 86
+    }
+  ]
+}
