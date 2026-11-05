@@ -1,0 +1,209 @@
+{
+  "received_on": "2026-11-06",
+  "round": 3,
+  "photos": [
+    {
+      "file_name": "1-写真1.jpg",
+      "sha256": "24034a00a6ad177fe968b9c0e8d4a711d53aadd5d1d73de4fbcb23f26dcde246",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "file_name": "2-写真2.jpg",
+      "sha256": "046139b9c325fee361ffa764f9e892eaefc18a18ae59e182623769f60b63380d",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "file_name": "3-写真3.jpg",
+      "sha256": "b3fea3b6c44f34dd143deed7a0c219e7582bdb6e4ffc1085408c1b565b28a1fc",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "file_name": "4-写真4.jpg",
+      "sha256": "81a09be2e560b6516535be878e48f028faaeadcb660eaec5189987dad43fb0b3",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "file_name": "5-写真5.jpg",
+      "sha256": "8e99403a5bdff6f1aee52b298a136f2d2b9ce6c3ed949b8e8a020b3bc814df9a",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        13,
+        14
+      ]
+    },
+    {
+      "file_name": "6-写真6.jpg",
+      "sha256": "a9f771a71053289f258615121a58d1042ce9c8f6f7da58e82c0994084f835c7f",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "file_name": "7-写真7.jpg",
+      "sha256": "38ef936ddbc4e7c22b5d72408eb51e88e3906e0bd03953131eccac2cd23c5605",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "file_name": "8-写真8.jpg",
+      "sha256": "e67551485a7c819dc08f3e3811f14d55f12c183eb419c5d930126816639597a1",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "file_name": "9-写真9.jpg",
+      "sha256": "4b0522d6e77e6959507b724ffb9407e0afdff41a350e0fa1eb53028688ed1f87",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "file_name": "10-写真10.jpg",
+      "sha256": "c08f9aead1874e71996657297e2e9fb94920790afc4fa27954bde6ccbeaf3e0f",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "file_name": "11-写真11.jpg",
+      "sha256": "2a37e1060654180b4dd7a5a0dee5a7d36f2b71e957febf150b2bc4c5a944f1d9",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "file_name": "12-写真12.jpg",
+      "sha256": "20bb7f8366780d0ab5a5fe9fa7c13515e427f82d1822f2e5c71447e0c5e2c32a",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "file_name": "13-写真13.jpg",
+      "sha256": "b9b0a33e72375fcbc03e1728c3b2edef8d79074f46de96ea0d1e88072d70f3bd",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "file_name": "14-写真14.jpg",
+      "sha256": "732dd3980f235ef0fc5a89e0c22ea2dfd5f11ed621c22ffbce899a435aa0f994",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "file_name": "15-写真15.jpg",
+      "sha256": "0e41722571f9b8f0a863abc12d24aaa1370c09cbaad72d9fa7c3633383070527",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        43,
+        44
+      ]
+    },
+    {
+      "file_name": "16-写真16.jpg",
+      "sha256": "efe2ae7fe866625b8b7b23b5d51add638a31a8352b2afbb0d57c3e395f289cf5",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "file_name": "17-写真17.jpg",
+      "sha256": "96e294a9ea726aeb42c13de3abbcd4eda2f0fd040969d29362720521c1d467e9",
+      "width": 2880,
+      "height": 3840,
+      "role": "question",
+      "question_numbers": [
+        48,
+        49,
+        50
+      ]
+    }
+  ]
+}
