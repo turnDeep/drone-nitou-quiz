@@ -25,6 +25,13 @@ ROUND2_ORIGINAL_KEY = (
     "cacaaaccbb"  # 31-40
     "bcbaabacbb"  # 41-50
 )
+ROUND3_ORIGINAL_KEY = (
+    "acbbacbacb"  # 1-10
+    "ababcbaacb"  # 11-20
+    "aaabaacaba"  # 21-30
+    "bccbcacabb"  # 31-40
+    "bbaabaaaca"  # 41-50
+)
 
 
 def test_photo_bank_has_all_50_with_matching_original_key_and_evidence():
@@ -104,12 +111,44 @@ def test_second_round_has_all_50_with_matching_original_key_and_evidence():
         assert changed == (audit["verdict"] == "question_revised"), number
 
 
+def test_third_round_has_all_50_with_matching_original_key_and_evidence():
+    questions = load_questions(ROOT / "data/questions_round3.json")
+    assert [q["id"] for q in questions] == [f"round3-{number:03}" for number in range(1, 51)]
+    assert len(eligible_questions(questions, "photo")) == 50
+    first_ids = {q["id"] for q in load_questions(ROOT / "data/questions.json")}
+    second_ids = {q["id"] for q in load_questions(ROOT / "data/questions_round2.json")}
+    assert first_ids.isdisjoint({q["id"] for q in questions})
+    assert second_ids.isdisjoint({q["id"] for q in questions})
+    manifest = json.loads((ROOT / "docs/photo-manifest-round3.json").read_text(encoding="utf-8"))
+    photos = {item["file_name"] for item in manifest["photos"]}
+    assert len(photos) == 37 and manifest["round"] == 3
+    assert len(ROUND3_ORIGINAL_KEY) == 50
+    for number, question in enumerate(questions, 1):
+        original, audit = question["original"], question["audit"]
+        assert original["answer_index"] == "abc".index(ROUND3_ORIGINAL_KEY[number - 1]), number
+        assert original["prompt"] and len(original["choices"]) == 3
+        assert original["explanation_summary"]
+        assert question["origin"]["round"] == 3
+        assert question["origin"]["question_number"] == str(number)
+        assert question["origin"]["source_file"] in photos
+        assert question["origin"]["answer_source_file"] in photos
+        reference = question["review"]["reference"]
+        assert reference["pdf_page"] == reference["printed_page"] + 6
+        assert reference["url"] == "https://www.mlit.go.jp/common/002010809.pdf"
+        assert audit["reason"] and audit["reference_excerpt"]
+        assert 2 <= len(question["explanation_highlights"]) <= 4
+        assert all(term in question["explanation"] for term in question["explanation_highlights"])
+        assert audit["answer_changed"] == (original["answer_index"] != question["answer_index"])
+        changed = original["prompt"] != question["prompt"] or original["choices"] != question["choices"]
+        assert changed == (audit["verdict"] == "question_revised"), number
+
+
 def test_both_rounds_switch_cleanly_and_second_round_grades_all_50():
     app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=10)
     app.session_state["source_mode"] = "第1回"
     app.run()
     assert not app.exception
-    assert app.sidebar.radio[0].options == ["第1回", "第2回"]
+    assert app.sidebar.radio[0].options == ["第1回", "第2回", "第3回"]
     first = next(item for item in app.radio if item.label == "答えを1つ選んでください")
     first.set_value(0)
     next(item for item in app.button if item.label == "回答する").click().run()
@@ -142,6 +181,7 @@ def test_both_rounds_switch_cleanly_and_second_round_grades_all_50():
 @pytest.mark.parametrize("mode,bank_file", [
     ("第1回", "questions.json"),
     ("第2回", "questions_round2.json"),
+    ("第3回", "questions_round3.json"),
 ])
 def test_random_initial_round_stays_fixed_while_answering_and_advancing(mode, bank_file):
     questions = load_questions(ROOT / "data" / bank_file)
@@ -160,4 +200,4 @@ def test_random_initial_round_stays_fixed_while_answering_and_advancing(mode, ba
         assert app.sidebar.radio[0].value == mode
         assert app.session_state["quiz_session"]["position"] == 1
         assert app.session_state["quiz_session"]["answers"] == {questions[0]["id"]: questions[0]["answer_index"]}
-        choose.assert_called_once_with(["第1回", "第2回"])
+        choose.assert_called_once_with(["第1回", "第2回", "第3回"])

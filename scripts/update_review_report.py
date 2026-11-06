@@ -21,13 +21,13 @@ def cell(value):
     return str(value).replace("|", "\\|").replace("\n", " ")
 
 
-def write_report(round_number, bank_file, manifest_file, photo_count, report_file):
+def write_report(round_number, bank_file, manifest_file, photo_count, report_file, checked_on="2026年10月29日"):
     questions = load_questions(ROOT / "data" / bank_file)
     counts = Counter(q["audit"]["verdict"] for q in questions)
     changed_answers = sum(q["audit"]["answer_changed"] for q in questions)
     lines = [
         f"# 第{round_number}回・写真問題50問の第五版照合結果", "",
-        f"確認日：2026年10月29日。対象：提供写真{photo_count}枚にある第{round_number}回の問題1〜50と正答・解説。", "",
+        f"確認日：{checked_on}。対象：提供写真{photo_count}枚にある第{round_number}回の問題1〜50と正答・解説。", "",
         f"照合した問題は{len(questions)}問です。正答番号の変更は{changed_answers}問です。",
         f"原文・元の正答・元の解説の要点は `data/{bank_file}` の `original` に残しています。",
         "アプリの解説は第五版の該当本文を確認して書き直したものです。原本画像はGitHubにアップロードしていません。", "",
@@ -71,6 +71,7 @@ def write_report(round_number, bank_file, manifest_file, photo_count, report_fil
 def main():
     write_report(1, "questions.json", "photo-manifest.json", 20, "question-audit.md")
     write_report(2, "questions_round2.json", "photo-manifest-round2.json", 19, "question-audit-round2.md")
+    write_report(3, "questions_round3.json", "photo-manifest-round3.json", 37, "question-audit-round3.md", "2026年11月6日")
 
 
 if __name__ == "__main__":

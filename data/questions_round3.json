@@ -10,20 +10,27 @@
         "人への墜落事故",
         "航空機との接近"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "無人航空機が噴火を誘発するという科学的根拠はありません。上空を飛行するという特性から、衝突や墜落といった事故が発生した場合には重大な被害を生じさせる可能性があり、実際に人への墜落事故や航空機との接近といった事態が発生しています。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "1-写真1.jpg",
-        "question_number": "1"
+        "question_number": "1",
+        "answer_source_file": "47846A0B-43D9-40C7-B05A-7ACDFFEED477-photo-92ABB2BF-AE99-4E38-84A6-0FDF06E1F9A2.jpg",
+        "answer_printed_page": 45
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "1. はじめに",
+          "printed_page": 1,
+          "pdf_page": 7
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "無人航空機によって起こりうる被害として、誤っているものを1つ選びなさい。",
@@ -32,10 +39,19 @@
           "人への墜落事故",
           "航空機との接近"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "衝突・墜落で重大な被害が生じるおそれがあり、人への墜落事故や航空機との接近が発生している。噴火の誘発に科学的根拠はない。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "衝突や墜落といった事故が発生した場合には、重大な被害を生じさせる可能性がある"
+      },
+      "explanation_highlights": [
+        "噴火を誘発するという科学的根拠はありません",
+        "人への墜落事故"
+      ]
     },
     {
       "id": "round3-002",
@@ -46,20 +62,27 @@
         "操縦者は、被害者に対して民法に基づく「損害賠償責任」を負う場合がある。",
         "航空法への違反や、無人航空機を飛行させるに当たり非行又は重大な過失があった場合には、技能証明の「効力の取消」や技能証明の「効力の停止」（期間は3年以上）といった行政処分等の対象となる。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 2,
+      "explanation": "技能証明の効力の停止期間は、1年、6月、3月のいずれかであり、文書警告や口頭注意も行政処分等の対象となります。死傷者が発生した場合は業務上過失致死傷などの刑事責任を、被害者に対しては民法に基づく損害賠償責任を負う場合があります。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "1-写真1.jpg",
-        "question_number": "2"
+        "question_number": "2",
+        "answer_source_file": "47846A0B-43D9-40C7-B05A-7ACDFFEED477-photo-92ABB2BF-AE99-4E38-84A6-0FDF06E1F9A2.jpg",
+        "answer_printed_page": 45
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "2.1.8 事故を起こしたときに操縦者が負う法的責任",
+          "printed_page": 3,
+          "pdf_page": 9
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "事故を起こしたときに操縦者が負う法的責任として、誤っているものを1つ選びなさい。",
@@ -68,10 +91,19 @@
           "操縦者は、被害者に対して民法に基づく「損害賠償責任」を負う場合がある。",
           "航空法への違反や、無人航空機を飛行させるに当たり非行又は重大な過失があった場合には、技能証明の「効力の取消」や技能証明の「効力の停止」（期間は3年以上）といった行政処分等の対象となる。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 2,
+        "explanation_summary": "刑事責任・損害賠償責任は正しい。行政処分等の効力の停止期間は1年、6月、3月のいずれかで、cの「3年以上」が誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "技能証明の効力の停止（期間は1年、6月、3月のいずれか）"
+      },
+      "explanation_highlights": [
+        "1年、6月、3月のいずれか",
+        "損害賠償責任"
+      ]
     },
     {
       "id": "round3-003",
@@ -82,20 +114,27 @@
         "体調が悪い場合は、注意力が散漫になり、判断力が低下するなど事故の原因となる。",
         "操縦に当たっては、前日に睡眠が十分に取れていなくても問題ない。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "体調が悪い場合は、注意力が散漫になり、判断力が低下するなど事故の原因となります。必要に応じてヘルメットや保護メガネなどの保護具を準備し、前日に十分な睡眠を取り、睡眠不足や疲労が蓄積した状態で操縦しないなど体調管理に努めます。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "1-写真1.jpg",
-        "question_number": "3"
+        "question_number": "3",
+        "answer_source_file": "47846A0B-43D9-40C7-B05A-7ACDFFEED477-photo-92ABB2BF-AE99-4E38-84A6-0FDF06E1F9A2.jpg",
+        "answer_printed_page": 45
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "2.2.6 服装に対する注意／2.2.7 体調管理",
+          "printed_page": 4,
+          "pdf_page": 10
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "服装や体調管理に対する注意として、正しいものを1つ選びなさい。",
@@ -104,10 +143,20 @@
           "体調が悪い場合は、注意力が散漫になり、判断力が低下するなど事故の原因となる。",
           "操縦に当たっては、前日に睡眠が十分に取れていなくても問題ない。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "保護具は必要に応じて準備する。体調不良は注意力の散漫や判断力の低下を招くため、十分な睡眠など体調管理に努める。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "必要に応じてヘルメットや保護メガネなどの保護具を準備する"
+      },
+      "explanation_highlights": [
+        "注意力が散漫",
+        "保護メガネなどの保護具",
+        "十分な睡眠"
+      ]
     },
     {
       "id": "round3-004",
@@ -118,20 +167,27 @@
         "無人航空機の飛行する空域や場所には、他の航空機をはじめ、ビルや家屋といった建物や自動車、電柱、高圧線、樹木などの飛行の支障となるものが数多く存在する。",
         "衝突防止装置を搭載する機体においては、鳥等に注意する必要はない。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "無人航空機の事故のうち、十分に監視をしていなかったことが原因となる事故が多発しています。飛行空域や場所には他の航空機や建物、自動車、電柱、高圧線、樹木など飛行の支障となるものが数多く存在し、衝突防止装置を過信せず、鳥等にも注意が必要です。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "2-写真2.jpg",
-        "question_number": "4"
+        "question_number": "4",
+        "answer_source_file": "78E24540-B854-4BA5-800A-7BC41D2CD149-photo-83A61DF5-E9EF-4F15-83DD-E6D08B35E77F.jpg",
+        "answer_printed_page": 46
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "2.2.9 飛行中の注意（2）監視の実施",
+          "printed_page": 5,
+          "pdf_page": 11
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "監視の実施に関する説明として、正しいものを1つ選びなさい。",
@@ -140,10 +196,19 @@
           "無人航空機の飛行する空域や場所には、他の航空機をはじめ、ビルや家屋といった建物や自動車、電柱、高圧線、樹木などの飛行の支障となるものが数多く存在する。",
           "衝突防止装置を搭載する機体においては、鳥等に注意する必要はない。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "監視不足が原因となる事故は少数ではなく多発している。支障物は数多く存在し、衝突防止装置を搭載する機体でも鳥等に注意を要する。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "十分に監視をしていなかったことが原因となる事故が多発している"
+      },
+      "explanation_highlights": [
+        "多発しています",
+        "衝突防止装置を過信せず"
+      ]
     },
     {
       "id": "round3-005",
@@ -154,20 +219,27 @@
         "飛行の終了後には、機体やバッテリー等を安全な状態で、任意の場所に保管する。",
         "特定飛行を行った場合には、飛行記録、日常点検記録、点検整備記録を飛行後3日以内に、飛行日誌（紙又は電子データ）に記載する。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "飛行が終わった後には、機体に不具合がないか等を点検し、使用後の手入れをして次回の飛行に備えます。機体やバッテリー等は安全な状態で適切な場所に保管し、特定飛行を行った場合は飛行記録等を遅滞なく飛行日誌に記載します。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "2-写真2.jpg",
-        "question_number": "5"
+        "question_number": "5",
+        "answer_source_file": "78E24540-B854-4BA5-800A-7BC41D2CD149-photo-83A61DF5-E9EF-4F15-83DD-E6D08B35E77F.jpg",
+        "answer_printed_page": 46
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "2.2.10 飛行後の注意",
+          "printed_page": 5,
+          "pdf_page": 11
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "飛行後の注意として、正しいものを1つ選びなさい。",
@@ -176,10 +248,19 @@
           "飛行の終了後には、機体やバッテリー等を安全な状態で、任意の場所に保管する。",
           "特定飛行を行った場合には、飛行記録、日常点検記録、点検整備記録を飛行後3日以内に、飛行日誌（紙又は電子データ）に記載する。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "飛行後は点検と手入れを行う。保管は任意の場所ではなく適切な場所、飛行日誌への記載は「3日以内」ではなく遅滞なく行う。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "飛行が終わった後には、機体に不具合がないか等を点検し、使用後の手入れをして次回の飛行に備える"
+      },
+      "explanation_highlights": [
+        "点検し、使用後の手入れをして",
+        "遅滞なく飛行日誌に記載"
+      ]
     },
     {
       "id": "round3-006",
@@ -190,20 +271,27 @@
         "「航空機」とは、人が乗って航空の用に供することができる飛行機、回転翼航空機、滑空機及び飛行船を対象としているため、人が乗り組まないで操縦できる機器であっても、航空機を改造したものなど、航空機に近い構造、性能等を有している場合には、無人航空機ではなく、航空機に分類される。このように操縦者が乗り組まないで飛行することができる装置を有する航空機を「無操縦者航空機」という。",
         "飛行機、回転翼航空機、滑空機及び飛行船のいずれにも該当しない気球やロケットなどは「特殊航空機」に該当する。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 2,
+      "explanation": "気球やロケットなどは、飛行機、回転翼航空機、滑空機及び飛行船のいずれにも該当しないため、航空機や無人航空機には該当しません。「構造上人が乗ることができないもの」かどうかは、座席の有無ではなく、概括的な大きさや潜在的な能力を含めた構造、性能等により判断されます。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "2-写真2.jpg",
-        "question_number": "6"
+        "question_number": "6",
+        "answer_source_file": "78E24540-B854-4BA5-800A-7BC41D2CD149-photo-83A61DF5-E9EF-4F15-83DD-E6D08B35E77F.jpg",
+        "answer_printed_page": 46
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.1（1）航空法における無人航空機の定義",
+          "printed_page": 7,
+          "pdf_page": 13
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "航空法における無人航空機の定義として、誤っているものを1つ選びなさい。",
@@ -212,10 +300,19 @@
           "「航空機」とは、人が乗って航空の用に供することができる飛行機、回転翼航空機、滑空機及び飛行船を対象としているため、人が乗り組まないで操縦できる機器であっても、航空機を改造したものなど、航空機に近い構造、性能等を有している場合には、無人航空機ではなく、航空機に分類される。このように操縦者が乗り組まないで飛行することができる装置を有する航空機を「無操縦者航空機」という。",
           "飛行機、回転翼航空機、滑空機及び飛行船のいずれにも該当しない気球やロケットなどは「特殊航空機」に該当する。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 2,
+        "explanation_summary": "無人航空機の定義と無操縦者航空機の説明は正しい。気球やロケットは「特殊航空機」ではなく、航空機・無人航空機のいずれにも該当しない。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "①の「構造上人が乗ることができないもの」とは、単に人が乗ることができる座席の有無を意味するものではなく、当該機器の概括的な大きさや潜在的な能力を含めた構造、性能等により判断される。一方で、「航空機」と"
+      },
+      "explanation_highlights": [
+        "航空機や無人航空機には該当しません",
+        "構造、性能等により判断"
+      ]
     },
     {
       "id": "round3-007",
@@ -226,20 +323,27 @@
         "操縦者の目視外での飛行（目視外飛行）",
         "第三者又は第三者の物件との間の距離が50メートル未満での飛行"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "規制対象となる飛行の方法（特定飛行）には、日没後から日出までの夜間飛行、操縦者の目視外での飛行、第三者又は第三者の物件との間の距離が30メートル未満での飛行などがあります。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "3-写真3.jpg",
-        "question_number": "7"
+        "question_number": "7",
+        "answer_source_file": "1A695F76-FD14-4CB4-A4AE-649F164F59C2-photo-DF795B50-C986-4926-880F-430C0DBE26C6.jpg",
+        "answer_printed_page": 47
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.1（2）2）規制対象となる飛行の方法",
+          "printed_page": 8,
+          "pdf_page": 14
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "規制対象となる飛行の方法（特定飛行）として、正しいものを1つ選びなさい。",
@@ -248,10 +352,19 @@
           "操縦者の目視外での飛行（目視外飛行）",
           "第三者又は第三者の物件との間の距離が50メートル未満での飛行"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "夜間飛行は「午後9時から午前6時」ではなく日没後から日出まで。距離は50メートル未満ではなく30メートル未満。bが正しい。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "夜間飛行（日没後から日出まで）"
+      },
+      "explanation_highlights": [
+        "日没後から日出まで",
+        "30メートル未満"
+      ]
     },
     {
       "id": "round3-008",
@@ -262,20 +375,27 @@
         "機体認証及び技能証明については、無人航空機の飛行形態のリスクに応じ、カテゴリーⅡ飛行に対応した第一種機体認証及び一等無人航空機操縦士、カテゴリーⅢ飛行に対応した第二種機体認証及び二等無人航空機操縦士に区分されている。",
         "機体認証のための検査は、国又は国が登録した民間の検査機関（以下「登録検査機関」という。）が実施し、機体認証の有効期間は、第一種は3年、第二種は5年である。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "機体認証と技能証明は、カテゴリーIII飛行に対応した第一種機体認証及び一等無人航空機操縦士、カテゴリーII飛行に対応した第二種機体認証及び二等無人航空機操縦士に区分されます。機体認証の有効期間は第一種が1年、第二種が3年です。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "3-写真3.jpg",
-        "question_number": "8"
+        "question_number": "8",
+        "answer_source_file": "1A695F76-FD14-4CB4-A4AE-649F164F59C2-photo-DF795B50-C986-4926-880F-430C0DBE26C6.jpg",
+        "answer_printed_page": 47
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.1（2）4）機体認証及び無人航空機操縦者技能証明",
+          "printed_page": 9,
+          "pdf_page": 15
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "機体認証及び無人航空機操縦者技能証明の説明として、正しいものを1つ選びなさい。",
@@ -284,10 +404,19 @@
           "機体認証及び技能証明については、無人航空機の飛行形態のリスクに応じ、カテゴリーⅡ飛行に対応した第一種機体認証及び一等無人航空機操縦士、カテゴリーⅢ飛行に対応した第二種機体認証及び二等無人航空機操縦士に区分されている。",
           "機体認証のための検査は、国又は国が登録した民間の検査機関（以下「登録検査機関」という。）が実施し、機体認証の有効期間は、第一種は3年、第二種は5年である。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "区分は第一種・一等がカテゴリーIII、第二種・二等がカテゴリーII。有効期間は第一種1年、第二種3年で、b・cが誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "機体認証の有効期間は、第一種は1年、第二種は3年である"
+      },
+      "explanation_highlights": [
+        "カテゴリーIII飛行に対応した第一種",
+        "第一種が1年、第二種が3年"
+      ]
     },
     {
       "id": "round3-009",
@@ -298,20 +427,27 @@
         "航空機と無人航空機間で飛行の進路が交差し、又は接近する場合には、無人航空機の航行の安全を確保するためにも、航空機側が回避することが妥当であり、無人航空機は、航空機に対して進路権を有するとされている。",
         "我が国においても無人航空機と航空機の接近事案や無人航空機により空港が閉鎖される事案などが発生しており、ひとたび航空機に事故が発生した場合には甚大な被害が生じるおそれがあることから、航空機と同じ空を飛行させる無人航空機の操縦者も航空機の運航ルールを十分に理解することが極めて重要である。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 2,
+      "explanation": "航空機と無人航空機の進路が交差し、又は接近する場合には、無人航空機側が回避することが妥当であり、航空機は無人航空機に対して進路権を有します。接近事案や空港閉鎖の事案も発生しており、操縦者も航空機の運航ルールを十分に理解することが重要です。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "3-写真3.jpg",
-        "question_number": "9"
+        "question_number": "9",
+        "answer_source_file": "A9E017B6-A61E-41C1-8FD7-13A8E2C97CEB-photo-BB4B4B78-23A1-4EAB-8FDF-DA4B76580255.jpg",
+        "answer_printed_page": 48
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.1（3）1）無人航空機の操縦者が航空機の運航ルールを理解する必要性",
+          "printed_page": 10,
+          "pdf_page": 16
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "航空機の運航ルール等の説明として、正しいものを1つ選びなさい。",
@@ -320,10 +456,19 @@
           "航空機と無人航空機間で飛行の進路が交差し、又は接近する場合には、無人航空機の航行の安全を確保するためにも、航空機側が回避することが妥当であり、無人航空機は、航空機に対して進路権を有するとされている。",
           "我が国においても無人航空機と航空機の接近事案や無人航空機により空港が閉鎖される事案などが発生しており、ひとたび航空機に事故が発生した場合には甚大な被害が生じるおそれがあることから、航空機と同じ空を飛行させる無人航空機の操縦者も航空機の運航ルールを十分に理解することが極めて重要である。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 2,
+        "explanation_summary": "無人航空機が航空機の安全に影響を及ぼすおそれはあり、回避するのは航空機側ではなく無人航空機側。cが正しい。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "航空機は、無人航空機に対して進路権を有するとされている"
+      },
+      "explanation_highlights": [
+        "無人航空機側が回避",
+        "進路権を有します"
+      ]
     },
     {
       "id": "round3-010",
@@ -334,20 +479,27 @@
         "無人航空機がこれらの禁止空域を飛行する場合には、当該空域を管轄する都道府県知事と調整し支障の有無を確認したうえで飛行の許可を受ける必要がある。",
         "無人航空機の操縦者は、航空機の空域の特徴や注意点を十分に理解して慎重に飛行し、航空交通管制機関等の指示等を遵守する必要がある。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "無人航空機が禁止空域を飛行する場合には、当該空域を管轄する航空交通管制機関と調整し、支障の有無を確認したうえで飛行の許可を受ける必要があります。都道府県知事ではありません。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "4-写真4.jpg",
-        "question_number": "10"
+        "question_number": "10",
+        "answer_source_file": "A9E017B6-A61E-41C1-8FD7-13A8E2C97CEB-photo-BB4B4B78-23A1-4EAB-8FDF-DA4B76580255.jpg",
+        "answer_printed_page": 48
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.1（3）6）航空機の空域の概要",
+          "printed_page": 11,
+          "pdf_page": 17
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "航空機の空域の概要として、誤っているものを1つ選びなさい。",
@@ -356,10 +508,19 @@
           "無人航空機がこれらの禁止空域を飛行する場合には、当該空域を管轄する都道府県知事と調整し支障の有無を確認したうえで飛行の許可を受ける必要がある。",
           "無人航空機の操縦者は、航空機の空域の特徴や注意点を十分に理解して慎重に飛行し、航空交通管制機関等の指示等を遵守する必要がある。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "禁止空域の飛行は都道府県知事ではなく航空交通管制機関と調整して許可を受ける。a・cは正しく、bが誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "無人航空機は、高度150メートル以上又は空港周辺の空域の飛行は原則禁止されているが、これは航空機が主に飛行する空域との分離を図ることにより、安全を確保するためである"
+      },
+      "explanation_highlights": [
+        "航空交通管制機関と調整",
+        "都道府県知事ではありません"
+      ]
     },
     {
       "id": "round3-011",
@@ -370,20 +531,27 @@
         "事故の原因究明など安全確保上必要な措置の実施",
         "安全上問題のある機体の登録を拒否し安全を確保すること"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "登録制度の目的は、事故発生時などにおける所有者把握、事故の原因究明など安全確保上必要な措置の実施、安全上問題のある機体の登録を拒否し安全を確保することです。「所在把握」ではありません。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "4-写真4.jpg",
-        "question_number": "11"
+        "question_number": "11",
+        "answer_source_file": "97CD3C01-B092-4A02-9815-380F78DBA300-photo-B1D3FF0C-CDC0-414C-AB79-23EF7CA88614.jpg",
+        "answer_printed_page": 49
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.2（1）1）無人航空機登録制度の背景・目的",
+          "printed_page": 13,
+          "pdf_page": 19
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "無人航空機登録制度創設の目的として、誤っているものを1つ選びなさい。",
@@ -392,10 +560,19 @@
           "事故の原因究明など安全確保上必要な措置の実施",
           "安全上問題のある機体の登録を拒否し安全を確保すること"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "目的は所有者把握、原因究明、安全上問題のある機体の登録拒否。aの「所在把握」が誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "事故発生時などにおける所有者把握"
+      },
+      "explanation_highlights": [
+        "所有者把握",
+        "原因究明"
+      ]
     },
     {
       "id": "round3-012",
@@ -406,20 +583,27 @@
         "十分な強度を有する紐など（長さが20m以内のもの）により係留して行う飛行",
         "警察庁、都道府県警察又は海上保安庁が警備その他の特に秘匿を必要とする業務のために行う飛行"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "リモートID機能の搭載が免除されるのは、十分な強度を有する紐など（長さが30m以内のもの）により係留して行う飛行です。20m以内ではありません。特定区域での必要な措置を講じた飛行や、警察庁・都道府県警察・海上保安庁の秘匿を必要とする業務の飛行も免除されます。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "4-写真4.jpg",
-        "question_number": "12"
+        "question_number": "12",
+        "answer_source_file": "97CD3C01-B092-4A02-9815-380F78DBA300-photo-B1D3FF0C-CDC0-414C-AB79-23EF7CA88614.jpg",
+        "answer_printed_page": 49
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.2（1）5）リモートID機能の搭載の義務",
+          "printed_page": 14,
+          "pdf_page": 20
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "リモートID機能の搭載が免除される飛行として、誤っているものを1つ選びなさい。",
@@ -428,10 +612,19 @@
           "十分な強度を有する紐など（長さが20m以内のもの）により係留して行う飛行",
           "警察庁、都道府県警察又は海上保安庁が警備その他の特に秘匿を必要とする業務のために行う飛行"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "係留による免除は紐の長さが30m以内の場合。bの「20m以内」が誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "十分な強度を有する紐（ひも）など（長さが30m以内のもの）により係留して行う飛行"
+      },
+      "explanation_highlights": [
+        "30m以内",
+        "免除されます"
+      ]
     },
     {
       "id": "round3-013",
@@ -442,20 +635,27 @@
         "緊急用務空域では、原則、無人航空機の飛行が禁止される（重量100グラム未満の模型航空機は飛行禁止の対象とならない）。",
         "災害等の規模に応じ、緊急用務を行う航空機の飛行が想定される場合には、国土交通省がその都度「緊急用務空域」を指定し、国土交通省のホームページ・Facebookにて公示する。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "緊急用務空域では、原則、無人航空機の飛行が禁止され、重量100グラム未満の模型航空機も飛行禁止の対象となります。指定は国土交通省のホームページ・X（旧Twitter）にて公示されます。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "5-写真5.jpg",
-        "question_number": "13"
+        "question_number": "13",
+        "answer_source_file": "97CD3C01-B092-4A02-9815-380F78DBA300-photo-B1D3FF0C-CDC0-414C-AB79-23EF7CA88614.jpg",
+        "answer_printed_page": 49
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.2（2）1）b. 緊急用務空域",
+          "printed_page": 15,
+          "pdf_page": 21
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "規制対象となる飛行の空域（特定飛行）の緊急用務空域の説明として、正しいものを1つ選びなさい。",
@@ -464,10 +664,19 @@
           "緊急用務空域では、原則、無人航空機の飛行が禁止される（重量100グラム未満の模型航空機は飛行禁止の対象とならない）。",
           "災害等の規模に応じ、緊急用務を行う航空機の飛行が想定される場合には、国土交通省がその都度「緊急用務空域」を指定し、国土交通省のホームページ・Facebookにて公示する。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "緊急用務空域の定義は正しい。100グラム未満の模型航空機も禁止の対象となり、公示はFacebookではなくX（旧Twitter）。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "重量100グラム未満の模型航空機も飛行禁止の対象となる"
+      },
+      "explanation_highlights": [
+        "模型航空機も飛行禁止の対象",
+        "X（旧Twitter）"
+      ]
     },
     {
       "id": "round3-014",
@@ -478,20 +687,27 @@
         "土地は、「物件」に該当する。",
         "無人航空機の操縦者は、多数の者の集合する催しが行われている場所の上空における飛行が原則禁止されている。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "「物件」とは、中に人が存在することが想定される機器、建築物その他の相当の大きさを有する工作物等を指します。土地や自然物（樹木、雑草等）などは「物件」に該当しません。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "5-写真5.jpg",
-        "question_number": "14"
+        "question_number": "14",
+        "answer_source_file": "86F36168-6362-42F4-8409-9857900E64F1-photo-80EA8FB9-CD50-46F9-A017-D6A560E2BC64.jpg",
+        "answer_printed_page": 50
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.2（2）2）c. 人又は物件との距離",
+          "printed_page": 16,
+          "pdf_page": 22
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "飛行の規制対象となる「物件」と、飛行が禁止されている上空の説明として、誤っているものを1つ選びなさい。",
@@ -500,10 +716,19 @@
           "土地は、「物件」に該当する。",
           "無人航空機の操縦者は、多数の者の集合する催しが行われている場所の上空における飛行が原則禁止されている。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "物件の定義と催し場所上空の飛行禁止は正しい。土地は物件に該当しないためbが誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "土地や自然物（樹木、雑草等）などは、「物件」に該当しない"
+      },
+      "explanation_highlights": [
+        "該当しません",
+        "相当の大きさを有する工作物等"
+      ]
     },
     {
       "id": "round3-015",
@@ -514,20 +739,27 @@
         "かまくら",
         "水門"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 2,
+      "explanation": "「物件」の具体例として、工作物の水門が該当します。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "6-写真6.jpg",
-        "question_number": "15"
+        "question_number": "15",
+        "answer_source_file": "86F36168-6362-42F4-8409-9857900E64F1-photo-80EA8FB9-CD50-46F9-A017-D6A560E2BC64.jpg",
+        "answer_printed_page": 50
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.2（2）2）c. 人又は物件との距離",
+          "printed_page": 16,
+          "pdf_page": 22
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "飛行の規制対象となる「物件」として、正しいものを1つ選びなさい。",
@@ -536,10 +768,19 @@
           "かまくら",
           "水門"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 2,
+        "explanation_summary": "物件として、水門などが該当する。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "、航空機、建設機械、港湾のクレーン等工作物：ビル、住居、工場、倉庫、橋梁、高架、水門、変電所、鉄塔、電柱、電線、信号機、街灯等なお、土地や自然物（樹木、雑草等）などは、「物件」に該当しない。d.催し場所上空無人航空機の操縦者は、多数の者の集合する催しが行われて"
+      },
+      "explanation_highlights": [
+        "水門",
+        "具体例として"
+      ]
     },
     {
       "id": "round3-016",
@@ -550,20 +791,27 @@
         "信号機",
         "陸上トラック"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "「物件」の具体例として、工作物の信号機が該当します。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "6-写真6.jpg",
-        "question_number": "16"
+        "question_number": "16",
+        "answer_source_file": "86F36168-6362-42F4-8409-9857900E64F1-photo-80EA8FB9-CD50-46F9-A017-D6A560E2BC64.jpg",
+        "answer_printed_page": 50
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.2（2）2）c. 人又は物件との距離",
+          "printed_page": 16,
+          "pdf_page": 22
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "飛行の規制対象となる「物件」として、正しいものを1つ選びなさい。",
@@ -572,10 +820,19 @@
           "信号機",
           "陸上トラック"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "物件として、信号機が該当する。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "ン等工作物：ビル、住居、工場、倉庫、橋梁、高架、水門、変電所、鉄塔、電柱、電線、信号機、街灯等なお、土地や自然物（樹木、雑草等）などは、「物件」に該当しない。d.催し場所上空無人航空機の操縦者は、多数の者の集合する催しが行われている場所の上空における飛行が原則"
+      },
+      "explanation_highlights": [
+        "信号機",
+        "具体例として"
+      ]
     },
     {
       "id": "round3-017",
@@ -586,20 +843,27 @@
         "忘年会",
         "全校集会"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "「多数の者の集合する催し」の該当例として、屋外で開催されるコンサート等のイベントが挙げられます。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "6-写真6.jpg",
-        "question_number": "17"
+        "question_number": "17",
+        "answer_source_file": "A246B0B0-CA0E-4B86-86CC-E031CEBC3A51-photo-8DA917F1-BD1C-4B42-871C-C5BF8A68BDFB.jpg",
+        "answer_printed_page": 51
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.2（2）2）d. 催し場所上空",
+          "printed_page": 16,
+          "pdf_page": 22
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "飛行が原則禁止されている「多数の者の集合する催し」として、正しいものを1つ選びなさい。",
@@ -608,10 +872,19 @@
           "忘年会",
           "全校集会"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "多数の者の集合する催しとして、屋外で開催されるコンサートが該当する。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "屋外で開催されるコンサート等のイベント"
+      },
+      "explanation_highlights": [
+        "屋外で開催されるコンサート",
+        "該当例として"
+      ]
     },
     {
       "id": "round3-018",
@@ -622,20 +895,27 @@
         "SDカード",
         "蛍光灯"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "輸送が原則禁止される「危険物」には、火薬類、高圧ガス、引火性液体、可燃性物質、酸化性物質類、毒物類、放射性物質、腐食性物質などが該当します。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "6-写真6.jpg",
-        "question_number": "18"
+        "question_number": "18",
+        "answer_source_file": "A246B0B0-CA0E-4B86-86CC-E031CEBC3A51-photo-8DA917F1-BD1C-4B42-871C-C5BF8A68BDFB.jpg",
+        "answer_printed_page": 51
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.2（2）2）e. 危険物の輸送",
+          "printed_page": 17,
+          "pdf_page": 23
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "輸送が原則禁止されている「危険物」として、正しいものを1つ選びなさい。",
@@ -644,10 +924,19 @@
           "SDカード",
           "蛍光灯"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "危険物として、放射性物質が該当する。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "「危険物」とは、火薬類、高圧ガス、引火性液体、可燃性物質、酸化性物質類、毒物類、放射性物質、腐食性物質などが該当する"
+      },
+      "explanation_highlights": [
+        "放射性物質",
+        "原則禁止される"
+      ]
     },
     {
       "id": "round3-019",
@@ -658,20 +947,27 @@
         "「第三者」とは、無人航空機の飛行に、直接的には関与していないが間接的に関与している者をいう。",
         "無人航空機の飛行に直接的に関与している者とは、操縦者、現に操縦はしていないが操縦する可能性のある者、補助者等無人航空機の飛行の安全確保に必要な要員とする。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 2,
+      "explanation": "移動する物件に紐等を固定する等して移動しながら飛行させる行為（えい航）は、係留には該当しません。「第三者」とは飛行に直接的又は間接的に関与していない者をいい、直接的に関与している者には操縦者、操縦する可能性のある者、補助者等が含まれます。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "7-写真7.jpg",
-        "question_number": "19"
+        "question_number": "19",
+        "answer_source_file": "A246B0B0-CA0E-4B86-86CC-E031CEBC3A51-photo-8DA917F1-BD1C-4B42-871C-C5BF8A68BDFB.jpg",
+        "answer_printed_page": 51
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.2（2）3）c. 十分な強度を有する紐等で係留した場合の例外／（2）4）a. 第三者及び第三者上空の定義",
+          "printed_page": 18,
+          "pdf_page": 24
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "規制対象となる飛行の空域及び方法の例外や第三者及び第三者上空の定義に関する説明として、正しいものを1つ選びなさい。",
@@ -680,10 +976,19 @@
           "「第三者」とは、無人航空機の飛行に、直接的には関与していないが間接的に関与している者をいう。",
           "無人航空機の飛行に直接的に関与している者とは、操縦者、現に操縦はしていないが操縦する可能性のある者、補助者等無人航空機の飛行の安全確保に必要な要員とする。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 2,
+        "explanation_summary": "えい航は係留に該当しない。第三者は直接的には関与していないが間接的に関与している者ではなく、直接・間接を問わず関与していない者。cが正しい。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "無人航空機を飛行させる行為（えい航）は、係留には該当しない"
+      },
+      "explanation_highlights": [
+        "係留には該当しません",
+        "関与していない者"
+      ]
     },
     {
       "id": "round3-020",
@@ -694,20 +999,27 @@
         "体内に保有するアルコール濃度が0.15mg/L以上の状態においてのみ、無人航空機の飛行を行ってはならないとされている。",
         "無人航空機が飛行に支障がないことその他飛行に必要な準備が整っていることを確認した後において飛行させること。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "アルコールによる身体への影響は個人の体質や体調により異なるため、体内に保有するアルコールが微量であっても、濃度の程度にかかわらず体内にアルコールを保有する状態では飛行を行ってはなりません。数値基準で線引きはされていません。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "7-写真7.jpg",
-        "question_number": "20"
+        "question_number": "20",
+        "answer_source_file": "ECA91985-716C-4F45-87B1-B170C6857CBD-photo-18C2C8B7-EE9B-435D-A703-EA68CF13452F.jpg",
+        "answer_printed_page": 52
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.2（3）1）a. アルコール又は薬物の影響下での飛行禁止",
+          "printed_page": 21,
+          "pdf_page": 27
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "無人航空機の操縦者が遵守する必要がある運航ルールに関する説明として、誤っているものを1つ選びなさい。",
@@ -716,10 +1028,19 @@
           "体内に保有するアルコール濃度が0.15mg/L以上の状態においてのみ、無人航空機の飛行を行ってはならないとされている。",
           "無人航空機が飛行に支障がないことその他飛行に必要な準備が整っていることを確認した後において飛行させること。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "アルコール・薬物の定義と飛行前の確認は正しい。bの「0.15mg/L以上の状態においてのみ」は誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "体内に保有するアルコール濃度の程度にかかわらず体内にアルコールを保有する状態では無人航空機の飛行を行ってはならない"
+      },
+      "explanation_highlights": [
+        "濃度の程度にかかわらず",
+        "保有する状態では飛行を行ってはなりません"
+      ]
     },
     {
       "id": "round3-021",
@@ -730,20 +1051,27 @@
         "害虫の分布状況",
         "水鳥の待機状況"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "飛行前の確認事項として、飛行空域や周囲の地上又は水上の人（第三者の有無）又は物件（障害物等の有無）の状況等が該当します。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "7-写真7.jpg",
-        "question_number": "21"
+        "question_number": "21",
+        "answer_source_file": "ECA91985-716C-4F45-87B1-B170C6857CBD-photo-18C2C8B7-EE9B-435D-A703-EA68CF13452F.jpg",
+        "answer_printed_page": 52
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.2（3）1）b. 飛行前の確認",
+          "printed_page": 21,
+          "pdf_page": 27
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "飛行前の確認事項として、正しいものを1つ選びなさい。",
@@ -752,10 +1080,19 @@
           "害虫の分布状況",
           "水鳥の待機状況"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "飛行前の確認事項として、飛行空域や周囲の地上又は水上の人（第三者の有無）又は物件（障害物等の有無）の状況が該当する。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "飛行空域や周囲の地上又は水上の人（第三者の有無）又は物件（障害物等の有無）の状況"
+      },
+      "explanation_highlights": [
+        "第三者の有無",
+        "障害物等の有無"
+      ]
     },
     {
       "id": "round3-022",
@@ -766,20 +1103,27 @@
         "飛行上の必要がないのに低調音を発し、又は急上昇し、その他他人に迷惑を及ぼすような方法で飛行させないこと。",
         "登録を受けた無人航空機の使用者は、整備及び必要に応じて改造をし、当該無人航空機が安全上の問題から登録を受けることができない無人航空機とならないように維持しなければならない。なお、登録記号の機体への表示は維持しなくてもよい。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "飛行上の必要がないのに高調音を発し、又は急降下し、その他他人に迷惑を及ぼすような方法で飛行させないこととされています。また、使用者は登録を受けることができない無人航空機とならないように維持し、登録記号の機体への表示も維持しなければなりません。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "8-写真8.jpg",
-        "question_number": "22"
+        "question_number": "22",
+        "answer_source_file": "F65FF694-7EEF-4B0B-9561-CF6134E023F5-photo-023F9964-AEDF-4F29-BCC4-8915F7AB97A4.jpg",
+        "answer_printed_page": 53
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.2（3）1）c. 航空機又は他の無人航空機との衝突防止",
+          "printed_page": 22,
+          "pdf_page": 28
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "無人航空機の操縦者が遵守する必要がある運航ルールとして、正しいものを1つ選びなさい。",
@@ -788,10 +1132,19 @@
           "飛行上の必要がないのに低調音を発し、又は急上昇し、その他他人に迷惑を及ぼすような方法で飛行させないこと。",
           "登録を受けた無人航空機の使用者は、整備及び必要に応じて改造をし、当該無人航空機が安全上の問題から登録を受けることができない無人航空機とならないように維持しなければならない。なお、登録記号の機体への表示は維持しなくてもよい。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "他の無人航空機との安全な間隔の確保が正しい。bは「低調音・急上昇」、cは登録記号の表示を維持しなくてもよいとする点が誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "飛行上の必要がないのに高調音を発し、又は急降下し、その他他人に迷惑を及ぼすような方法で飛行させないこと"
+      },
+      "explanation_highlights": [
+        "高調音を発し、又は急降下し",
+        "表示も維持しなければなりません"
+      ]
     },
     {
       "id": "round3-023",
@@ -802,20 +1155,27 @@
         "無人航空機の施錠失念",
         "無人航空機の電波受信"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "重大インシデントの対象としては、無人航空機の制御が不能となった事態などが含まれます。施錠失念や電波受信は対象ではありません。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "8-写真8.jpg",
-        "question_number": "23"
+        "question_number": "23",
+        "answer_source_file": "F65FF694-7EEF-4B0B-9561-CF6134E023F5-photo-023F9964-AEDF-4F29-BCC4-8915F7AB97A4.jpg",
+        "answer_printed_page": 53
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.2（3）1）f. 事故等の場合の措置",
+          "printed_page": 22,
+          "pdf_page": 28
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "重大インシデントの対象として、正しいものを1つ選びなさい。",
@@ -824,10 +1184,19 @@
           "無人航空機の施錠失念",
           "無人航空機の電波受信"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "重大インシデントの対象として、無人航空機の制御が不能となった事態が該当する。施錠失念や電波受信は該当しない。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "無人航空機の制御が不能となった事態"
+      },
+      "explanation_highlights": [
+        "制御が不能となった事態",
+        "重大インシデントの対象"
+      ]
     },
     {
       "id": "round3-024",
@@ -838,20 +1207,27 @@
         "技能証明試験に関して不正の行為が認められた場合には、当該不正行為と関係のある者について、その試験を停止し、又はその合格を無効にすることができる。",
         "技能証明の更新を申請する者は、「登録更新講習機関」が実施する無人航空機更新講習を有効期間の更新の申請をする日以前1月以内に修了したうえで、有効期間が満了する日以前3月以内に国土交通大臣に対し技能証明の更新を申請しなければならない。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "技能証明試験に関して不正の行為が認められた場合には、当該不正行為と関係のある者について、その試験を停止し、又はその合格を無効にすることができます。学科試験に合格しなければ実地試験を受けることはできません。更新は、更新講習を申請の日以前3月以内に修了したうえで、有効期間が満了する日の6月前から1月前までの間に申請します。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "8-写真8.jpg",
-        "question_number": "24"
+        "question_number": "24",
+        "answer_source_file": "F65FF694-7EEF-4B0B-9561-CF6134E023F5-photo-023F9964-AEDF-4F29-BCC4-8915F7AB97A4.jpg",
+        "answer_printed_page": 53
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.2（5）3）技能証明の交付手続き",
+          "printed_page": 28,
+          "pdf_page": 34
+        },
+        "note": "第五版3.1.2（5）3）では、更新講習は申請をする日以前3月以内に修了し、更新の申請は有効期間が満了する日の6月前から1月前までの間に行う。原本Cの数値が誤りである点は第五版でも変わらないが、原本解説の申請時期の表現には下限（1月前まで）が欠けるため、アプリの解説で第五版の申請期間を明示した。設問・正答は維持。"
       },
       "original": {
         "prompt": "技能証明の交付手続きとして、正しいものを1つ選びなさい。",
@@ -860,10 +1236,19 @@
           "技能証明試験に関して不正の行為が認められた場合には、当該不正行為と関係のある者について、その試験を停止し、又はその合格を無効にすることができる。",
           "技能証明の更新を申請する者は、「登録更新講習機関」が実施する無人航空機更新講習を有効期間の更新の申請をする日以前1月以内に修了したうえで、有効期間が満了する日以前3月以内に国土交通大臣に対し技能証明の更新を申請しなければならない。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "学科試験に合格しなければ実地試験を受けることはできない。不正行為が認められた場合は試験の停止や合格の無効ができる。原本の更新時期（講習1月以内・申請3月以内）は誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "explanation_updated",
+        "reason": "第五版3.1.2（5）3）では、更新講習は申請をする日以前3月以内に修了し、更新の申請は有効期間が満了する日の6月前から1月前までの間に行う。原本Cの数値が誤りである点は第五版でも変わらないが、原本解説の申請時期の表現には下限（1月前まで）が欠けるため、アプリの解説で第五版の申請期間を明示した。設問・正答は維持。",
+        "answer_changed": false,
+        "reference_excerpt": "学科試験に合格しなければ、実地試験を受けることができない"
+      },
+      "explanation_highlights": [
+        "合格を無効にすることができます",
+        "6月前から1月前までの間"
+      ]
     },
     {
       "id": "round3-025",
@@ -874,20 +1259,27 @@
         "飛行計画を通報せずに特定飛行を行ったときは、30万円以下の罰金が科される可能性がある。",
         "技能証明を携帯せずに特定飛行を行ったときは、10万円以下の罰金が科される可能性がある。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "登録記号の表示又はリモートIDの搭載をせずに飛行させたときは、50万円以下の罰金です。飛行計画を通報せずに特定飛行を行ったときは30万円以下、技能証明を携帯せずに特定飛行を行ったときは10万円以下の罰金となります。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "9-写真9.jpg",
-        "question_number": "25"
+        "question_number": "25",
+        "answer_source_file": "3C034667-C5C7-40A3-9647-51432EB94E11-photo-49247221-0DE5-40BD-A340-874E4DD4360F.jpg",
+        "answer_printed_page": 54
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.1.2（3）4）罰則",
+          "printed_page": 24,
+          "pdf_page": 30
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "航空法令に違反した場合の罰則として、誤っているものを1つ選びなさい。",
@@ -896,10 +1288,19 @@
           "飛行計画を通報せずに特定飛行を行ったときは、30万円以下の罰金が科される可能性がある。",
           "技能証明を携帯せずに特定飛行を行ったときは、10万円以下の罰金が科される可能性がある。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "罰則表では登録記号・リモートIDなしの飛行は50万円以下、飛行計画の通報なしは30万円以下、技能証明の不携帯は10万円以下。aの「100万円以下」が誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "登録記号の表示又はリモートIDの搭載をせずに飛行させたとき50万円以下の罰金"
+      },
+      "explanation_highlights": [
+        "50万円以下の罰金",
+        "30万円以下"
+      ]
     },
     {
       "id": "round3-026",
@@ -910,20 +1311,27 @@
         "アマチュア無線を使用した無人航空機を、利益を目的とした仕事などの業務に利用することができる。",
         "アマチュア無線によるFPV無人航空機については、現在、無人航空機の操縦に2.4GHz帯の免許不要局を使用し、無人航空機からの画像伝送に5GHz帯のアマチュア無線局を使用する場合が多いが、5GHz帯のアマチュア無線は、周波数割当計画上、一次業務に割り当てられている。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "アマチュア無線を使用した無人航空機を、利益を目的とした仕事などの業務に利用することはできません。また、5GHz帯のアマチュア無線は、周波数割当計画上、二次業務に割り当てられています。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "9-写真9.jpg",
-        "question_number": "26"
+        "question_number": "26",
+        "answer_source_file": "3C034667-C5C7-40A3-9647-51432EB94E11-photo-49247221-0DE5-40BD-A340-874E4DD4360F.jpg",
+        "answer_printed_page": 54
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "3.2.2（3）アマチュア無線局",
+          "printed_page": 32,
+          "pdf_page": 38
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "アマチュア無線局に関する説明として、正しいものを1つ選びなさい。",
@@ -932,10 +1340,19 @@
           "アマチュア無線を使用した無人航空機を、利益を目的とした仕事などの業務に利用することができる。",
           "アマチュア無線によるFPV無人航空機については、現在、無人航空機の操縦に2.4GHz帯の免許不要局を使用し、無人航空機からの画像伝送に5GHz帯のアマチュア無線局を使用する場合が多いが、5GHz帯のアマチュア無線は、周波数割当計画上、一次業務に割り当てられている。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "アマチュア無線の定義は正しい。業務に利用することはできず、5GHz帯は一次業務ではなく二次業務に割り当てられている。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "アマチュア無線とは、金銭上の利益のためでなく、専ら個人的な興味により行う自己訓練、通信及び技術研究のための無線通信である"
+      },
+      "explanation_highlights": [
+        "業務に利用することはできません",
+        "二次業務"
+      ]
     },
     {
       "id": "round3-027",
@@ -946,20 +1363,27 @@
         "適切な機体設計によって無操縦・無制御でも飛行安定が達成でき、仮に故障などによって飛行中に推力を失っても滑空飛行状態になれば、すぐには墜落しない。",
         "エレベーター（上下ピッチ方向）、エルロン（左右ロール方向）、スロットル（左右ヨー方向）、ラダー（推進パワー）の複合的な操縦で飛行する。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 2,
+      "explanation": "飛行機は、エレベーター（上下ピッチ方向）、エルロン（左右ロール方向）、ラダー（左右ヨー方向）、スロットル（推進パワー）の複合的な操縦で飛行します。cはラダーとスロットルの役割を取り違えています。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "9-写真9.jpg",
-        "question_number": "27"
+        "question_number": "27",
+        "answer_source_file": "75019C22-065D-443B-9274-C9EAF5D63169-photo-D09E040F-3443-430A-ABC2-280CB7CD7829.jpg",
+        "answer_printed_page": 55
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "4.1.2（1）機体の特徴",
+          "printed_page": 34,
+          "pdf_page": 40
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "飛行機の特徴として、誤っているものを1つ選びなさい。",
@@ -968,10 +1392,19 @@
           "適切な機体設計によって無操縦・無制御でも飛行安定が達成でき、仮に故障などによって飛行中に推力を失っても滑空飛行状態になれば、すぐには墜落しない。",
           "エレベーター（上下ピッチ方向）、エルロン（左右ロール方向）、スロットル（左右ヨー方向）、ラダー（推進パワー）の複合的な操縦で飛行する。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 2,
+        "explanation_summary": "エレベーターはピッチ方向、エルロンはロール方向、ラダーはヨー方向、スロットルは推進パワー。cの対応付けが誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "エレベーター（上下ピッチ方向）、エルロン（左右ロール方向）、ラダー（左右ヨー方向）、スロットル（推進パワー）の複合的な操縦で飛行する"
+      },
+      "explanation_highlights": [
+        "ラダー（左右ヨー方向）",
+        "スロットル（推進パワー）"
+      ]
     },
     {
       "id": "round3-028",
@@ -982,20 +1415,27 @@
         "機体の前後左右移動は、その指示した側のローターの回転数を上げ、反対側のローター回転数を下げることで機体が傾き、ローター推力の合力が、指示した方向に傾くので、傾いた方向に機体が移動する。",
         "ローターの反トルクバランスを崩すと機体の垂直回転が始まる。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "機体の前後左右移動は、指示した側のローターの回転数を下げ、反対側のローター回転数を上げることで機体が傾き、傾いた方向に移動します。また、ローターの反トルクバランスを崩すと機体の水平回転が始まります。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "10-写真10.jpg",
-        "question_number": "28"
+        "question_number": "28",
+        "answer_source_file": "44739AF9-5657-4725-934A-5E7CCE3E0208-photo-486AECE7-C740-4FDB-9DD8-A011A25B4BBD.jpg",
+        "answer_printed_page": 56
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "4.1.4（1）機体の特徴",
+          "printed_page": 36,
+          "pdf_page": 42
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "回転翼航空機（マルチローター）の特徴として、正しいものを1つ選びなさい。",
@@ -1004,10 +1444,19 @@
           "機体の前後左右移動は、その指示した側のローターの回転数を上げ、反対側のローター回転数を下げることで機体が傾き、ローター推力の合力が、指示した方向に傾くので、傾いた方向に機体が移動する。",
           "ローターの反トルクバランスを崩すと機体の垂直回転が始まる。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "ホバリングの説明が正しい。移動は指示した側の回転数を上げるのではなく下げ、回転は垂直回転ではなく水平回転。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "機体の前後左右移動は、その指示した側のローターの回転数を下げ、反対側のローター回転数を上げることで機体が傾き"
+      },
+      "explanation_highlights": [
+        "回転数を下げ",
+        "水平回転"
+      ]
     },
     {
       "id": "round3-029",
@@ -1018,20 +1467,27 @@
         "搭載カメラや機体の高度、速度、位置、不具合状況等を空中で監視できる操縦装置",
         "不具合発生時に対応する危機回避機能（フェールセーフ機能）"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "搭載カメラや機体の高度、速度、位置、不具合状況等を地上で監視できる操縦装置が必要です。「空中で監視」ではありません。自動操縦システム及び機体の外の様子が監視できる機体と、不具合発生時に対応する危機回避機能（フェールセーフ機能）も必要な装備です。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "10-写真10.jpg",
-        "question_number": "29"
+        "question_number": "29",
+        "answer_source_file": "44739AF9-5657-4725-934A-5E7CCE3E0208-photo-486AECE7-C740-4FDB-9DD8-A011A25B4BBD.jpg",
+        "answer_printed_page": 56
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "4.2.2（2）目視外飛行のために必要な装備",
+          "printed_page": 37,
+          "pdf_page": 43
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "目視外飛行において、周囲の安全を確認する補助者が配置された場合に必要な装備として、誤っているものを1つ選びなさい。",
@@ -1040,10 +1496,19 @@
           "搭載カメラや機体の高度、速度、位置、不具合状況等を空中で監視できる操縦装置",
           "不具合発生時に対応する危機回避機能（フェールセーフ機能）"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "必要な装備のうち、操縦装置は空中ではなく地上で監視できるもの。bが誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "体の外の様子が監視できる機体⚫搭載カメラや機体の高度、速度、位置、不具合状況等を地上で監視できる操縦装置⚫不具合発生時に対応する危機回避機能（フェールセーフ機能）、電波断絶時の自動帰還や空中停止機能、"
+      },
+      "explanation_highlights": [
+        "地上で監視できる操縦装置",
+        "危機回避機能（フェールセーフ機能）"
+      ]
     },
     {
       "id": "round3-030",
@@ -1054,20 +1519,27 @@
         "加速度センサは3次元の慣性運動（直行3軸方向の並進運動）を検出する装置であり、無人航空機の速度の変化量を検出するセンサである。",
         "地磁気センサは、地球の磁力を検出して方位を測定する。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "単位時間当たりの回転角度の変化を検出するのはジャイロセンサです。高度センサではありません。加速度センサは3次元の慣性運動（直行3軸方向の並進運動）を検出し、地磁気センサは地球の磁力を検出して方位を測定します。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "10-写真10.jpg",
-        "question_number": "30"
+        "question_number": "30",
+        "answer_source_file": "FBD56922-04E2-4AAC-B934-45772D64CEC4-photo-BC6417B6-1347-453B-81FC-F4E1BA84B75B.jpg",
+        "answer_printed_page": 57
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "4.4.1（2）無人航空機の飛行に用いられる各種センサの原理及び使用環境",
+          "printed_page": 42,
+          "pdf_page": 48
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "無人航空機の飛行に用いられる各種センサの原理及び使用環境の説明として、誤っているものを1つ選びなさい。",
@@ -1076,10 +1548,19 @@
           "加速度センサは3次元の慣性運動（直行3軸方向の並進運動）を検出する装置であり、無人航空機の速度の変化量を検出するセンサである。",
           "地磁気センサは、地球の磁力を検出して方位を測定する。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "回転角度の変化を検出する装置はジャイロセンサであり、aの「高度センサ」が誤り。加速度センサ・地磁気センサの説明は正しい。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "ジャイロセンサ回転角速度を測定するデバイス。加速度センサ加速度を測定するデバイス。IMU(InertialMeasurementUnit)3軸のジャイロセンサと３方向の加速度センサ等によって３次元の角"
+      },
+      "explanation_highlights": [
+        "ジャイロセンサ",
+        "地磁気センサ"
+      ]
     },
     {
       "id": "round3-031",
@@ -1090,20 +1571,27 @@
         "充電率の単位は%であり、満充電で放電できる電気量と現時点で放電できる電気量の比率を表す。",
         "充電率の単位は%であり、0%は仕様上の満充電状態を、100%は完全放電状態を表す。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "充電率は%で表し、満充電で放電できる電気量と現時点で放電できる電気量の比率を表します。0%は仕様上の完全放電状態、100%は満充電状態です。エネルギー容量の単位はWhで、電流や温度によって変化します。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "11-写真11.jpg",
-        "question_number": "31"
+        "question_number": "31",
+        "answer_source_file": "FBD56922-04E2-4AAC-B934-45772D64CEC4-photo-BC6417B6-1347-453B-81FC-F4E1BA84B75B.jpg",
+        "answer_printed_page": 57
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "4.4.2（1）バッテリー",
+          "printed_page": 43,
+          "pdf_page": 49
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "バッテリーに関係する用語として、正しいものを1つ選びなさい。",
@@ -1112,10 +1600,19 @@
           "充電率の単位は%であり、満充電で放電できる電気量と現時点で放電できる電気量の比率を表す。",
           "充電率の単位は%であり、0%は仕様上の満充電状態を、100%は完全放電状態を表す。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "用語表では、エネルギー容量は電流や温度によって変化し、充電率は比率を表す。0%は満充電ではなく完全放電状態で、cも誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "0%は仕様上の完全放電状態を、100%は満充電状態を表す"
+      },
+      "explanation_highlights": [
+        "比率を表します",
+        "完全放電状態"
+      ]
     },
     {
       "id": "round3-032",
@@ -1126,20 +1623,27 @@
         "過放電を行うと、緩やかに劣化が進み、寿命が短くなる。",
         "バッテリーが強い衝撃を受けた場合、発火する可能性がある。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 2,
+      "explanation": "リチウムポリマーバッテリーの充電器は満充電になると充電を停止しますが、過充電となる場合があります。また、過放電や過充電を行うと急速に劣化が進み、寿命が短くなります。強い衝撃を受けた場合は発火する可能性があります。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "11-写真11.jpg",
-        "question_number": "32"
+        "question_number": "32",
+        "answer_source_file": "05D713B6-460E-4E2C-BD7D-CF946F03E49D-photo-76427359-CB97-411F-B9B2-7F04DE7B72C9.jpg",
+        "answer_printed_page": 58
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "4.4.4（2）2）リチウムポリマーバッテリーの取り扱い上の注意点",
+          "printed_page": 45,
+          "pdf_page": 51
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "リチウムポリマーバッテリーの取り扱い上の注意点として、正しいものを1つ選びなさい。",
@@ -1148,10 +1652,19 @@
           "過放電を行うと、緩やかに劣化が進み、寿命が短くなる。",
           "バッテリーが強い衝撃を受けた場合、発火する可能性がある。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 2,
+        "explanation_summary": "充電器が停止しても過充電となる場合があり、過放電では緩やかではなく急速に劣化が進む。cが正しい。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "充電を停止するが、過充電となる場合がある"
+      },
+      "explanation_highlights": [
+        "過充電となる場合があります",
+        "急速に劣化"
+      ]
     },
     {
       "id": "round3-033",
@@ -1162,20 +1675,27 @@
         "バランスが著しく崩れたまま充電を行うとセル間の電圧差が生じ、セルによって過放電となる現象が起こり、急速に劣化が進む。",
         "セル間の充電量のバランスをとるバランスコネクタがついているタイプは、充電後にそのコネクタを充電器へ接続することが重要である。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 2,
+      "explanation": "セル間の充電量のバランスをとるバランスコネクタがついているタイプでは、充電時にそのコネクタを充電器へ接続することが重要です。「充電後」ではありません。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "11-写真11.jpg",
-        "question_number": "33"
+        "question_number": "33",
+        "answer_source_file": "05D713B6-460E-4E2C-BD7D-CF946F03E49D-photo-76427359-CB97-411F-B9B2-7F04DE7B72C9.jpg",
+        "answer_printed_page": 58
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "4.4.4（2）3）複数のセルで構成されたリチウムポリマーバッテリーの取扱上の注意",
+          "printed_page": 45,
+          "pdf_page": 51
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "複数のセルで構成されたリチウムポリマーバッテリーの取扱上の注意として、誤っているものを1つ選びなさい。",
@@ -1184,10 +1704,19 @@
           "バランスが著しく崩れたまま充電を行うとセル間の電圧差が生じ、セルによって過放電となる現象が起こり、急速に劣化が進む。",
           "セル間の充電量のバランスをとるバランスコネクタがついているタイプは、充電後にそのコネクタを充電器へ接続することが重要である。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 2,
+        "explanation_summary": "バランスを補正しながら充電し、崩れたまま充電すると過放電となる現象が起こり急速に劣化する。cの「充電後に接続」が誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "、急速に劣化が進む。そのため、セル間の充電量のバランスをとるバランスコネクタがついているタイプは、充電時にそのコネクタを充電器へ接続することが重要である。（3）エンジンエンジン機は、エンジンの回転を動力にローター又はプロペラを回転させ揚力と推力を得ている。エ4"
+      },
+      "explanation_highlights": [
+        "充電時にそのコネクタを充電器へ接続",
+        "バランスコネクタ"
+      ]
     },
     {
       "id": "round3-034",
@@ -1198,20 +1727,27 @@
         "受信機は、周囲の地形や障害物の状況を考慮して設置する必要がある。",
         "一般的に位置精度は、水平方向に比べ高度方向の誤差が小さくなる。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "自動操縦では手動操作よりも高精度なGNSS測位が必要であり、受信機は周囲の地形や障害物の状況を考慮して設置する必要があります。一般的に位置精度は、水平方向に比べ高度方向の誤差が大きくなります。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "12-写真12.jpg",
-        "question_number": "34"
+        "question_number": "34",
+        "answer_source_file": "05D713B6-460E-4E2C-BD7D-CF946F03E49D-photo-76427359-CB97-411F-B9B2-7F04DE7B72C9.jpg",
+        "answer_printed_page": 58
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "4.5.3（3）GNSSを使用した飛行における注意事項",
+          "printed_page": 50,
+          "pdf_page": 56
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "GNSSを使用した飛行における注意事項として、正しいものを1つ選びなさい。",
@@ -1220,10 +1756,19 @@
           "受信機は、周囲の地形や障害物の状況を考慮して設置する必要がある。",
           "一般的に位置精度は、水平方向に比べ高度方向の誤差が小さくなる。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "高精度なGNSS測位が必要なのは手動操作ではなく自動操縦。位置精度は高度方向の誤差が小さくではなく大きくなる。bが正しい。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "自動操縦では手動操作よりも高精度なGNSS測位が必要である"
+      },
+      "explanation_highlights": [
+        "高精度なGNSS測位",
+        "高度方向の誤差が大きくなります"
+      ]
     },
     {
       "id": "round3-035",
@@ -1234,20 +1779,27 @@
         "短絡すると発火する危険があるため、バッテリー端子が短絡しないように細心の注意を払うこと。",
         "バッテリーを高温（25℃超）になる環境で保管しないこと。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 2,
+      "explanation": "バッテリーを高温（35℃超）になる環境で保管しないこととされています。25℃超ではありません。満充電や飛行後の放電状態での保管は劣化が進みやすく、短絡による発火にも注意が必要です。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "12-写真12.jpg",
-        "question_number": "35"
+        "question_number": "35",
+        "answer_source_file": "71582D48-AEB1-4F64-97CF-E877A7FD8894-photo-F32B2071-E302-4956-B7A3-D138274CF7A4.jpg",
+        "answer_printed_page": 59
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "4.6.1（2）リチウムポリマーバッテリーの保管方法",
+          "printed_page": 50,
+          "pdf_page": 56
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "リチウムポリマーバッテリーの保管方法の説明として、誤っているものを1つ選びなさい。",
@@ -1256,10 +1808,19 @@
           "短絡すると発火する危険があるため、バッテリー端子が短絡しないように細心の注意を払うこと。",
           "バッテリーを高温（25℃超）になる環境で保管しないこと。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 2,
+        "explanation_summary": "満充電・放電状態での保管を避けることと短絡への注意は正しい。高温は25℃超ではなく35℃超で、cが誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "満充電の状態での保管又は飛行後の放電状態での保管は、電池の劣化が進みやすく電池が膨らみ、使用不可になることが多いので行わないこと"
+      },
+      "explanation_highlights": [
+        "35℃超",
+        "短絡による発火"
+      ]
     },
     {
       "id": "round3-036",
@@ -1270,20 +1831,27 @@
         "操縦者の危機回避能力",
         "飛行時間"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "飛行前の準備として行う操縦者の確認項目には、技能証明の等級・限定・条件及び有効期間、操縦者の操縦能力、飛行経験、訓練状況等があります。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "12-写真12.jpg",
-        "question_number": "36"
+        "question_number": "36",
+        "answer_source_file": "71582D48-AEB1-4F64-97CF-E877A7FD8894-photo-F32B2071-E302-4956-B7A3-D138274CF7A4.jpg",
+        "answer_printed_page": 59
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "5.1.2（2）運航者がプロセスごとに行うべき点検",
+          "printed_page": 53,
+          "pdf_page": 59
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "飛行前の準備として行う操縦者の確認項目について、正しいものを1つ選びなさい。",
@@ -1292,10 +1860,19 @@
           "操縦者の危機回避能力",
           "飛行時間"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "操縦者の確認項目には、技能証明の等級・限定・条件及び有効期間、操縦者の操縦能力、飛行経験、訓練状況等がある。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "技能証明の等級・限定・条件及び有効期間・操縦者の操縦能力、飛行経験、訓練状況等"
+      },
+      "explanation_highlights": [
+        "技能証明の等級・限定・条件及び有効期間",
+        "操縦能力、飛行経験、訓練状況"
+      ]
     },
     {
       "id": "round3-037",
@@ -1306,20 +1883,27 @@
         "通信系統、推進系統、電源系統及び自動制御系統は正常に作動するか",
         "トータルID機能が正常に作動しているか"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 2,
+      "explanation": "飛行前の点検項目には、リモートID機能が正常に作動しているかも含まれます。「トータルID機能」ではありません。燃料の搭載量又はバッテリーの充電量、通信系統・推進系統・電源系統及び自動制御系統の作動も確認します。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "13-写真13.jpg",
-        "question_number": "37"
+        "question_number": "37",
+        "answer_source_file": "71582D48-AEB1-4F64-97CF-E877A7FD8894-photo-F32B2071-E302-4956-B7A3-D138274CF7A4.jpg",
+        "answer_printed_page": 59
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "5.1.2（2）運航者がプロセスごとに行うべき点検",
+          "printed_page": 54,
+          "pdf_page": 60
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "飛行前の点検項目として、誤っているものを1つ選びなさい。",
@@ -1328,10 +1912,19 @@
           "通信系統、推進系統、電源系統及び自動制御系統は正常に作動するか",
           "トータルID機能が正常に作動しているか"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 2,
+        "explanation_summary": "飛行前の点検項目には燃料・バッテリーの量、各系統の作動、リモートID機能の作動等がある。cの「トータルID機能」が誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "リモートID機能が正常に作動しているか"
+      },
+      "explanation_highlights": [
+        "リモートID機能",
+        "正常に作動しているかも含まれます"
+      ]
     },
     {
       "id": "round3-038",
@@ -1342,20 +1935,27 @@
         "エンジン駆動の場合には機体の振動が大きいため、ネジ類の緩みなどを特に注意して点検する必要がある。",
         "ペイロード投下場所に補助者を配置しない場合、物件投下を行う際の高度は原則1m以内である必要がある。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "ガソリンは危険物に該当するため、乗用車等で運搬する場合には、消防法で定められた22リットル以下の専用の容器で運搬しなければなりません。20リットル以下ではありません。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "13-写真13.jpg",
-        "question_number": "38"
+        "question_number": "38",
+        "answer_source_file": "71582D48-AEB1-4F64-97CF-E877A7FD8894-photo-F32B2071-E302-4956-B7A3-D138274CF7A4.jpg",
+        "answer_printed_page": 59
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "5.1.2（3）ガソリンエンジンで駆動する機体の注意事項",
+          "printed_page": 54,
+          "pdf_page": 60
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "ガソリンエンジンで駆動する機体や、ペイロードを搭載あるいは物件投下時における注意事項として、誤っているものを1つ選びなさい。",
@@ -1364,10 +1964,19 @@
           "エンジン駆動の場合には機体の振動が大きいため、ネジ類の緩みなどを特に注意して点検する必要がある。",
           "ペイロード投下場所に補助者を配置しない場合、物件投下を行う際の高度は原則1m以内である必要がある。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "ガソリンの運搬容器は20リットル以下ではなく22リットル以下。ネジ類の緩みへの注意と投下高度1m以内は正しい。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "消防法で定められた22リットル以下の専用の容器で運搬しなければならない"
+      },
+      "explanation_highlights": [
+        "22リットル以下",
+        "消防法で定められた"
+      ]
     },
     {
       "id": "round3-039",
@@ -1378,20 +1987,27 @@
         "緊急時にはGNSS受信装置による機体位置推定機能を使用しない機体操作が求められる。",
         "ホバリング中GNSS受信機能を無効にすると、機体周辺の気流の影響で水平位置が不安定となるため、エレベーター操作及びスロットル操作により水平位置を安定させホバリング飛行を維持させる。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "緊急時にはGNSS受信装置による機体位置推定機能を使用しない機体操作が求められます。降下を継続し着陸を行う際には降下速度を減少させ、GNSS受信機能を無効にしたホバリングではエレベーター操作及びエルロン操作により水平位置を安定させます。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "13-写真13.jpg",
-        "question_number": "39"
+        "question_number": "39",
+        "answer_source_file": "D56D9616-D258-40F3-B9B9-7049F32D5B60-photo-A7A98353-577B-4B7A-8FDC-2C8C4FE8909C.jpg",
+        "answer_printed_page": 60
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "5.2.1（1）離着陸時に特に注意すべき事項（回転翼航空機（マルチローター））",
+          "printed_page": 57,
+          "pdf_page": 63
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "回転翼航空機（マルチローター）の離着陸時に特に注意すべき事項として、正しいものを1つ選びなさい。",
@@ -1400,10 +2016,19 @@
           "緊急時にはGNSS受信装置による機体位置推定機能を使用しない機体操作が求められる。",
           "ホバリング中GNSS受信機能を無効にすると、機体周辺の気流の影響で水平位置が不安定となるため、エレベーター操作及びスロットル操作により水平位置を安定させホバリング飛行を維持させる。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "降下速度は増加ではなく減少させ、GNSSなしのホバリングではスロットルではなくエルロン操作で水平位置を安定させる。bが正しい。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "が求められる。6）GNSSを使用しないホバリングホバリング中GNSS受信機能を無効にすると、機体周辺の気流の影響で水平位置が不安定となるためエレベーター操作及びエルロン操作により水平位置を安定させホバリング飛行を維持させる。7）GNSSを使用しない着陸上述の操作によりホバリングを安定させながら、スロットル操作により機体を降下させ着陸させる"
+      },
+      "explanation_highlights": [
+        "使用しない機体操作",
+        "エルロン操作"
+      ]
     },
     {
       "id": "round3-040",
@@ -1414,20 +2039,27 @@
         "地面に近づくにつれ、降下速度を速くし、滑空着陸による衝撃を抑えること。",
         "目測の誤りにより滑走路を逸脱することがあるので厳重に注意が必要である。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "地面に近づくにつれ、降下速度を遅くし、滑空着陸による衝撃を抑えます。「速くし」ではありません。向かい風方向に滑走できるエリアを確保できたら着陸操縦に入り、目測の誤りによる滑走路の逸脱にも注意が必要です。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "14-写真14.jpg",
-        "question_number": "40"
+        "question_number": "40",
+        "answer_source_file": "D56D9616-D258-40F3-B9B9-7049F32D5B60-photo-A7A98353-577B-4B7A-8FDC-2C8C4FE8909C.jpg",
+        "answer_printed_page": 60
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "5.2.1（3）離着陸時に特に注意すべき事項（飛行機）",
+          "printed_page": 57,
+          "pdf_page": 63
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "飛行機の着陸方法として、誤っているものを1つ選びなさい。",
@@ -1436,10 +2068,19 @@
           "地面に近づくにつれ、降下速度を速くし、滑空着陸による衝撃を抑えること。",
           "目測の誤りにより滑走路を逸脱することがあるので厳重に注意が必要である。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "向かい風方向での着陸操縦と逸脱への注意は正しい。降下速度は速くするのではなく遅くするもので、bが誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "回転が低下し、機体が不安定になるおそれがある。3）着陸方法⚫地面に近づくにつれ、降下速度を遅くし、着陸による衝撃を抑えること。衝撃が大きい場合、脚部が変形又は破損するおそれがある。⚫地面効果範囲内のホバリングは避け、速やかに着陸させること。"
+      },
+      "explanation_highlights": [
+        "降下速度を遅く",
+        "滑空着陸による衝撃を抑えます"
+      ]
     },
     {
       "id": "round3-041",
@@ -1450,20 +2091,27 @@
         "障害物への接近を避けるための機体方向の確認",
         "エレベーターでの機体の安定性や周囲の安全の確認"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "自動操縦から手動操縦に切り替えた場合には、急な飛行速度の低下や失速に備えた操作準備、障害物への接近を避けるための機体方向の確認、ホバリングしての機体の安定性や周囲の安全の確認などが必要となります。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "14-写真14.jpg",
-        "question_number": "41"
+        "question_number": "41",
+        "answer_source_file": "62B5CAA4-A503-4801-9038-17DB0AE46245-photo-D6390F1E-9914-4F28-8B2E-B263392966B1.jpg",
+        "answer_printed_page": 61
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "5.2.2（4）自動操縦と手動操縦の切り替えにおける操作上の注意と対応",
+          "printed_page": 60,
+          "pdf_page": 66
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "自動操縦から手動操縦に切り替えた場合に必要となる事項として、正しいものを1つ選びなさい。",
@@ -1472,10 +2120,19 @@
           "障害物への接近を避けるための機体方向の確認",
           "エレベーターでの機体の安定性や周囲の安全の確認"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "切替え時に備えるのは急な飛行速度の上昇や加速ではなく低下や失速。安定性の確認はエレベーターではなくホバリングして行う。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "急な飛行速度の低下や失速に備えた操作準備や、障害物への接近を避けるための機体方向の確認"
+      },
+      "explanation_highlights": [
+        "飛行速度の低下や失速",
+        "機体方向の確認"
+      ]
     },
     {
       "id": "round3-042",
@@ -1486,20 +2143,27 @@
         "操縦者とのコミュニケーションは、都度、即席の手段を用いて行い、危険予知の警告や緊急着陸地点への誘導、着陸後の機体回収や安全点検の補助も行う。",
         "無人航空機の飛行経路や範囲に応じ補助者の数や配置、各人の担当範囲や役割、異常運航時の対応方法も決めておく必要がある。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "補助者と操縦者とのコミュニケーションは予め決められた手段を用いて行います。「都度、即席の手段」ではありません。補助者は離着陸場所や飛行経路周辺の安全確認のほか、障害物等の対処について手順に従い作業を行います。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "14-写真14.jpg",
-        "question_number": "42"
+        "question_number": "42",
+        "answer_source_file": "62B5CAA4-A503-4801-9038-17DB0AE46245-photo-D6390F1E-9914-4F28-8B2E-B263392966B1.jpg",
+        "answer_printed_page": 61
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "5.4.2 安全な運航のための補助者の必要性、役割及び配置",
+          "printed_page": 62,
+          "pdf_page": 68
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "安全な運航のための補助者の必要性、役割及び配置について、誤っているものを1つ選びなさい。",
@@ -1508,10 +2172,19 @@
           "操縦者とのコミュニケーションは、都度、即席の手段を用いて行い、危険予知の警告や緊急着陸地点への誘導、着陸後の機体回収や安全点検の補助も行う。",
           "無人航空機の飛行経路や範囲に応じ補助者の数や配置、各人の担当範囲や役割、異常運航時の対応方法も決めておく必要がある。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "補助者の安全確認や配置の説明は正しい。コミュニケーションは都度即席の手段ではなく予め決められた手段を用いるためbが誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "コミュニケーションは予め決められた手段を用いて行い"
+      },
+      "explanation_highlights": [
+        "予め決められた手段",
+        "安全確認"
+      ]
     },
     {
       "id": "round3-043",
@@ -1522,20 +2195,27 @@
         "飛行計画の一部の工程において安全管理が優先され、離陸前、離陸時、計画経路の飛行、着陸時、着陸後の状況に応じた安全対策を講じ、飛行の目的を果たす飛行計画の策定が求められる。",
         "飛行計画策定時は、機体の物理的障害や飛行範囲特有の現象、制度面での規制、事後に予想しうる状況の変化などを想定した確認事項の作成が求められる。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "飛行計画策定時は、機体の物理的障害や飛行範囲特有の現象、制度面での規制、事前に予想しうる状況の変化などを想定した確認事項の作成が求められます。また、安全管理が優先されるのは一部の工程ではなく全ての工程です。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "15-写真15.jpg",
-        "question_number": "43"
+        "question_number": "43",
+        "answer_source_file": "62B5CAA4-A503-4801-9038-17DB0AE46245-photo-D6390F1E-9914-4F28-8B2E-B263392966B1.jpg",
+        "answer_printed_page": 61
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "6.1.2（1）飛行計画策定時の確認事項",
+          "printed_page": 64,
+          "pdf_page": 70
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "飛行計画策定時の確認事項として、正しいものを1つ選びなさい。",
@@ -1544,10 +2224,19 @@
           "飛行計画の一部の工程において安全管理が優先され、離陸前、離陸時、計画経路の飛行、着陸時、着陸後の状況に応じた安全対策を講じ、飛行の目的を果たす飛行計画の策定が求められる。",
           "飛行計画策定時は、機体の物理的障害や飛行範囲特有の現象、制度面での規制、事後に予想しうる状況の変化などを想定した確認事項の作成が求められる。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "経路設定の確認事項は正しい。安全管理は一部の工程ではなく全ての工程で優先され、状況の変化は事後ではなく事前に予想する。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "飛行計画の全ての工程において安全管理が優先され"
+      },
+      "explanation_highlights": [
+        "事前に予想しうる",
+        "全ての工程"
+      ]
     },
     {
       "id": "round3-044",
@@ -1558,20 +2247,27 @@
         "安全な飛行を実施するためには、まず一般的な天気予報だけではなく、どのような気象情報や予報が提供されているかを理解する必要がある。",
         "自らの作業内容、時間、環境に応じて、雲や視程障害、風向風速及び降水等、自ら行う飛行に影響する気象情報を適切に入手、分析して、離陸から着陸に至るまで支障のある気象状況にならないことを確認した後に飛行を開始しなければならない。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "航空法では「当該無人航空機及びその周囲の状況を目視により常時監視して飛行させること。」とされています。「レーダーにより」ではありません。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "15-写真15.jpg",
-        "question_number": "44"
+        "question_number": "44",
+        "answer_source_file": "8BC763AF-AD00-4F73-B161-CC508EF94521-photo-B9DD855B-5BF6-4CA1-B600-21D7165F467C.jpg",
+        "answer_printed_page": 62
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "6.2.1（1）無人航空機における気象の重要性",
+          "printed_page": 69,
+          "pdf_page": 75
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "無人航空機における気象の重要性に関する説明として、誤っているものを1つ選びなさい。",
@@ -1580,10 +2276,19 @@
           "安全な飛行を実施するためには、まず一般的な天気予報だけではなく、どのような気象情報や予報が提供されているかを理解する必要がある。",
           "自らの作業内容、時間、環境に応じて、雲や視程障害、風向風速及び降水等、自ら行う飛行に影響する気象情報を適切に入手、分析して、離陸から着陸に至るまで支障のある気象状況にならないことを確認した後に飛行を開始しなければならない。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "常時監視はレーダーではなく目視によるもの。気象情報の理解と、支障のある気象状況にならないことの確認後の飛行開始は正しい。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "当該無人航空機及びその周囲の状況を目視により常時監視して飛行させること"
+      },
+      "explanation_highlights": [
+        "目視により常時監視",
+        "レーダーにより"
+      ]
     },
     {
       "id": "round3-045",
@@ -1594,20 +2299,27 @@
         "大気の圧力を気圧といい、単位はヘクトパスカル（hPa）で標準大気圧（1気圧）は、1013hPaである。",
         "気圧の等しい点を結んだ線を等高線という。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 1,
+      "explanation": "気温は天気記号の左上の数字で、摂氏の度数を表します。華氏ではありません。また、気圧の等しい点を結んだ線は等高線ではなく等圧線です。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "16-写真16.jpg",
-        "question_number": "45"
+        "question_number": "45",
+        "answer_source_file": "8BC763AF-AD00-4F73-B161-CC508EF94521-photo-B9DD855B-5BF6-4CA1-B600-21D7165F467C.jpg",
+        "answer_printed_page": 62
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "6.2.1（3）天気図の見方",
+          "printed_page": 70,
+          "pdf_page": 76
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "天気図の見方の説明として、正しいものを1つ選びなさい。",
@@ -1616,34 +2328,50 @@
           "大気の圧力を気圧といい、単位はヘクトパスカル（hPa）で標準大気圧（1気圧）は、1013hPaである。",
           "気圧の等しい点を結んだ線を等高線という。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 1,
+        "explanation_summary": "気温は華氏ではなく摂氏、気圧の等しい点を結ぶ線は等高線ではなく等圧線。bが正しい。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "天気記号の左上の数字で、摂氏の度数を表す"
+      },
+      "explanation_highlights": [
+        "摂氏の度数",
+        "等圧線"
+      ]
     },
     {
       "id": "round3-046",
       "category": "気象・前線",
       "prompt": "前線の説明として、誤っているものを1つ選びなさい。",
       "choices": [
-        "寒常前線があると、発達した積乱雲により、突風や雷を伴い長時間にわたって断続的に強い雨が降る。",
+        "寒冷前線があると、発達した積乱雲により、突風や雷を伴い長時間にわたって断続的に強い雨が降る。",
         "寒冷前線が接近してくると、南から南東よりの風が通過後は、風向きが急変し、西から北西よりの風に変わり、気温が下がる。",
         "温暖前線があると層状の厚い雲が段々と広がり、近づくと気温、湿度は次第に高くなり、時には雷雨を伴うときもあるが、弱い雨が絶え間なく降る。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "寒冷前線があると、発達した積乱雲により、突風や雷を伴い短時間で断続的に強い雨が降ります。寒冷前線の通過後は風向きが急変して気温が下がり、温暖前線では層状の厚い雲が広がって弱い雨が絶え間なく降ります。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "16-写真16.jpg",
-        "question_number": "46"
+        "question_number": "46",
+        "answer_source_file": "FBD4B975-CAA6-497F-A5E5-CCD29EB38C5C-photo-55776B83-8BAA-4316-95F4-175042CB68C4.jpg",
+        "answer_printed_page": 63
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "6.2.1（3）10）前線",
+          "printed_page": 71,
+          "pdf_page": 77
+        },
+        "note": "原本Aの誤記「寒常前線」を第五版の表記「寒冷前線」に訂正。設問の正答は維持。"
       },
       "original": {
         "prompt": "前線の説明として、誤っているものを1つ選びなさい。",
@@ -1652,10 +2380,19 @@
           "寒冷前線が接近してくると、南から南東よりの風が通過後は、風向きが急変し、西から北西よりの風に変わり、気温が下がる。",
           "温暖前線があると層状の厚い雲が段々と広がり、近づくと気温、湿度は次第に高くなり、時には雷雨を伴うときもあるが、弱い雨が絶え間なく降る。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "寒冷前線では長時間ではなく短時間で断続的に強い雨が降る。aが誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "question_revised",
+        "reason": "原本Aの「寒常前線」は教則第五版にない表記で、原本解説も「寒冷前線」としている誤記のため、アプリ側の選択肢を「寒冷前線」に訂正。寒冷前線では短時間で断続的に強い雨が降るため、訂正後もAは誤った説明のままで、正答Aを維持。",
+        "answer_changed": false,
+        "reference_excerpt": "発達した積乱雲により、突風や雷を伴い短時間で断続的に強い雨が降る"
+      },
+      "explanation_highlights": [
+        "短時間で断続的に強い雨",
+        "温暖前線"
+      ]
     },
     {
       "id": "round3-047",
@@ -1666,20 +2403,27 @@
         "風は地面の摩擦を受けるため、一般的に上空では弱く、地表に近づくにつれて強くなる。",
         "一般に地表の粗度が大きいほど、高さによる風速の変化は小さくなる。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "風は地面の摩擦を受けるため、一般的に上空では強く、地表に近づくにつれて弱くなります。また、地表の粗度が大きいほど、高さによる風速の変化は大きくなります。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "16-写真16.jpg",
-        "question_number": "47"
+        "question_number": "47",
+        "answer_source_file": "FBD4B975-CAA6-497F-A5E5-CCD29EB38C5C-photo-55776B83-8BAA-4316-95F4-175042CB68C4.jpg",
+        "answer_printed_page": 63
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "6.2.2（1）2）風",
+          "printed_page": 72,
+          "pdf_page": 78
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "風速の説明として、正しいものを1つ選びなさい。",
@@ -1688,10 +2432,19 @@
           "風は地面の摩擦を受けるため、一般的に上空では弱く、地表に近づくにつれて強くなる。",
           "一般に地表の粗度が大きいほど、高さによる風速の変化は小さくなる。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "最大風速・最大瞬間風速の定義は正しい。風は上空で弱いのではなく強く、粗度が大きいほど風速の変化は小さくではなく大きくなる。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "一般に地表の粗度が大きいほど、高さによる風速の変化は大きくなる"
+      },
+      "explanation_highlights": [
+        "上空では強く",
+        "変化は大きくなります"
+      ]
     },
     {
       "id": "round3-048",
@@ -1702,20 +2455,27 @@
         "広い運動場のような場所では、強い日射により上昇気流がおこりつむじ風が発生する可能性がある。",
         "安全のため気象条件を考慮した判断をする場合、降雨時、降雪時、霧の発生時や雷鳴が聞こえる時は飛行の延期や中止が望ましい。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "地表面が暖められると上昇気流が発生するため、広い面積の太陽光パネルやアスファルト・コンクリートの地面が多い市街地は注意が必要です。「下降気流」ではありません。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "17-写真17.jpg",
-        "question_number": "48"
+        "question_number": "48",
+        "answer_source_file": "FBD4B975-CAA6-497F-A5E5-CCD29EB38C5C-photo-55776B83-8BAA-4316-95F4-175042CB68C4.jpg",
+        "answer_printed_page": 63
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "6.2.2（2）気象に関する注意事項",
+          "printed_page": 73,
+          "pdf_page": 79
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "気象に関する注意事項や飛行の実施の判断として、誤っているものを1つ選びなさい。",
@@ -1724,10 +2484,19 @@
           "広い運動場のような場所では、強い日射により上昇気流がおこりつむじ風が発生する可能性がある。",
           "安全のため気象条件を考慮した判断をする場合、降雨時、降雪時、霧の発生時や雷鳴が聞こえる時は飛行の延期や中止が望ましい。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "地表面が暖められると発生するのは下降気流ではなく上昇気流。つむじ風や悪天候時の延期・中止の判断は正しい。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "能時間）が普段より短くなる可能性があるため注意が必要である。地表面が暖められると上昇気流が発生するため、広い面積の太陽光パネルやアスファルト・コンクリートの地面が多い市街地は注意が必要である。また、広い運動場のような場所では、強い日射により"
+      },
+      "explanation_highlights": [
+        "上昇気流が発生",
+        "市街地は注意が必要です"
+      ]
     },
     {
       "id": "round3-049",
@@ -1738,20 +2507,27 @@
         "オートローテーション機構を装備している機体であっても、動力が停止した場合には軟着陸が不可能である。",
         "オートローテーションに入るためには必要な操作、飛行高度範囲及び速度範囲がある。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 2,
+      "explanation": "前進させながら降下することは、ボルテックス・リング・ステートの予防に有効です。また、オートローテーション機構を装備している機体は、動力が停止しても軟着陸が可能です。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "17-写真17.jpg",
-        "question_number": "49"
+        "question_number": "49",
+        "answer_source_file": "AA5F295F-CA46-436F-B956-46A5A6A9DC2A-photo-2FC2C18F-5FF8-4F94-B021-3072E67313EB.jpg",
+        "answer_printed_page": 64
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "6.3.2（1）回転翼航空機（ヘリコプター）の運航の特徴",
+          "printed_page": 75,
+          "pdf_page": 81
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "回転翼航空機（ヘリコプター）の運航の特徴として、正しいものを1つ選びなさい。",
@@ -1760,10 +2536,19 @@
           "オートローテーション機構を装備している機体であっても、動力が停止した場合には軟着陸が不可能である。",
           "オートローテーションに入るためには必要な操作、飛行高度範囲及び速度範囲がある。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 2,
+        "explanation_summary": "予防に有効なのは後退ではなく前進させながらの降下。オートローテーションでは軟着陸が可能である。cが正しい。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "オートローテーションに入るためには必要な操作、飛行高度範囲及び速度範囲がある"
+      },
+      "explanation_highlights": [
+        "前進させながら降下",
+        "軟着陸が可能"
+      ]
     },
     {
       "id": "round3-050",
@@ -1774,20 +2559,27 @@
         "操縦者は事前に第三者の立入りの無い安全な場所で、訓練を実施すること。",
         "離着陸地点を含め、回避すべき障害物などには、安全確保のため照明が必要である。"
       ],
-      "answer_index": null,
-      "explanation": "",
+      "answer_index": 0,
+      "explanation": "夜間飛行においては、原則として目視外飛行は実施せず、機体の向きを視認できる灯火が装備された機体を使用します。「目視外飛行を実施し」ではありません。",
       "origin": {
         "kind": "photo",
         "round": 3,
         "source_file": "17-写真17.jpg",
-        "question_number": "50"
+        "question_number": "50",
+        "answer_source_file": "AA5F295F-CA46-436F-B956-46A5A6A9DC2A-photo-2FC2C18F-5FF8-4F94-B021-3072E67313EB.jpg",
+        "answer_printed_page": 64
       },
       "review": {
-        "status": "pending",
+        "status": "verified",
         "edition": 5,
-        "checked_on": "",
-        "reference": {},
-        "note": "問題写真のみ受領。正答・解説写真との照合および教則第五版の内容確認・修正待ち。"
+        "checked_on": "2026-11-06",
+        "reference": {
+          "url": "https://www.mlit.go.jp/common/002010809.pdf",
+          "section": "6.4.1（1）夜間飛行の運航",
+          "printed_page": 78,
+          "pdf_page": 84
+        },
+        "note": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。"
       },
       "original": {
         "prompt": "夜間飛行の運航の説明として、誤っているものを1つ選びなさい。",
@@ -1796,10 +2588,19 @@
           "操縦者は事前に第三者の立入りの無い安全な場所で、訓練を実施すること。",
           "離着陸地点を含め、回避すべき障害物などには、安全確保のため照明が必要である。"
         ],
-        "answer_index": null,
-        "explanation_summary": ""
+        "answer_index": 0,
+        "explanation_summary": "夜間飛行では原則として目視外飛行を実施しない。訓練の実施と照明の必要性は正しく、aが誤り。"
       },
-      "explanation_highlights": []
+      "audit": {
+        "verdict": "unchanged",
+        "reason": "第五版本文に照らし正答と各選択肢の正誤を確認。設問・正答を維持。",
+        "answer_changed": false,
+        "reference_excerpt": "原則として目視外飛行は実施せず、機体の向きを視認できる灯火が装備された機体を使用する"
+      },
+      "explanation_highlights": [
+        "目視外飛行は実施せず",
+        "灯火が装備された機体"
+      ]
     }
   ]
 }

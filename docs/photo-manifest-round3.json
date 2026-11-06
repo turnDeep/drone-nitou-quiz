@@ -204,6 +204,244 @@
         49,
         50
       ]
+    },
+    {
+      "file_name": "47846A0B-43D9-40C7-B05A-7ACDFFEED477-photo-92ABB2BF-AE99-4E38-84A6-0FDF06E1F9A2.jpg",
+      "sha256": "bd1d569f0ab9a6408489702b1b176bff3c03a4458e287917c39b58166cea1e76",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "file_name": "78E24540-B854-4BA5-800A-7BC41D2CD149-photo-83A61DF5-E9EF-4F15-83DD-E6D08B35E77F.jpg",
+      "sha256": "9c1a497a1e9bcd134a99662b2483269252018c40983c5deef50bc1b49be9a651",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "file_name": "1A695F76-FD14-4CB4-A4AE-649F164F59C2-photo-DF795B50-C986-4926-880F-430C0DBE26C6.jpg",
+      "sha256": "5e5a5c57572cc79a17f6c59424d839792c3c44da8abbf01e2f25b656932393af",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "file_name": "A9E017B6-A61E-41C1-8FD7-13A8E2C97CEB-photo-BB4B4B78-23A1-4EAB-8FDF-DA4B76580255.jpg",
+      "sha256": "2dc669028c70c0f12b05f7363c457b045d900fa0f7e29af9aa4c85bed9c22081",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        9,
+        10
+      ]
+    },
+    {
+      "file_name": "97CD3C01-B092-4A02-9815-380F78DBA300-photo-B1D3FF0C-CDC0-414C-AB79-23EF7CA88614.jpg",
+      "sha256": "03871b08edd5576d3ce11763748ccf15b6d19c077b57ffea0ed6fa2855feec51",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "file_name": "86F36168-6362-42F4-8409-9857900E64F1-photo-80EA8FB9-CD50-46F9-A017-D6A560E2BC64.jpg",
+      "sha256": "c6304bdcbc73f4f7fea2be57d8a4e77152bf4df64ce12c5f38ee38d448ada18a",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "file_name": "A246B0B0-CA0E-4B86-86CC-E031CEBC3A51-photo-8DA917F1-BD1C-4B42-871C-C5BF8A68BDFB.jpg",
+      "sha256": "d41e48bcb87da1a29fb85f9a4c621d3e8eff8d0f6321d2c23f6b1604af9cc950",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "file_name": "ECA91985-716C-4F45-87B1-B170C6857CBD-photo-18C2C8B7-EE9B-435D-A703-EA68CF13452F.jpg",
+      "sha256": "a7f8ce88e5d118fa6bdc74dc7c3a61d2ddd7dba8f95bd6de2cefd7c6b2997d30",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "file_name": "F65FF694-7EEF-4B0B-9561-CF6134E023F5-photo-023F9964-AEDF-4F29-BCC4-8915F7AB97A4.jpg",
+      "sha256": "effd24b7d96f25bb555c8e335c8b8f0e5ad46a1d96e3b00f52b401d1bf2a8a1e",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "file_name": "3C034667-C5C7-40A3-9647-51432EB94E11-photo-49247221-0DE5-40BD-A340-874E4DD4360F.jpg",
+      "sha256": "7989e11a98eee7f73b94b8e4af90f8c31c886914abef3f416adbc401b34ebef5",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "file_name": "75019C22-065D-443B-9274-C9EAF5D63169-photo-D09E040F-3443-430A-ABC2-280CB7CD7829.jpg",
+      "sha256": "518fd5c41ed1e38f0c5bc99113237792f21c36f9341d4864629a96683bf5cadb",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        26,
+        27
+      ]
+    },
+    {
+      "file_name": "44739AF9-5657-4725-934A-5E7CCE3E0208-photo-486AECE7-C740-4FDB-9DD8-A011A25B4BBD.jpg",
+      "sha256": "2434a4acfca979dc88c645de7e3d23f5ad4d8e61214624b2eeeae8bc645101ac",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        28,
+        29
+      ]
+    },
+    {
+      "file_name": "FBD56922-04E2-4AAC-B934-45772D64CEC4-photo-BC6417B6-1347-453B-81FC-F4E1BA84B75B.jpg",
+      "sha256": "0ef004f04b032e9e3934776d1e06e4e79bb558ced28890b79b04685b52ba6a98",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        30,
+        31
+      ]
+    },
+    {
+      "file_name": "05D713B6-460E-4E2C-BD7D-CF946F03E49D-photo-76427359-CB97-411F-B9B2-7F04DE7B72C9.jpg",
+      "sha256": "9c3e5447f64f56febec9d777897c630d7d2f514796e3f2d7425b626f7796810b",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "file_name": "71582D48-AEB1-4F64-97CF-E877A7FD8894-photo-F32B2071-E302-4956-B7A3-D138274CF7A4.jpg",
+      "sha256": "b469756d103d051000fb2f0f1867f7f555b67100076c47cda5756c40bab9f71e",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "file_name": "D56D9616-D258-40F3-B9B9-7049F32D5B60-photo-A7A98353-577B-4B7A-8FDC-2C8C4FE8909C.jpg",
+      "sha256": "c3b98e9ee57d7ef5ed995a77fa92d7fe27e9b1eca7a272da6bf2e36e51573c65",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "file_name": "62B5CAA4-A503-4801-9038-17DB0AE46245-photo-D6390F1E-9914-4F28-8B2E-B263392966B1.jpg",
+      "sha256": "29b5c7b115b5eeb030d1ed60b65f6049d8d5be4965923b3b563a7b6b28816f62",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "file_name": "8BC763AF-AD00-4F73-B161-CC508EF94521-photo-B9DD855B-5BF6-4CA1-B600-21D7165F467C.jpg",
+      "sha256": "6bee6c2fdc456f08dbc043c5d74a6e4230c2ca25db80e92b9d372e10508fd5dc",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        44,
+        45
+      ]
+    },
+    {
+      "file_name": "FBD4B975-CAA6-497F-A5E5-CCD29EB38C5C-photo-55776B83-8BAA-4316-95F4-175042CB68C4.jpg",
+      "sha256": "6c1123b0cc90797eaeece0f2b590792e66d39395cc7196e2a626a9693ae549a3",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "file_name": "AA5F295F-CA46-436F-B956-46A5A6A9DC2A-photo-2FC2C18F-5FF8-4F94-B021-3072E67313EB.jpg",
+      "sha256": "1262538b92b31a2ca03a3029f6107bad878ee5e9273dfbf96f5ee9230c2800c0",
+      "width": 1206,
+      "height": 1608,
+      "role": "answer_and_explanation",
+      "question_numbers": [
+        48,
+        49,
+        50
+      ]
     }
-  ]
+  ],
+  "answers_received_on": "2026-11-06"
 }

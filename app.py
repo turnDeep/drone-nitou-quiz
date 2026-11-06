@@ -16,7 +16,7 @@ from quiz import (
 )
 
 ROOT = Path(__file__).resolve().parent
-BANK_FILES = {"第1回": "questions.json", "第2回": "questions_round2.json"}
+BANK_FILES = {"第1回": "questions.json", "第2回": "questions_round2.json", "第3回": "questions_round3.json"}
 
 st.set_page_config(
     page_title="二等ドローン学科 | 三択レッスン", page_icon="✈️",
