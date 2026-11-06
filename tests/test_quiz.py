@@ -3,8 +3,9 @@ import json
 import pytest
 
 from quiz import (
-    QuestionDataError, advance, create_session, eligible_questions,
-    load_questions, missed_questions, score, submit_answer, validate_questions,
+    QuestionDataError, advance, create_session, decode_progress, eligible_questions,
+    encode_progress, load_questions, missed_questions, score, session_from_progress,
+    submit_answer, validate_questions,
 )
 
 
@@ -110,6 +111,72 @@ def test_wrong_question_cannot_be_submitted():
     first, second = example(), example("photo-002")
     with pytest.raises(ValueError, match="現在の問題"):
         submit_answer(create_session([first, second]), second, 1)
+
+
+def test_progress_round_trip_restores_order_position_and_answers():
+    first, second = example(), example("photo-002")
+    session = create_session([first, second])
+    submit_answer(session, first, 0)
+    advance(session)
+    token = encode_progress(1, "すべて", False, session)
+    progress = decode_progress(token)
+    assert progress == {
+        "bank_index": 1, "category": "すべて", "shuffle": False,
+        "order": ["photo-001", "photo-002"], "position": 1, "answers": [0, None],
+    }
+    assert session_from_progress(progress, [first, second]) == session
+
+
+def test_progress_round_trip_for_finished_and_retry_sessions():
+    first, second = example(), example("photo-002")
+    session = create_session([first, second])
+    submit_answer(session, first, 1)
+    advance(session)
+    submit_answer(session, second, 1)
+    advance(session)
+    progress = decode_progress(encode_progress(0, "確認用", True, session))
+    assert session_from_progress(progress, [first, second]) == session
+    retry = create_session([first])
+    retry_progress = decode_progress(encode_progress(0, "確認用", False, retry))
+    assert session_from_progress(retry_progress, [first, second]) == retry
+
+
+def test_decode_progress_rejects_broken_or_tampered_tokens():
+    first, second = example(), example("photo-002")
+    session = create_session([first, second])
+    submit_answer(session, first, 0)
+    advance(session)
+    valid = decode_progress(encode_progress(1, "すべて", False, session))
+
+    def token(**changes):
+        payload = {
+            "bank_index": valid["bank_index"], "category": valid["category"],
+            "shuffle": valid["shuffle"], "order": valid["order"],
+            "position": valid["position"], "answers": valid["answers"],
+        }
+        payload.update(changes)
+        return encode_progress(
+            payload["bank_index"], payload["category"], payload["shuffle"],
+            {"order": payload["order"], "position": payload["position"],
+             "answers": {qid: sel for qid, sel in zip(payload["order"], payload["answers"]) if sel is not None}},
+        )
+
+    assert decode_progress(None) is None
+    assert decode_progress("") is None
+    assert decode_progress("!!!not-a-token!!!") is None
+    assert decode_progress("aGVsbG8") is None  # base64 of non-JSON text
+    assert decode_progress(token(position=0, answers=[0, 1])) is None  # answer beyond position
+    assert decode_progress(token(answers=[None, None])) is None  # gap before position
+    assert decode_progress(token(position=3)) is None
+    assert decode_progress(token(order=["photo-001", "photo-001"], answers=[0, None])) is None
+
+
+def test_session_from_progress_rejects_unknown_question_ids():
+    first, second = example(), example("photo-002")
+    session = create_session([first, second])
+    progress = decode_progress(encode_progress(2, "すべて", False, session))
+    progress["order"] = ["photo-001", "missing-999"]
+    assert session_from_progress(progress, [first, second]) is None
 
 
 def test_load_utf8_bom(tmp_path):

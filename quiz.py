@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import base64
 import json
 import random
 from datetime import date
@@ -161,6 +162,90 @@ def score(session: dict, questions: list[dict]) -> tuple[int, int]:
         for question_id, selection in session["answers"].items()
     )
     return correct, len(session["answers"])
+
+
+_PROGRESS_FORMAT_VERSION = 1
+
+
+def encode_progress(bank_index: int, category: str, shuffle: bool, session: dict) -> str:
+    """Encode the resumable state of a session as a compact URL-safe token.
+
+    Only the bank, filter settings, question order, position, and the locked
+    answers are stored; question texts and correct answers always come from
+    the data files, never from the token.
+    """
+    payload = {
+        "v": _PROGRESS_FORMAT_VERSION,
+        "b": bank_index,
+        "c": category,
+        "s": bool(shuffle),
+        "o": list(session["order"]),
+        "p": session["position"],
+        "a": [session["answers"].get(question_id) for question_id in session["order"]],
+    }
+    raw = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+    return base64.urlsafe_b64encode(raw).decode("ascii").rstrip("=")
+
+
+def decode_progress(value: object) -> dict | None:
+    """Decode a progress token structurally; return None for anything malformed.
+
+    This checks only the shape of the token. Whether the questions still
+    exist is verified separately by session_from_progress.
+    """
+    if not isinstance(value, str) or not value:
+        return None
+    try:
+        padded = value + "=" * (-len(value) % 4)
+        payload = json.loads(base64.urlsafe_b64decode(padded.encode("ascii")).decode("utf-8"))
+    except (ValueError, UnicodeError):
+        return None
+    if not isinstance(payload, dict):
+        return None
+    if type(payload.get("v")) is not int or payload["v"] != _PROGRESS_FORMAT_VERSION:
+        return None
+    bank_index, category, shuffle = payload.get("b"), payload.get("c"), payload.get("s")
+    order, position, answers = payload.get("o"), payload.get("p"), payload.get("a")
+    if type(bank_index) is not int or bank_index < 0:
+        return None
+    if not _text(category):
+        return None
+    if type(shuffle) is not bool:
+        return None
+    if not isinstance(order, list) or not order or not all(_text(item) for item in order):
+        return None
+    if len(set(order)) != len(order):
+        return None
+    if type(position) is not int or not 0 <= position <= len(order):
+        return None
+    if not isinstance(answers, list) or len(answers) != len(order):
+        return None
+    if any(item is not None and (type(item) is not int or item not in range(3)) for item in answers):
+        return None
+    # Answers can only exist up to the current position (the current question
+    # itself may already be answered); later questions are never answered yet,
+    # and every earlier question must have been answered to reach this point.
+    if any(item is None for item in answers[:position]):
+        return None
+    if any(item is not None for item in answers[position + 1:]):
+        return None
+    return {
+        "bank_index": bank_index, "category": category, "shuffle": shuffle,
+        "order": order, "position": position, "answers": answers,
+    }
+
+
+def session_from_progress(progress: dict, questions: list[dict]) -> dict | None:
+    """Rebuild a session when every encoded question is in the current set."""
+    known = {question["id"] for question in questions}
+    if any(question_id not in known for question_id in progress["order"]):
+        return None
+    answers = {
+        question_id: selection
+        for question_id, selection in zip(progress["order"], progress["answers"])
+        if selection is not None
+    }
+    return {"order": list(progress["order"]), "position": progress["position"], "answers": answers}
 
 
 def missed_questions(session: dict, questions: list[dict]) -> list[dict]:

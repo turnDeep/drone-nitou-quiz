@@ -11,12 +11,14 @@ import streamlit as st
 
 from formatting import explanation_html, question_html
 from quiz import (
-    QuestionDataError, advance, create_session, eligible_questions,
-    load_questions, missed_questions, score, submit_answer,
+    QuestionDataError, advance, create_session, decode_progress, eligible_questions,
+    encode_progress, load_questions, missed_questions, score, session_from_progress,
+    submit_answer,
 )
 
 ROOT = Path(__file__).resolve().parent
 BANK_FILES = {"第1回": "questions.json", "第2回": "questions_round2.json", "第3回": "questions_round3.json"}
+BANK_NAMES = list(BANK_FILES)
 
 st.set_page_config(
     page_title="二等ドローン学科 | 三択レッスン", page_icon="✈️",
@@ -24,15 +26,34 @@ st.set_page_config(
 )
 st.markdown(f"<style>{(ROOT / 'styles.css').read_text(encoding='utf-8')}</style>", unsafe_allow_html=True)
 
+# When the Streamlit session is gone (connection lost, browser reopened),
+# the progress token in the URL is the only way back. It is consulted only
+# on the very first run of a session state: if the app itself discarded a
+# quiz mid-session (bank or filter change), the token must not resurrect it.
+pending_restore = None
+if "app_booted" not in st.session_state:
+    st.session_state.app_booted = True
+    pending_restore = decode_progress(st.query_params.get("p"))
+    if pending_restore is not None and pending_restore["bank_index"] >= len(BANK_NAMES):
+        pending_restore = None
+
 if "source_mode" not in st.session_state:
-    st.session_state.source_mode = random.choice(list(BANK_FILES))
+    if pending_restore is not None:
+        st.session_state.source_mode = BANK_NAMES[pending_restore["bank_index"]]
+    else:
+        st.session_state.source_mode = random.choice(BANK_NAMES)
+if pending_restore is not None:
+    if "category_filter" not in st.session_state:
+        st.session_state.category_filter = pending_restore["category"]
+    if "shuffle_order" not in st.session_state:
+        st.session_state.shuffle_order = pending_restore["shuffle"]
 
 with st.sidebar:
     st.header("二等ドローン学科")
     mode = st.radio("問題集", list(BANK_FILES), key="source_mode")
     st.caption("教則第五版との照合済み問題だけを出題します。")
     st.divider()
-    st.caption("学習履歴はこのセッション内だけに保存します。ブラウザーを閉じたり接続が切れたりすると、履歴が失われる場合があります。")
+    st.caption("学習の進み具合はURLに保存します。接続が切れても、同じブラウザーでこのURLを開けば続きから再開できます。")
 
 if st.session_state.get("active_source") != mode:
     st.session_state.active_source = mode
@@ -65,19 +86,32 @@ if not questions:
 
 with st.sidebar:
     categories = sorted({question["category"] for question in questions})
-    category = st.selectbox("出題分野", ["すべて"] + categories)
-    shuffle = st.checkbox("問題の順番をランダムにする", value=False)
+    if st.session_state.get("category_filter") not in ["すべて", *categories]:
+        st.session_state.category_filter = "すべて"
+    category = st.selectbox("出題分野", ["すべて"] + categories, key="category_filter")
+    shuffle = st.checkbox("問題の順番をランダムにする", key="shuffle_order")
 
 if category != "すべて":
     questions = [question for question in questions if question["category"] == category]
 
 signature = hashlib.sha256(json.dumps([mode, category, shuffle, questions], ensure_ascii=False, sort_keys=True).encode()).hexdigest()
 if st.session_state.get("quiz_signature") != signature:
+    restored = session_from_progress(pending_restore, questions) if pending_restore else None
     st.session_state.quiz_signature = signature
-    st.session_state.quiz_session = create_session(questions, shuffle)
+    st.session_state.quiz_session = restored if restored is not None else create_session(questions, shuffle)
     st.session_state.quiz_generation = st.session_state.get("quiz_generation", 0) + 1
 
 session = st.session_state.quiz_session
+
+
+def save_progress() -> None:
+    """Mirror the live session into the URL so a lost session can resume."""
+    token = encode_progress(BANK_NAMES.index(mode), category, shuffle, session)
+    if st.query_params.get("p") != token:
+        st.query_params["p"] = token
+
+
+save_progress()
 lookup = {question["id"]: question for question in questions}
 correct, answered = score(session, questions)
 total = len(session["order"])
