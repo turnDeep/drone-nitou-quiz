@@ -17,6 +17,7 @@ from quiz import (
 )
 
 ROOT = Path(__file__).resolve().parent
+CHOICE_LABELS = "ABC"
 BANK_FILES = {"第1回": "questions.json", "第2回": "questions_round2.json", "第3回": "questions_round3.json"}
 BANK_NAMES = list(BANK_FILES)
 
@@ -178,7 +179,7 @@ if not is_answered:
             "答えを1つ選んでください",
             options=list(range(3)),
             index=None,
-            format_func=lambda value: question['choices'][value],
+            format_func=lambda value: f"{CHOICE_LABELS[value]}. {question['choices'][value]}",
             key=f"choice_{st.session_state.quiz_generation}_{question_id}",
             label_visibility="collapsed",
             width="stretch",
@@ -198,8 +199,8 @@ else:
         st.success("正解です！")
     else:
         st.error("不正解です。解説を確認してみましょう。")
-    st.write(f"**あなたの回答：{['A', 'B', 'C'][selected]}. {question['choices'][selected]}**")
-    st.write(f"**正答：{['A', 'B', 'C'][answer]}. {question['choices'][answer]}**")
+    st.write(f"**あなたの回答：{CHOICE_LABELS[selected]}. {question['choices'][selected]}**")
+    st.write(f"**正答：{CHOICE_LABELS[answer]}. {question['choices'][answer]}**")
     with st.container(border=True):
         st.markdown("### 解説")
         st.markdown(
