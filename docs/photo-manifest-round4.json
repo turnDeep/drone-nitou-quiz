@@ -1,0 +1,409 @@
+{
+ "round": 4,
+ "received_on": "2026-11-07",
+ "answers_received_on": "2026-11-07",
+ "note": "画像ファイル自体はリポジトリに含めない。撮影ページの冊子ページ番号は、写真で判読できたものだけ各問題の origin に記録した（問題: 問1〜13=62〜65ページ、問22〜25=68ページ、問35〜38=72ページ／解答・解説: 問7〜13=68〜70ページ、問17〜23=72〜73ページ、問29〜34=76〜77ページ、問35〜37=78ページ、問41〜48=80〜82ページ）。判読できないページは推測で埋めていない。",
+ "photos": [
+  {
+   "file_name": "790C5245-A052-43A6-AE3E-96839163B792-photo-81FE727D-5306-4B2B-9EB1-07D9D758330F.jpg",
+   "sha256": "4c9d66dee7b0b3744d44c5727c5b5c5cd15383604ed8c3287e3dd2f56e866d64",
+   "width": 1206,
+   "height": 1608,
+   "role": "question",
+   "question_numbers": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "file_name": "9DF5EF1A-6BEC-4BC1-A61E-07640FFF568A-photo-D1EAD5A3-C1A6-4D9B-AC89-CD15D9492290.jpg",
+   "sha256": "4c63fc2b7947ffd93ccb4444cc2b1debf93d4d7633b12a490b7624ccd3075165",
+   "width": 1206,
+   "height": 1608,
+   "role": "question",
+   "question_numbers": [
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "file_name": "3D55DB1F-5C27-41B0-871E-AA4F271E1B81-photo-2B274A71-5B92-4F13-835A-9D734A764DFD.jpg",
+   "sha256": "5986d5af3d779734697f221954b74e0743c6aa85af882eb7913c4115b0b63e36",
+   "width": 1206,
+   "height": 1608,
+   "role": "question",
+   "question_numbers": [
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "file_name": "515B469B-6818-4E7D-80FF-F1FE80C5A7A9-photo-D60B6C54-03D9-4242-B950-DC75C28A6B52.jpg",
+   "sha256": "c7ff2de391858ec15dfb69e2f47fe3b271f8a7f6fd7c111016bc65dbfc2a9f33",
+   "width": 1206,
+   "height": 1608,
+   "role": "question",
+   "question_numbers": [
+    11,
+    12,
+    13
+   ]
+  },
+  {
+   "file_name": "0C6B1D83-B2EB-40E1-9381-7C859AB57606-photo-EE50EC71-364E-46D9-8277-A8FF8B38E5AC.jpg",
+   "sha256": "2c4d859c21e6ea7ad1483c33ebe2e8f554ac03b77c741d4930d460be3e3d979e",
+   "width": 1206,
+   "height": 1608,
+   "role": "question",
+   "question_numbers": [
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  {
+   "file_name": "FE8D2BCD-B0F4-41B7-A504-18CDE8BC3EFE-photo-F2D8E7EF-7924-40F7-AB8F-203D31823550.jpg",
+   "sha256": "183e55686c0ce514001320f3c3810ea3f5bb59dd36e8df2b849b625274bb514a",
+   "width": 1206,
+   "height": 1608,
+   "role": "question",
+   "question_numbers": [
+    18,
+    19,
+    20,
+    21
+   ]
+  },
+  {
+   "file_name": "42BC0E34-9C58-4AC8-87DF-B32382ED8614-photo-1D60E144-DA42-4085-9A22-159471242B16.jpg",
+   "sha256": "e699fcf6ef5bb4f0b9b77c20743675f4a795dc8da2651bd0f03db3d2e8025a53",
+   "width": 1206,
+   "height": 1608,
+   "role": "question",
+   "question_numbers": [
+    22,
+    23,
+    24,
+    25
+   ]
+  },
+  {
+   "file_name": "A3159F0B-6858-4DE5-B395-92D6AD3A67EE-photo-C9B0F11A-1811-434D-9DE2-8774B3CE703B.jpg",
+   "sha256": "3739512ff0537ec2442a70247d6e8b1c03feb949475aa841a91d38cd733c7330",
+   "width": 1206,
+   "height": 1608,
+   "role": "question",
+   "question_numbers": [
+    26,
+    27,
+    28
+   ]
+  },
+  {
+   "file_name": "4FBE1F67-3554-46F9-8A5B-4930D1EC8FDC-photo-C195B042-A5D6-42C0-BAC8-248DA1333DE9.jpg",
+   "sha256": "5796851ddc4961e8346767f23a7f637908633325185aeb2ae535e7683f6fdddf",
+   "width": 1206,
+   "height": 1608,
+   "role": "question",
+   "question_numbers": [
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "file_name": "496D191A-41A6-4C16-B7BB-EE3AC4AF494D-photo-4C58662F-FA33-4ED1-A24D-3EC5F3D947EC.jpg",
+   "sha256": "188ee41d141231ccd1f8ede5b512fa9e8e7c26a5e69d44cf8b59d2d24e85c70c",
+   "width": 1206,
+   "height": 1608,
+   "role": "question",
+   "question_numbers": [
+    32,
+    33,
+    34
+   ]
+  },
+  {
+   "file_name": "4F97D5F4-4547-4F26-B308-9E304224DD20-photo-FA8CF966-C85D-4C56-BA34-9A057C845AD1.jpg",
+   "sha256": "a533ad76a706c148f59a6320ae40ce6bf8cac77258f86c19b6fbed9c43b37354",
+   "width": 1206,
+   "height": 1608,
+   "role": "question",
+   "question_numbers": [
+    35,
+    36,
+    37,
+    38
+   ]
+  },
+  {
+   "file_name": "377FA81B-6F1B-4993-AC8A-68B4CC6240FA-photo-7FA118F7-9138-4CB4-857D-D4D15D02FAB8.jpg",
+   "sha256": "627811dbfd03597425e468354ef35f3d6ca59b6fc374be500d3158b096ed4dec",
+   "width": 1206,
+   "height": 1608,
+   "role": "question",
+   "question_numbers": [
+    39,
+    40,
+    41
+   ]
+  },
+  {
+   "file_name": "8401C8D3-C090-4399-B1D0-83D26B275F15-photo-150FA415-88AD-4A33-8AD5-205EF9B0FCDE.jpg",
+   "sha256": "b10074d920b9b65d86fa506da0f0678edfc1d6c23fdb9a748e18e7ba2ec120f4",
+   "width": 1206,
+   "height": 1608,
+   "role": "question",
+   "question_numbers": [
+    42,
+    43,
+    44
+   ]
+  },
+  {
+   "file_name": "1A6E810A-694B-43BA-AC14-950D9B4E8469-photo-27C13890-4540-4099-91BB-14FE3F41CC06.jpg",
+   "sha256": "d0727d47b40653ee251593418d17df5a4c7a1c6b9f922627481ba86d774c9220",
+   "width": 1206,
+   "height": 1608,
+   "role": "question",
+   "question_numbers": [
+    45,
+    46,
+    47
+   ]
+  },
+  {
+   "file_name": "F8161F4B-1B38-4DCD-9E7D-CCC2040EDF26-photo-3A7FF98D-D962-46F0-B6B6-F5DDA1CAD5C6.jpg",
+   "sha256": "ae144bb9ef9f0077dd6d1290755729702dea899c81a4e27cdffafa759928862d",
+   "width": 1206,
+   "height": 1608,
+   "role": "question",
+   "question_numbers": [
+    48,
+    49,
+    50
+   ]
+  },
+  {
+   "file_name": "B60F1718-8576-462A-8237-DF707E05F060-photo-245DA705-E0C5-4945-AE07-854E7A1FBFC5.jpg",
+   "sha256": "07e8c6b7544f1e950c7b06209bbda11a92746e8ceb15730b4825d4a4e5c96b99",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "file_name": "145160D9-B268-4538-A0CE-AEB3A577B8D4-photo-9046FF17-C33F-46C9-9B26-96355CF1AD47.jpg",
+   "sha256": "3343095d03f7ed773ffede098174a43dc8bbf462df3d571ac9145831d7c79477",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "file_name": "A011B06B-CD31-4D7D-B224-712295D1A0E0-photo-37F89A63-1E2F-4D50-9AC7-BAE934637207.jpg",
+   "sha256": "b78925ce129182935ca7c8a7991f7297105822a6e9f4eab52b567f214f7566ec",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "file_name": "C028650C-B518-4400-B3B8-5EF3EEC43A61-photo-04B4953F-EBFF-4272-8B87-2E2F5F8B3D09.jpg",
+   "sha256": "bb89cc4f14021a384c2fa8e0d6c7c38fd54705e9e088fb0544d41995301df041",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    10,
+    11
+   ]
+  },
+  {
+   "file_name": "4B74A71F-7611-4CF8-9AF8-82938B3D25B2-photo-E3F40A03-8964-4B5D-8F09-0872F47F18AD.jpg",
+   "sha256": "06a1c9932beededc76583fa2eb077e0cc72e24e479baac507a3e62e5b6e4dc3a",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    12,
+    13
+   ]
+  },
+  {
+   "file_name": "CC1361D6-06F3-481D-84D5-988253BE96F8-photo-AE0A6A9F-8E64-4A86-B8E1-7AA812AF173B.jpg",
+   "sha256": "3e2c5cf017d8435469431f4c202b1cbfa7c069f9c6b703f47652e1edb0a5b034",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    14,
+    15,
+    16
+   ]
+  },
+  {
+   "file_name": "A9899E86-416D-449A-9FFA-C0FB25CF1423-photo-7C91E2D9-3EB4-46A0-88DA-C450660771BC.jpg",
+   "sha256": "b1eb96ecd37d91cda2e3ecb3f04885bd32d67fe933a693fbacc06b5c01f4c86c",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    17,
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "file_name": "F38D56B8-DC00-4A0F-8400-62FA97800BF5-photo-F1FE34AC-D645-485F-8540-89F0038FDBAF.jpg",
+   "sha256": "fb2f47d5464350ba9bc644770d6a4bee32b9be9251ec47a8af0345ecec8dbaad",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    20,
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "file_name": "4125945E-C8AE-4CE3-BD61-18224D0D02EC-photo-83215480-1875-40D0-BA79-33F093CC18CB.jpg",
+   "sha256": "01375ffb7424f8cf86a2c25f116ab2764056d241abdd3708275199ef615b76ab",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    24,
+    25,
+    26
+   ]
+  },
+  {
+   "file_name": "9D3A7B19-2E4C-48A8-BD17-66EE4A9CF009-photo-78BE45B0-D8E0-4183-A686-37616D23E5E9.jpg",
+   "sha256": "9e2eaf58be04d48ba7958c15f300940ea479fa7600bc906b2dbee3d62d754d60",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    27,
+    28
+   ]
+  },
+  {
+   "file_name": "C0D85CCA-388A-4762-AC8E-2F5272BAA44C-photo-AB30D0FD-CBC0-412D-9081-781A0F3F5E07.jpg",
+   "sha256": "459343813cd7ccbf5acdf3f1c61a4ee14be9181b601e58e8782e4ebb44df65d6",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "file_name": "FC77F41F-AB47-46E3-AC05-924E556C909D-photo-15A3D2BA-F622-454E-9AED-BC498F021938.jpg",
+   "sha256": "8ced88300afd3c5a840ba0acde52a125df5179a8acbd00fe5b673132afd021e4",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    31,
+    32,
+    33,
+    34
+   ]
+  },
+  {
+   "file_name": "38D32F4E-51BF-458A-AB97-C9583AD8C044-photo-99A0C6E3-8FA5-4779-825A-9089A2FD61DD.jpg",
+   "sha256": "072a5966c6494802271e642f74b96b941d9db3c420d834c7338c240b456e3266",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    35,
+    36,
+    37
+   ]
+  },
+  {
+   "file_name": "05F906CE-A79C-4127-9E38-40740EFF493D-photo-0E0C5F42-3510-4C4F-B2C9-1F928FA87E57.jpg",
+   "sha256": "a8137438932a3ee9b9b5924954c153559cc2bdf825b8ffb916b1b6f323a1af61",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    38,
+    39,
+    40
+   ]
+  },
+  {
+   "file_name": "B4BD45F2-B77E-47FE-877E-C6A812E54C0A-photo-C88B3646-F79C-4CAD-924D-5156AA1B2746.jpg",
+   "sha256": "bf60c08104522c6f41104045304629c0853b4c0ecc255a1494b32d6d4e556891",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    41,
+    42,
+    43
+   ]
+  },
+  {
+   "file_name": "AC09B54A-0EDF-4D0C-8853-65D14DF24B8E-photo-693C9510-4FB7-4D1C-BCEB-9164B7286DEE.jpg",
+   "sha256": "b926930f0e7111ac27a281e64a04ed3c1ac4435183a6f59a62297ba572905114",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    43,
+    44,
+    45
+   ]
+  },
+  {
+   "file_name": "ED48462A-917D-44FE-9FD6-38309B8045C8-photo-41A8AB3F-5803-4E8E-805D-365E95CC0DDE.jpg",
+   "sha256": "37c1ebeb19a98bcd4d8da27a5d77a074a084be68c77a4a6ee3b411acbba7782b",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    46,
+    47,
+    48
+   ]
+  },
+  {
+   "file_name": "EF1F76DD-5876-42C4-8D00-6B363468AE60-photo-06BE60E1-DC4B-4427-8231-96B9A37E3807.jpg",
+   "sha256": "4c046c345adb4ee6412a475bc71701c8b4cbdc12c42f0995bfdf8ec87e2de92f",
+   "width": 1206,
+   "height": 1608,
+   "role": "answer",
+   "question_numbers": [
+    49,
+    50
+   ]
+  }
+ ]
+}

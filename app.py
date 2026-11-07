@@ -18,7 +18,7 @@ from quiz import (
 
 ROOT = Path(__file__).resolve().parent
 CHOICE_LABELS = "ABC"
-BANK_FILES = {"第1回": "questions.json", "第2回": "questions_round2.json", "第3回": "questions_round3.json"}
+BANK_FILES = {"第1回": "questions.json", "第2回": "questions_round2.json", "第3回": "questions_round3.json", "第4回": "questions_round4.json"}
 BANK_NAMES = list(BANK_FILES)
 
 st.set_page_config(
