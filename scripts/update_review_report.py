@@ -73,6 +73,7 @@ def main():
     write_report(2, "questions_round2.json", "photo-manifest-round2.json", 19, "question-audit-round2.md")
     write_report(3, "questions_round3.json", "photo-manifest-round3.json", 37, "question-audit-round3.md", "2026年11月6日")
     write_report(4, "questions_round4.json", "photo-manifest-round4.json", 33, "question-audit-round4.md", "2026年11月7日")
+    write_report(5, "questions_round5.json", "photo-manifest-round5.json", 36, "question-audit-round5.md", "2026年11月7日")
 
 
 if __name__ == "__main__":
