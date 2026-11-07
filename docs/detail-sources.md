@@ -2,7 +2,7 @@
 
 「詳しい解説」で使用しているイラストは、ドローン・パイロット氏の note「ドローン用語」シリーズ各記事の見出し画像です。各問題の出典はアプリ内にもクレジット表示しています。
 
-使用問題数: 90問 / 記事数: 52件
+使用問題数: 147問 / 記事数: 72件
 
 | 問題ID | 画像ファイル | 出典 |
 |---|---|---|
@@ -96,3 +96,60 @@
 | round3-043 | assets/details/round3-043.jpg | ドローン・パイロット『第90号｜「飛行計画」と「飛行計画の通報」——“飛ぶ前に伝える”が安全のスタート【ドローン用語】』（note） https://note.com/dronepilot/n/n229b833982d3 |
 | round3-044 | assets/details/round3-044.jpg | ドローン・パイロット『第86号｜「目視による常時監視」と「目視外飛行」——“画面で見てる”は目視ではありません【ドローン用語】』（note） https://note.com/dronepilot/n/nacd870ab8811 |
 | round3-050 | assets/details/round3-050.jpg | ドローン・パイロット『第35号｜「夜間飛行」と「照明灯火」——暗い時間帯の“見える化”【ドローン用語】』（note） https://note.com/dronepilot/n/n6a7e477fe9ec |
+| round4-001 | assets/details/round4-001.jpg | ドローン・パイロット『第25号｜「指定試験機関」と「技能証明試験」——国家資格の“試験センター”【ドローン用語】』（note） https://note.com/dronepilot/n/n9bb5348ba7f3 |
+| round4-003 | assets/details/round4-003.jpg | ドローン・パイロット『第111号｜「役割分担の明確化」と「連絡体制の確保」——“誰が決めるか”が決まると、安全は一段上がる【ドローン用語】』（note） https://note.com/dronepilot/n/n37dfd0b77bde |
+| round4-005 | assets/details/round4-005.jpg | ドローン・パイロット『「飛行日誌」——“飛ばした記録”を残すためのノート【ドローン用語】』（note） https://note.com/dronepilot/n/n3602ca8d2635 |
+| round4-006 | assets/details/round4-006.jpg | ドローン・パイロット『第110号｜「無人航空機」と「模型航空機」——100gの線は、ただの重さの話ではありません【ドローン用語】』（note） https://note.com/dronepilot/n/n7cb3a85c4963 |
+| round4-007 | assets/details/round4-007.jpg | ドローン・パイロット『第98号｜「人口集中地区（DID）」と「高度150m以上の空域」——“見た目”と“海抜”で考えると危ないです【ドローン用語】』（note） https://note.com/dronepilot/n/n27198e72490b |
+| round4-008 | assets/details/round4-008.jpg | ドローン・パイロット『第100号｜「機体認証」と「技能証明」——国が見ているのは“機体”と“人”の両方です【ドローン用語】』（note） https://note.com/dronepilot/n/n1878dc861460 |
+| round4-009 | assets/details/round4-009.jpg | ドローン・パイロット『第113号｜「航空機の進路権」と「回避行動」——“見えたら避ける”では遅い理由【ドローン用語】』（note） https://note.com/dronepilot/n/nf5249dedb108 |
+| round4-011 | assets/details/round4-011.jpg | ドローン・パイロット『第88号｜「緊急用務空域」——“飛ばさない判断”が最も大事な空域【ドローン用語】』（note） https://note.com/dronepilot/n/n4284bede70e8 |
+| round4-012 | assets/details/round4-012.jpg | ドローン・パイロット『第104号｜「登録記号」と「リモートID」——“機体に番号を書く”だけでは終わりません【ドローン用語】』（note） https://note.com/dronepilot/n/ne34e995ac0e3 |
+| round4-013 | assets/details/round4-013.jpg | ドローン・パイロット『第86号｜「目視による常時監視」と「目視外飛行」——“画面で見てる”は目視ではありません【ドローン用語】』（note） https://note.com/dronepilot/n/nacd870ab8811 |
+| round4-014 | assets/details/round4-014.jpg | ドローン・パイロット『第87号｜「航空交通管制圏」と「空港の制限表面」——空港周りの“見えない壁”を立体で理解【ドローン用語】』（note） https://note.com/dronepilot/n/n6c1fe8233188 |
+| round4-017 | assets/details/round4-017.jpg | ドローン・パイロット『「催し場所上空」——お祭りやイベントの“真上”はなぜ原則NGなのか【ドローン用語】』（note） https://note.com/dronepilot/n/n4dd9b51f6a69 |
+| round4-018 | assets/details/round4-018.jpg | ドローン・パイロット『第89号｜「危険物の輸送」と「物件の投下」——農薬散布も“投下”として考える【ドローン用語】』（note） https://note.com/dronepilot/n/nf75290b7efb4 |
+| round4-019 | assets/details/round4-019.jpg | ドローン・パイロット『「危険物の輸送」と「物件投下」——“運ぶ・落とす”飛行はなぜ重く扱われるのか【ドローン用語】』（note） https://note.com/dronepilot/n/n68f62c3e6cbe |
+| round4-020 | assets/details/round4-020.jpg | ドローン・パイロット『「立入管理措置」——第三者を“入れない・入らせない・入ったら止める”【ドローン用語】』（note） https://note.com/dronepilot/n/n81bd039ce983 |
+| round4-021 | assets/details/round4-021.jpg | ドローン・パイロット『第107号｜「飛行前の確認」と「体調管理」——機体が正常でも、人が不安定なら安全ではありません【ドローン用語】』（note） https://note.com/dronepilot/n/n68c79621c891 |
+| round4-022 | assets/details/round4-022.jpg | ドローン・パイロット『第30号｜「飛行前・飛行後の点検」と「日常点検記録」——安全フライトを支える“毎回のチェック”【ドローン用語】』（note） https://note.com/dronepilot/n/n9f54325106ca |
+| round4-023 | assets/details/round4-023.jpg | ドローン・パイロット『第128号｜「事故報告」と「重大インシデント報告」——“大事故だけ”が対象ではありません【ドローン用語】』（note） https://note.com/dronepilot/n/nb50f0605181f |
+| round4-024 | assets/details/round4-024.jpg | ドローン・パイロット『第124号｜「罰則」と「行政処分」——“罰金で終わり”ではない世界です【ドローン用語】』（note） https://note.com/dronepilot/n/n15d685ad61dc |
+| round4-026 | assets/details/round4-026.jpg | ドローン・パイロット『「小型無人機等飛行禁止法」と「重要施設」——ドローンが近づけない“レッドゾーン”と“イエローゾーン”【ドローン用語】』（note） https://note.com/dronepilot/n/n7d94d6f35652 |
+| round4-029 | assets/details/round4-029.jpg | ドローン・パイロット『「目視外飛行」と「補助者」——見えないところをどうカバーする？【ドローン用語44】』（note） https://note.com/dronepilot/n/n8dda237cc50f |
+| round4-030 | assets/details/round4-030.jpg | ドローン・パイロット『第109号｜「GNSS」と「フェールセーフ機能」——“自動で戻る”を過信すると危ないです【ドローン用語】』（note） https://note.com/dronepilot/n/n4b1cc07b52aa |
+| round4-034 | assets/details/round4-034.jpg | ドローン・パイロット『第109号｜「GNSS」と「フェールセーフ機能」——“自動で戻る”を過信すると危ないです【ドローン用語】』（note） https://note.com/dronepilot/n/n4b1cc07b52aa |
+| round4-036 | assets/details/round4-036.jpg | ドローン・パイロット『第30号｜「飛行前・飛行後の点検」と「日常点検記録」——安全フライトを支える“毎回のチェック”【ドローン用語】』（note） https://note.com/dronepilot/n/n9f54325106ca |
+| round4-037 | assets/details/round4-037.jpg | ドローン・パイロット『第122号｜「無人航空機飛行規程」と「使用の条件」——“性能がある”と“使ってよい”は別です【ドローン用語】』（note） https://note.com/dronepilot/n/n49a2000f2e92 |
+| round4-038 | assets/details/round4-038.jpg | ドローン・パイロット『第107号｜「飛行前の確認」と「体調管理」——機体が正常でも、人が不安定なら安全ではありません【ドローン用語】』（note） https://note.com/dronepilot/n/n68c79621c891 |
+| round4-044 | assets/details/round4-044.jpg | ドローン・パイロット『「運航リスク評価」——飛ばす前に“どこがどれくらい危ないか”を言葉にする【ドローン用語】』（note） https://note.com/dronepilot/n/ne0c98c1be23a |
+| round4-050 | assets/details/round4-050.jpg | ドローン・パイロット『「補助者」とは？——操縦者を支える“もう一つの目と口”【ドローン用語】』（note） https://note.com/dronepilot/n/n67d47a9a8639 |
+| round5-001 | assets/details/round5-001.jpg | ドローン・パイロット『第101号｜「登録講習機関」と「指定試験機関」——“通うところ”と“試験を行うところ”は同じではありません【ドローン用語】』（note） https://note.com/dronepilot/n/n2ec102dbb2ce |
+| round5-004 | assets/details/round5-004.jpg | ドローン・パイロット『第107号｜「飛行前の確認」と「体調管理」——機体が正常でも、人が不安定なら安全ではありません【ドローン用語】』（note） https://note.com/dronepilot/n/n68c79621c891 |
+| round5-005 | assets/details/round5-005.jpg | ドローン・パイロット『第108号｜「事故時の救護」と「国への報告」——墜落したあとに“最初にやること”を間違えない【ドローン用語】』（note） https://note.com/dronepilot/n/n2c8e4ad4d926 |
+| round5-006 | assets/details/round5-006.jpg | ドローン・パイロット『第61号｜「登録」と「登録記号」——機体の“身分証”は3年ごとに更新が必要【ドローン用語】』（note） https://note.com/dronepilot/n/nb3375b7f0b30 |
+| round5-007 | assets/details/round5-007.jpg | ドローン・パイロット『第66号｜「カテゴリーⅠ・Ⅱ・Ⅲ」——飛行の“危険度の階段”を一度で整理する【ドローン用語】』（note） https://note.com/dronepilot/n/n64dfa74f1321 |
+| round5-008 | assets/details/round5-008.jpg | ドローン・パイロット『第67号｜「カテゴリーⅡA」と「カテゴリーⅡB」——“同じカテゴリーⅡ”でも手続きが変わる理由【ドローン用語】』（note） https://note.com/dronepilot/n/n8071f8f313aa |
+| round5-010 | assets/details/round5-010.jpg | ドローン・パイロット『第46号｜「無人航空機の登録」と「登録記号」——“名札”がないと飛ばせません【ドローン用語】』（note） https://note.com/dronepilot/n/n6d3d33c1b15d |
+| round5-011 | assets/details/round5-011.jpg | ドローン・パイロット『「航空交通管制圏」と「空港の制限表面」——空港周りの“見えない壁”をイメージする【ドローン用語39】』（note） https://note.com/dronepilot/n/n939d81b8cc2b |
+| round5-012 | assets/details/round5-012.jpg | ドローン・パイロット『「空港等の周辺の上空」と「制限表面」——空港近くには“見えない屋根”がある【ドローン用語】』（note） https://note.com/dronepilot/n/n46f64da93054 |
+| round5-013 | assets/details/round5-013.jpg | ドローン・パイロット『第98号｜「人口集中地区（DID）」と「高度150m以上の空域」——“見た目”と“海抜”で考えると危ないです【ドローン用語】』（note） https://note.com/dronepilot/n/n27198e72490b |
+| round5-016 | assets/details/round5-016.jpg | ドローン・パイロット『「催し場所上空」——お祭りやイベントの“真上”はなぜ原則NGなのか【ドローン用語】』（note） https://note.com/dronepilot/n/n4dd9b51f6a69 |
+| round5-017 | assets/details/round5-017.jpg | ドローン・パイロット『第89号｜「危険物の輸送」と「物件の投下」——農薬散布も“投下”として考える【ドローン用語】』（note） https://note.com/dronepilot/n/nf75290b7efb4 |
+| round5-018 | assets/details/round5-018.jpg | ドローン・パイロット『「危険物の輸送」と「物件投下」——“運ぶ・落とす”飛行はなぜ重く扱われるのか【ドローン用語】』（note） https://note.com/dronepilot/n/n68f62c3e6cbe |
+| round5-019 | assets/details/round5-019.jpg | ドローン・パイロット『第103号｜「捜索又は救助のための特例」と「緊急用務空域」——災害時こそ、“誰でも自由に飛べる”ではありません【ドローン用語】』（note） https://note.com/dronepilot/n/n4bcbb6e7953e |
+| round5-020 | assets/details/round5-020.jpg | ドローン・パイロット『第118号｜「レベル3」と「レベル3.5」——“補助者なしで楽になる”ではなく、確認のやり方が変わるだけ【ドローン用語】』（note） https://note.com/dronepilot/n/n8a6f2240e181 |
+| round5-021 | assets/details/round5-021.jpg | ドローン・パイロット『第30号｜「飛行前・飛行後の点検」と「日常点検記録」——安全フライトを支える“毎回のチェック”【ドローン用語】』（note） https://note.com/dronepilot/n/n9f54325106ca |
+| round5-022 | assets/details/round5-022.jpg | ドローン・パイロット『第36号｜「飛行マニュアル」と「安全確保措置」——紙のルールを“現場の動き”に変える【ドローン用語】』（note） https://note.com/dronepilot/n/nb8b3af7c27dd |
+| round5-023 | assets/details/round5-023.jpg | ドローン・パイロット『第82号｜「事故発生時の運航者の行動」——止める→救護→通報→国交大臣へ報告【ドローン用語】』（note） https://note.com/dronepilot/n/na90a9f20e303 |
+| round5-024 | assets/details/round5-024.jpg | ドローン・パイロット『第105号｜「飛行日誌」と「日常点検記録」——飛ばしたあとに書くものも、安全の一部です【ドローン用語】』（note） https://note.com/dronepilot/n/nd038fd860b85 |
+| round5-025 | assets/details/round5-025.jpg | ドローン・パイロット『「小型無人機等飛行禁止法」と「重要施設」——ドローンが近づけない“レッドゾーン”と“イエローゾーン”【ドローン用語】』（note） https://note.com/dronepilot/n/n7d94d6f35652 |
+| round5-035 | assets/details/round5-035.jpg | ドローン・パイロット『第123号｜「無人航空機整備手順書」と「点検整備記録」——整備は“やったかどうか”で信用が決まります【ドローン用語】』（note） https://note.com/dronepilot/n/ne7628ce67642 |
+| round5-036 | assets/details/round5-036.jpg | ドローン・パイロット『第50号｜「許可」と「承認」——“空域”と“飛ばし方”で申請が分かれます【ドローン用語】』（note） https://note.com/dronepilot/n/n89d5524f0852 |
+| round5-037 | assets/details/round5-037.jpg | ドローン・パイロット『第128号｜「事故報告」と「重大インシデント報告」——“大事故だけ”が対象ではありません【ドローン用語】』（note） https://note.com/dronepilot/n/nb50f0605181f |
+| round5-038 | assets/details/round5-038.jpg | ドローン・パイロット『「第三者賠償責任保険」——任意だけれど“実質必須”なカバー【ドローン用語43】』（note） https://note.com/dronepilot/n/n50749402d98e |
+| round5-040 | assets/details/round5-040.jpg | ドローン・パイロット『第56号｜「遠隔操作」と「自動操縦」——“誰が操縦しているか”の切り分け【ドローン用語】』（note） https://note.com/dronepilot/n/n3c296a6a5ed8 |
+| round5-041 | assets/details/round5-041.jpg | ドローン・パイロット『第82号｜「事故発生時の運航者の行動」——止める→救護→通報→国交大臣へ報告【ドローン用語】』（note） https://note.com/dronepilot/n/na90a9f20e303 |
+| round5-042 | assets/details/round5-042.jpg | ドローン・パイロット『第130号｜「緊急着陸地点」と「安全にホバリング・旋回できる場所」——逃げ道は飛ばす前に決めます【ドローン用語】』（note） https://note.com/dronepilot/n/n1890deb43803 |
+| round5-049 | assets/details/round5-049.jpg | ドローン・パイロット『第97号｜「昼間（日中）」と「夜間飛行」——“まだ明るい”ではなく、日出と日没で決まります【ドローン用語】』（note） https://note.com/dronepilot/n/n5b3b5c81594a |
+| round5-050 | assets/details/round5-050.jpg | ドローン・パイロット『「目視外飛行」と「補助者」——見えないところをどうカバーする？【ドローン用語44】』（note） https://note.com/dronepilot/n/n8dda237cc50f |

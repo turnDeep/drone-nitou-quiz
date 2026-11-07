@@ -5,7 +5,7 @@ from pathlib import Path
 from quiz import load_questions
 
 ROOT = Path(__file__).resolve().parent.parent
-BANK_FILES = ("questions.json", "questions_round2.json", "questions_round3.json")
+BANK_FILES = ("questions.json", "questions_round2.json", "questions_round3.json", "questions_round4.json", "questions_round5.json")
 
 
 def _all_questions() -> list[dict]:
@@ -17,7 +17,7 @@ def _all_questions() -> list[dict]:
 
 def test_all_questions_have_detail_sections() -> None:
     questions = _all_questions()
-    assert len(questions) == 150
+    assert len(questions) == 250
     for question in questions:
         detail = question.get("detail")
         assert isinstance(detail, dict), question["id"]
