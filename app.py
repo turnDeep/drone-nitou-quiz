@@ -211,6 +211,27 @@ else:
         reference = review["reference"]
         st.markdown(f"[教則第五版の該当箇所を開く]({reference['url']}#page={reference['pdf_page']})")
         st.caption(f"{reference['section']} / 本文 {reference['printed_page']}ページ / PDF通算 {reference['pdf_page']}ページ")
+        detail = question.get("detail")
+        if detail:
+            st.divider()
+            st.markdown("### 詳しい解説")
+            image = detail.get("image")
+            if image and (ROOT / image["file"]).is_file():
+                st.image(str(ROOT / image["file"]))
+                st.caption(f"画像出典：{image['credit']}")
+            for section in detail.get("sections", []):
+                st.markdown(f"**{section['heading']}**")
+                table = section.get("table")
+                if table:
+                    header = " | ".join(table["head"])
+                    separator = " | ".join("---" for _ in table["head"])
+                    lines = [f"| {header} |", f"| {separator} |"]
+                    for row in table["rows"]:
+                        cells = " | ".join(str(cell).replace("|", "｜") for cell in row)
+                        lines.append(f"| {cells} |")
+                    st.markdown("\n".join(lines))
+                for bullet in section.get("bullets", []):
+                    st.markdown(f"- {bullet}")
     if st.button("結果を見る" if session["position"] + 1 == total else "次の問題へ", type="primary", use_container_width=True):
         advance(session)
         st.session_state.scroll_to_top = True

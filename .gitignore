@@ -11,3 +11,4 @@ artifacts/
 *.log
 .working/
 .playwright-mcp/
+.detail-work/
