@@ -2,12 +2,11 @@
 
 import json
 from pathlib import Path
-from unittest.mock import patch
 
 import pytest
 from streamlit.testing.v1 import AppTest
 
-from quiz import eligible_questions, load_questions
+from quiz import create_random_session, eligible_questions, extend_random_session, load_questions
 
 ROOT = Path(__file__).resolve().parents[1]
 # Independently transcribed from the answer table in photo 10, in question order.
@@ -227,7 +226,7 @@ def test_both_rounds_switch_cleanly_and_second_round_grades_all_50():
     app.session_state["source_mode"] = "第1回"
     app.run()
     assert not app.exception
-    assert app.sidebar.radio[0].options == ["第1回", "第2回", "第3回", "第4回", "第5回"]
+    assert app.sidebar.radio[0].options == ["第1回", "第2回", "第3回", "第4回", "第5回", "ランダム"]
     first = next(item for item in app.radio if item.label == "答えを1つ選んでください")
     first.set_value(0)
     next(item for item in app.button if item.label == "回答する").click().run()
@@ -257,6 +256,45 @@ def test_both_rounds_switch_cleanly_and_second_round_grades_all_50():
     assert not (ROOT / "data/demo_questions.json").exists()
 
 
+BANK_FILE_NAMES = (
+    "questions.json", "questions_round2.json", "questions_round3.json",
+    "questions_round4.json", "questions_round5.json",
+)
+
+
+def whole_pool():
+    pool = []
+    for filename in BANK_FILE_NAMES:
+        pool.extend(eligible_questions(load_questions(ROOT / "data" / filename), "photo"))
+    return pool
+
+
+def test_default_set_is_random_and_stays_fixed_while_answering_and_advancing():
+    app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=10).run()
+    assert not app.exception
+    assert app.sidebar.radio[0].value == "ランダム"
+    pool = whole_pool()
+    assert len(pool) == 250
+    by_id = {question["id"]: question for question in pool}
+    session = app.session_state["quiz_session"]
+    drawn_order = list(session["order"])
+    assert len(drawn_order) == 10
+    assert len(set(drawn_order)) == 10
+    assert set(drawn_order) <= set(by_id)
+    first = by_id[drawn_order[0]]
+    answer = next(item for item in app.radio if item.label == "答えを1つ選んでください")
+    answer.set_value(first["answer_index"])
+    next(item for item in app.button if item.label == "回答する").click().run()
+    assert not app.exception
+    assert any("正解です" in item.value for item in app.success)
+    next(item for item in app.button if item.label == "次の問題へ").click().run()
+    assert not app.exception
+    assert app.sidebar.radio[0].value == "ランダム"
+    assert app.session_state["quiz_session"]["order"] == drawn_order
+    assert app.session_state["quiz_session"]["position"] == 1
+    assert app.session_state["quiz_session"]["answers"] == {drawn_order[0]: first["answer_index"]}
+
+
 @pytest.mark.parametrize("mode,bank_file", [
     ("第1回", "questions.json"),
     ("第2回", "questions_round2.json"),
@@ -264,21 +302,24 @@ def test_both_rounds_switch_cleanly_and_second_round_grades_all_50():
     ("第4回", "questions_round4.json"),
     ("第5回", "questions_round5.json"),
 ])
-def test_random_initial_round_stays_fixed_while_answering_and_advancing(mode, bank_file):
+def test_each_round_stays_selectable_with_its_own_order(mode, bank_file):
     questions = load_questions(ROOT / "data" / bank_file)
-    with patch("random.choice", return_value=mode) as choose:
-        app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=10).run()
-        assert not app.exception
-        assert app.sidebar.radio[0].value == mode
-        assert app.session_state["quiz_session"]["order"] == [q["id"] for q in questions]
-        answer = next(item for item in app.radio if item.label == "答えを1つ選んでください")
-        answer.set_value(questions[0]["answer_index"])
-        next(item for item in app.button if item.label == "回答する").click().run()
-        assert not app.exception
-        assert any("正解です" in item.value for item in app.success)
-        next(item for item in app.button if item.label == "次の問題へ").click().run()
-        assert not app.exception
-        assert app.sidebar.radio[0].value == mode
-        assert app.session_state["quiz_session"]["position"] == 1
-        assert app.session_state["quiz_session"]["answers"] == {questions[0]["id"]: questions[0]["answer_index"]}
-        choose.assert_called_once_with(["第1回", "第2回", "第3回", "第4回", "第5回"])
+    app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=10)
+    app.session_state["source_mode"] = mode
+    app.run()
+    assert not app.exception
+    assert app.sidebar.radio[0].value == mode
+    assert app.session_state["quiz_session"]["order"] == [q["id"] for q in questions]
+
+
+def test_random_set_can_serve_all_250_without_duplicates():
+    pool = whole_pool()
+    assert len(pool) == 250
+    session = create_random_session(pool)
+    assert len(session["order"]) == 10
+    added = 10
+    while added:
+        added = extend_random_session(session, pool)
+    assert len(session["order"]) == 250
+    assert len(set(session["order"])) == 250
+    assert set(session["order"]) == {question["id"] for question in pool}

@@ -3,8 +3,9 @@ import json
 import pytest
 
 from quiz import (
-    QuestionDataError, advance, create_session, decode_progress, eligible_questions,
-    encode_progress, load_questions, missed_questions, score, session_from_progress,
+    RANDOM_BATCH_SIZE, QuestionDataError, advance, create_random_session, create_session,
+    decode_progress, draw_questions, eligible_questions, encode_progress,
+    extend_random_session, load_questions, missed_questions, score, session_from_progress,
     submit_answer, validate_questions,
 )
 
@@ -177,6 +178,45 @@ def test_session_from_progress_rejects_unknown_question_ids():
     progress = decode_progress(encode_progress(2, "すべて", False, session))
     progress["order"] = ["photo-001", "missing-999"]
     assert session_from_progress(progress, [first, second]) is None
+
+
+def test_random_draw_never_repeats_and_skips_excluded_ids():
+    pool = [example(f"photo-{number:03}") for number in range(1, 26)]
+    drawn = draw_questions(pool, 10)
+    assert len(drawn) == 10
+    assert len({question["id"] for question in drawn}) == 10
+    rest = draw_questions(pool, 100, excluded_ids=[question["id"] for question in drawn])
+    assert len(rest) == 15
+    assert {question["id"] for question in drawn}.isdisjoint(
+        question["id"] for question in rest
+    )
+
+
+def test_random_session_extends_until_pool_is_exhausted():
+    pool = [example(f"photo-{number:03}") for number in range(1, 26)]
+    session = create_random_session(pool)
+    assert len(session["order"]) == RANDOM_BATCH_SIZE
+    assert session["position"] == 0 and session["answers"] == {}
+    assert extend_random_session(session, pool) == 10
+    assert extend_random_session(session, pool) == 5
+    assert extend_random_session(session, pool) == 0
+    assert len(session["order"]) == 25
+    assert len(set(session["order"])) == 25
+    assert set(session["order"]) == {question["id"] for question in pool}
+
+
+def test_random_session_progress_round_trip_keeps_drawn_order_after_extend():
+    pool = [example(f"photo-{number:03}") for number in range(1, 13)]
+    session = create_random_session(pool)
+    lookup = {question["id"]: question for question in pool}
+    for _ in range(2):
+        current = lookup[session["order"][session["position"]]]
+        assert submit_answer(session, current, 1)
+        advance(session)
+    assert extend_random_session(session, pool) == 2
+    progress = decode_progress(encode_progress(5, "すべて", False, session))
+    assert progress is not None
+    assert session_from_progress(progress, pool) == session
 
 
 def test_load_utf8_bom(tmp_path):

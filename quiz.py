@@ -135,6 +135,29 @@ def create_session(questions: list[dict], shuffle: bool = False) -> dict:
     return {"order": order, "position": 0, "answers": {}}
 
 
+RANDOM_BATCH_SIZE = 10
+
+
+def draw_questions(pool: list[dict], count: int, excluded_ids=()) -> list[dict]:
+    """Draw up to count questions at random, never repeating or reusing excluded ids."""
+    excluded = set(excluded_ids)
+    candidates = [question for question in pool if question["id"] not in excluded]
+    return random.sample(candidates, min(count, len(candidates)))
+
+
+def create_random_session(pool: list[dict], count: int = RANDOM_BATCH_SIZE) -> dict:
+    """Start a random-set session with one batch drawn from the whole pool."""
+    drawn = draw_questions(pool, count)
+    return {"order": [question["id"] for question in drawn], "position": 0, "answers": {}}
+
+
+def extend_random_session(session: dict, pool: list[dict], count: int = RANDOM_BATCH_SIZE) -> int:
+    """Append one more batch of not-yet-served questions; return how many were added."""
+    drawn = draw_questions(pool, count, excluded_ids=session["order"])
+    session["order"].extend(question["id"] for question in drawn)
+    return len(drawn)
+
+
 def submit_answer(session: dict, question: dict, selection: int | None) -> bool:
     """Return True only for the first valid submission; never change a locked answer."""
     if session["position"] >= len(session["order"]) or session["order"][session["position"]] != question["id"]:

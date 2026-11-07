@@ -4,22 +4,24 @@ from __future__ import annotations
 
 import hashlib
 import json
-import random
 from pathlib import Path
 
 import streamlit as st
 
 from formatting import explanation_html, question_html
 from quiz import (
-    QuestionDataError, advance, create_session, decode_progress, eligible_questions,
-    encode_progress, load_questions, missed_questions, score, session_from_progress,
-    submit_answer,
+    RANDOM_BATCH_SIZE, QuestionDataError, advance, create_random_session, create_session,
+    decode_progress, eligible_questions, encode_progress, extend_random_session,
+    load_questions, missed_questions, score, session_from_progress, submit_answer,
 )
 
 ROOT = Path(__file__).resolve().parent
 CHOICE_LABELS = "ABC"
 BANK_FILES = {"第1回": "questions.json", "第2回": "questions_round2.json", "第3回": "questions_round3.json", "第4回": "questions_round4.json", "第5回": "questions_round5.json"}
-BANK_NAMES = list(BANK_FILES)
+RANDOM_MODE = "ランダム"
+# The random set stays last so progress tokens saved before it existed keep
+# pointing at the same round (the token stores the index into this list).
+SET_NAMES = [*BANK_FILES, RANDOM_MODE]
 
 st.set_page_config(
     page_title="二等ドローン学科 | 三択レッスン", page_icon="✈️",
@@ -35,14 +37,14 @@ pending_restore = None
 if "app_booted" not in st.session_state:
     st.session_state.app_booted = True
     pending_restore = decode_progress(st.query_params.get("p"))
-    if pending_restore is not None and pending_restore["bank_index"] >= len(BANK_NAMES):
+    if pending_restore is not None and pending_restore["bank_index"] >= len(SET_NAMES):
         pending_restore = None
 
 if "source_mode" not in st.session_state:
     if pending_restore is not None:
-        st.session_state.source_mode = BANK_NAMES[pending_restore["bank_index"]]
+        st.session_state.source_mode = SET_NAMES[pending_restore["bank_index"]]
     else:
-        st.session_state.source_mode = random.choice(BANK_NAMES)
+        st.session_state.source_mode = RANDOM_MODE
 if pending_restore is not None:
     if "category_filter" not in st.session_state:
         st.session_state.category_filter = pending_restore["category"]
@@ -51,7 +53,7 @@ if pending_restore is not None:
 
 with st.sidebar:
     st.header("二等ドローン学科")
-    mode = st.radio("問題集", list(BANK_FILES), key="source_mode")
+    mode = st.radio("問題集", SET_NAMES, key="source_mode")
     st.caption("教則第五版との照合済み問題だけを出題します。")
     st.divider()
     st.caption("学習の進み具合はURLに保存します。接続が切れても、同じブラウザーでこのURLを開けば続きから再開できます。")
@@ -60,10 +62,18 @@ if st.session_state.get("active_source") != mode:
     st.session_state.active_source = mode
     st.session_state.pop("quiz_signature", None)
     st.session_state.pop("quiz_session", None)
-path = ROOT / "data" / BANK_FILES[mode]
 
+# The random set draws from every round's bank merged into one pool; the
+# per-question source bank is remembered so the UI can still name it.
+bank_loads = list(BANK_FILES.items()) if mode == RANDOM_MODE else [(mode, BANK_FILES[mode])]
 try:
-    all_questions = load_questions(path)
+    all_questions = []
+    source_bank_by_id = {}
+    for bank_name, filename in bank_loads:
+        bank_questions = load_questions(ROOT / "data" / filename)
+        all_questions.extend(bank_questions)
+        for bank_question in bank_questions:
+            source_bank_by_id[bank_question["id"]] = bank_name
 except QuestionDataError as error:
     st.error(str(error))
     st.stop()
@@ -85,12 +95,20 @@ if not questions:
     st.info("第五版との照合済み問題がまだありません。照合完了後に学習できます。")
     st.stop()
 
-with st.sidebar:
-    categories = sorted({question["category"] for question in questions})
-    if st.session_state.get("category_filter") not in ["すべて", *categories]:
-        st.session_state.category_filter = "すべて"
-    category = st.selectbox("出題分野", ["すべて"] + categories, key="category_filter")
-    shuffle = st.checkbox("問題の順番をランダムにする", key="shuffle_order")
+if mode == RANDOM_MODE:
+    # The random set always serves the whole pool in drawn order, so the
+    # category filter and the shuffle toggle do not apply to it.
+    category = "すべて"
+    shuffle = False
+    with st.sidebar:
+        st.caption("ランダムは全問題から重複なしで出題します。出題分野の絞り込みは使いません。")
+else:
+    with st.sidebar:
+        categories = sorted({question["category"] for question in questions})
+        if st.session_state.get("category_filter") not in ["すべて", *categories]:
+            st.session_state.category_filter = "すべて"
+        category = st.selectbox("出題分野", ["すべて"] + categories, key="category_filter")
+        shuffle = st.checkbox("問題の順番をランダムにする", key="shuffle_order")
 
 if category != "すべて":
     questions = [question for question in questions if question["category"] == category]
@@ -99,7 +117,15 @@ signature = hashlib.sha256(json.dumps([mode, category, shuffle, questions], ensu
 if st.session_state.get("quiz_signature") != signature:
     restored = session_from_progress(pending_restore, questions) if pending_restore else None
     st.session_state.quiz_signature = signature
-    st.session_state.quiz_session = restored if restored is not None else create_session(questions, shuffle)
+    if restored is not None:
+        st.session_state.quiz_session = restored
+    elif mode == RANDOM_MODE:
+        st.session_state.quiz_session = create_random_session(questions)
+    else:
+        st.session_state.quiz_session = create_session(questions, shuffle)
+    # Only sessions born here (fresh draw or URL restore) count as random-set
+    # sessions; a missed-questions retry started from the result screen does not.
+    st.session_state.random_session = mode == RANDOM_MODE
     st.session_state.quiz_generation = st.session_state.get("quiz_generation", 0) + 1
 
 session = st.session_state.quiz_session
@@ -107,7 +133,7 @@ session = st.session_state.quiz_session
 
 def save_progress() -> None:
     """Mirror the live session into the URL so a lost session can resume."""
-    token = encode_progress(BANK_NAMES.index(mode), category, shuffle, session)
+    token = encode_progress(SET_NAMES.index(mode), category, shuffle, session)
     if st.query_params.get("p") != token:
         st.query_params["p"] = token
 
@@ -129,6 +155,15 @@ with st.sidebar:
 def restart(selected: list[dict]) -> None:
     st.session_state.quiz_session = create_session(selected, shuffle)
     st.session_state.quiz_generation += 1
+    st.session_state.random_session = False
+    st.session_state.scroll_to_top = True
+    st.rerun()
+
+
+def restart_random() -> None:
+    st.session_state.quiz_session = create_random_session(questions)
+    st.session_state.quiz_generation += 1
+    st.session_state.random_session = True
     st.session_state.scroll_to_top = True
     st.rerun()
 
@@ -152,6 +187,19 @@ def scroll_to_top_if_requested() -> None:
 
 if session["position"] >= total:
     st.success(f"おつかれさまでした。{total}問中 {correct}問正解です。")
+    if mode == RANDOM_MODE and st.session_state.get("random_session", False):
+        served = len(session["order"])
+        if served < len(questions):
+            st.write(
+                f"全{len(questions)}問のうち、{served}問を出題済みです。"
+                f"「追加で出題」を押すと、まだ出ていない問題から{RANDOM_BATCH_SIZE}問をランダムに追加します。"
+            )
+            if st.button("追加で出題", type="primary", use_container_width=True):
+                extend_random_session(session, questions)
+                st.session_state.scroll_to_top = True
+                st.rerun()
+        else:
+            st.write(f"全{len(questions)}問をすべて出題しました。")
     missed = missed_questions(session, questions)
     if missed:
         st.write("間違えた問題をもう一度確認しましょう。")
@@ -160,7 +208,10 @@ if session["position"] >= total:
     else:
         st.write("すべて正解です。解説で確認した内容を、実際の学習にも役立ててください。")
     if st.button("最初から学習する", use_container_width=True):
-        restart(questions)
+        if mode == RANDOM_MODE:
+            restart_random()
+        else:
+            restart(questions)
     scroll_to_top_if_requested()
     st.stop()
 
@@ -170,7 +221,10 @@ is_answered = question_id in session["answers"]
 st.markdown(f"<h1 class='question-heading'>{session['position'] + 1}. 問題</h1>", unsafe_allow_html=True)
 with st.sidebar:
     st.caption(f"第{session['position'] + 1}問 / {total}問 · {question['category']}")
-    st.caption(f"問題集：{mode}・問題{question['origin']['question_number']}")
+    if mode == RANDOM_MODE:
+        st.caption(f"問題集：ランダム（{source_bank_by_id.get(question_id, mode)}・問題{question['origin']['question_number']}）")
+    else:
+        st.caption(f"問題集：{mode}・問題{question['origin']['question_number']}")
 st.markdown(question_html(question["prompt"]), unsafe_allow_html=True)
 
 if not is_answered:
@@ -240,6 +294,9 @@ else:
 with st.sidebar:
     st.divider()
     if st.button("この学習をやり直す", use_container_width=True):
-        restart(questions)
+        if mode == RANDOM_MODE:
+            restart_random()
+        else:
+            restart(questions)
 
 scroll_to_top_if_requested()
