@@ -1,0 +1,210 @@
+{
+  "round": 5,
+  "received_on": "2026-11-07",
+  "note": "画像ファイル自体はリポジトリに含めない。問題写真17枚（問1〜50）を受領済み。解答・解説写真は未受領のため、正答・解説は教則第五版の本文に基づく下書き（review.status: pending）。撮影ページの冊子ページ番号は、写真で判読できたものだけ各問題の origin に記録した（問40〜42=91ページ）。判読できないページは推測で埋めていない。",
+  "photos": [
+    {
+      "file_name": "67249575-2C24-4477-A0A8-CB378D667CC3-photo-14CD5027-7F80-4236-9078-E4E0E2090E7A.jpg",
+      "sha256": "549ff7b379261d737cacd1d5e2c5a10f00d7c58662502152952ad923524f64bd",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "file_name": "A74FB4F7-2172-497E-BA5E-71E076CDD3E2-photo-FEA52113-053F-464B-A14E-9950062ADF9B.jpg",
+      "sha256": "932ac97f63bb819a68c4605b66fe328ad91814e2a1846f5cb78974087e793d31",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "file_name": "91B6B1B4-C4CC-4B36-BAF9-B798D27BE72C-photo-6C4BAD81-CB84-4D7F-8183-1BB004FE8B65.jpg",
+      "sha256": "50b5c744a01f5155489c0c6e74afd1b7977904e566b56b6e0989530e1e084c33",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        7,
+        8
+      ]
+    },
+    {
+      "file_name": "C6FB41A0-921F-45FA-A747-3B75C1C14361-photo-3F9D48FC-AB96-4C51-88AF-3A501D4DBF36.jpg",
+      "sha256": "f744352ae33ecc2963b5d99ffa86b1520128b36b3fd6c64c557459727e64024e",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "file_name": "4C77F931-796E-4B4B-A127-3460B34FB1AC-photo-AB3B9E5B-B546-45E4-A674-2E7D9F61CD81.jpg",
+      "sha256": "d85d5186814a6b9bd503c6b5dee5be1dd90872494457af3308381b8313118bec",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "file_name": "F569CAA0-C662-4813-BB5B-DCA6E6259F37-photo-DC499041-D7CE-4868-86F6-BB317C9C87AC.jpg",
+      "sha256": "959f2d344e51fd7ad0da65cf39b1f6c147a2edb2435964c8c22acde1efbfaa60",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "file_name": "6B270378-8D21-4FBD-B61A-1274103375B7-photo-087DA10E-943E-4EE5-A482-10B8E0558877.jpg",
+      "sha256": "e657ac4f3a2493db8f66aa4fd1a852ab86fa70b751618acbda0267040118c881",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "file_name": "A6119FD3-4124-4974-92A2-531AFFB72BBE-photo-87AA75F3-B8A4-461E-9E10-B5B6503C14DF.jpg",
+      "sha256": "143e0c27eeeafcb298bfc6741eeb8ca0481098b30002f4f56a0be419a9501810",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "file_name": "A6335D4E-227F-4DF6-97F3-78F4F71A34E6-photo-7E3A69EE-7AA8-482E-ABA6-A1DB2EAA9FD2.jpg",
+      "sha256": "6453a8e3b1fd22e564f0dc406f15fdf7d7fd980a71fb83e4bd91baf962116f14",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "file_name": "CA6D9B03-432A-447D-9E3B-F47A48959F39-photo-9143EAED-6F6D-4A22-AD46-759672499C94.jpg",
+      "sha256": "672cc0420ba7132dbda5c5e96b94190a9ece6981efe9be255c5ee242e347c49f",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "file_name": "D296E3F7-60AD-468A-89A7-7B6A455DDEE2-photo-12739539-C87B-497B-AE9F-1BDABDF291FB.jpg",
+      "sha256": "8537c380d2fe4ae509c29f2ba78b28ac7b202693afd1b7ecac2fb1db54c8e746",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "file_name": "51E3CEAA-3568-4111-871E-A7D64B1095A7-photo-768B0EDC-65F5-4965-82BC-75EDF063ECB2.jpg",
+      "sha256": "2b80fedc4969a355377e724b0fb58a802898b1c70338f5d50699ca90bdf38ffc",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "file_name": "96184E5C-5274-4771-9308-C4729511CB92-photo-92C47A5C-BC47-4BED-B77F-29489F909F27.jpg",
+      "sha256": "1a125e40049e151f197a45bdcb6739a37817e421a8d65ef408abf37cb784d0c7",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "file_name": "D341062F-16BD-407E-B5AA-E6975A5686F4-photo-C11C8A9E-58FD-4D95-9A97-F2DEE3C57259.jpg",
+      "sha256": "d0b31ba4d77f7da5eb6f796e5381b33cdb5eafabc80fc26d644c75db5345728e",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "file_name": "05ABA5AE-75A3-4CBC-82EA-753CF4A66809-photo-748E286C-7FD8-4120-A9A6-627086D61005.jpg",
+      "sha256": "bb9f5c1a1e8d09b5be04d4cf383af90d34e802a43f29fc52867437440c6632f5",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "file_name": "69B5F481-B1C4-4B12-85D7-D65BD156DD19-photo-8B7157CB-5293-41D8-84A9-66FE29B859F9.jpg",
+      "sha256": "05daddde96632ecf735ec96fceccfe2f22693116c024af4c65f6043511bc7dd1",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "file_name": "E307EE92-62BF-4A0E-95D3-B72E8C66D4BE-photo-C1CA2E44-56C9-4C80-A880-0F62C4E9317D.jpg",
+      "sha256": "e69ec9ea0ae4644178818b1b29dfa0d58bff34c0195abf732e67820be639613e",
+      "width": 1206,
+      "height": 1608,
+      "role": "question",
+      "question_numbers": [
+        49,
+        50
+      ]
+    }
+  ]
+}
